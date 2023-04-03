@@ -21264,11 +21264,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "MyFirstRobot",
-      "projectName": "MyFirstRobot",
-      "projectPath": "D:\\Jun\\learning-uipath\\section01\\MyFirstRobot\\.local",
+      "projectUniqueName": "Demo",
+      "projectName": "Demo",
+      "projectPath": "D:\\Jun\\learning-uipath\\section02\\Demo\\.local",
       "packagesPath": "C:\\Users\\keduit\\.nuget\\packages\\",
-      "outputPath": "D:\\Jun\\learning-uipath\\section01\\MyFirstRobot\\.local",
+      "outputPath": "D:\\Jun\\learning-uipath\\section02\\Demo\\.local",
       "fallbackFolders": [
         "C:\\Users\\keduit\\AppData\\Local\\UiPath\\NugetFallbackFolder"
       ]

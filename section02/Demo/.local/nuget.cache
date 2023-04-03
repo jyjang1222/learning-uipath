@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RWlRqFj8BHVrq0jS5UGu8lH2idt71kbKkoRSGC1kEMrATEXwhV8MXolxXkWxrJKuE91Kj4mij4QHwcNXnR1lBA==",
+  "dgSpecHash": "bi7fCMVcqoSjZ3XqWPKnG1/rqELE7ynV7uqs+idbWxg6vr1QsLHkt4Cx6372O45303zVL/eEeqhYKVGxB/GIXw==",
   "success": true,
-  "projectFilePath": "D:\\Jun\\learning-uipath\\section01\\MyFirstRobot\\.local\\",
+  "projectFilePath": "D:\\Jun\\learning-uipath\\section02\\Demo\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\keduit\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\keduit\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
