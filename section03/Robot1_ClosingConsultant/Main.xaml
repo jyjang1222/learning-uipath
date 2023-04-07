@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1056,1140" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1056,1135" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -102,7 +102,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,1075" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,1070" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CityName" />
     </Sequence.Variables>
@@ -123,19 +123,29 @@
         <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">CityName</CSharpValue>
       </InArgument>
     </WriteLine>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Google" sap:VirtualizedContainerService.HintSize="484,555" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0152652b-852c-4cdf-96a7-a863084a8387" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Google" sap:VirtualizedContainerService.HintSize="484,550" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0152652b-852c-4cdf-96a7-a863084a8387" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,338" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,333" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="0152652b-852c-4cdf-96a7-a863084a8387" Text="test" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/" CvType="InputBox" DesignTimeRectangle="696, 504, 403, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='gLFyf' aaname='검색' /&gt;" Guid="86754ad3-f4a2-43f8-a1fd-02ca7af2b72c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZcAAAAmCAYAAAAIh9ZpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACdSURBVHhe7dUxAQAADMOg+TfdmcgJJrgBQEwuAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAMS2B1texGn+IRRcAAAAAElFTkSuQmCC" InformativeScreenshot="ecc43ee2f2fe54714d03bc06d10bf17e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvType="InputBox" DesignTimeRectangle="649, 499, 582, 44" ElementType="InputBox" FriendlyName="'.CcAdNb{margin:auto}.QC…'" FullSelectorArgument="&lt;webctrl class='SDkEP' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='SDkEP' tag='DIV' type='' aaname='' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
