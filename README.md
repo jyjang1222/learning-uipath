@@ -14,6 +14,7 @@
 - Input Dialog: 텍스트 입력창 띄우기 (select,option도 가능)
     - input type(다중선택) 예시: "Seoul;Daegu;" 
 - Write Line: 출력창에 로그를 출력 (console.log랑 비슷)
+- Log Message: Write Line과 다른점은 속성을 통해 출력방식을 선택가능하다.
 - Use Application/Browser: 외부의 응용프로그램이나 웹브라우저 사용
     - close닫기속성
         - never: 절대 창을 닫지 않음
@@ -22,8 +23,8 @@
     - Timeout속성: 오류가 발생하기전에 동작을 실행하기위한 대기시간. 예를들어 인터넷이 끊긴다면 오류를 발생시키지 않기때문에 그럴때를 대비해서 설정한다. (단위:초)
     - 시크릿/프라이빗: true시 스크릿모드로 창을 응용 프로그램을 실행(쿠키로 인한 예외처리 가능)
 - Type Into: 입력할 타겟을 선택하여 문자를 입력 할 수 있다.
-    - 엄격한:
-    - 퍼지:
+- Get Text: 필요한 데이터를 문자열로 가져올 수 있다. 저장위치에는 변수를 작성할 수 있다.
+
 
 ## 단축키
 - ctrl + Y: ctrl+Z 반대
