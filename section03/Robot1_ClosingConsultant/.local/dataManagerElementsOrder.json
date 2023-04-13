@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Temperature&Sequence_3",
         "CityName&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
