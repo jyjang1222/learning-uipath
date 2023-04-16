@@ -1,10 +1,5 @@
 # UiPath 학습저장소 - 빠코의 디비 스토리
-## 목차
-1. 기초편
-2. 응용편
-3. 고급편
 
-# 기초편
 ## 변수 명명 규칙
 |접두어|의미|
 |:---:|:---|
@@ -42,10 +37,12 @@
 - Log Message: 로그 메세지를 남긴다.
 - For Each: 주로 Array, DataTable타입 변수들에 사용되며, 하나의 변수가 다수의 정보를 가지고 있을 때, 이들의 해당 값들을 하나씩 참조하는 역할을 한다.
     - 인덱스: 카운터 변수를 선언 가능하며 기본 타입은 Integer이다.
+- Build Data Table
+- For Each Row
 
 ## Methods
 - ToString: 문자열로 타입변환. 예시: iAge.ToString
 
 ## 단축키
 - ctrl + k: 변수 선언
-- ctrl + d: 주석 처리
+- ctrl + d: 주석 처리 
