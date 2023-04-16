@@ -2,6 +2,7 @@
 
 ## uipath rpa 개발자 코스 - udemy
 - https://www.udemy.com/course/complete-uipath-rpa-developer-course/
+
 1. 첫 자동화 프로그램 만들기
 2. UiPath 패널 설명
 3. 자동으로 구글에 날씨 데이터를 수집하여 입을 의상을 추천해주는 프로그램 만들기
@@ -9,7 +10,10 @@
 
 ## 빠코의 디비 스토리 - youtube
 - https://www.youtube.com/@user-yx5yw3ok2q
+
 1. 기초편
+- Variable
+- ForEach
 2. 응용편
 3. 고급편
 

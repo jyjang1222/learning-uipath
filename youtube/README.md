@@ -37,8 +37,12 @@
 - Log Message: 로그 메세지를 남긴다.
 - For Each: 주로 Array, DataTable타입 변수들에 사용되며, 하나의 변수가 다수의 정보를 가지고 있을 때, 이들의 해당 값들을 하나씩 참조하는 역할을 한다.
     - 인덱스: 카운터 변수를 선언 가능하며 기본 타입은 Integer이다.
-- Build Data Table
-- For Each Row
+- Build Data Table: 엑셀 데이터 읽기 및 쓰기 시 유용하게 활용 가능하며, 개발 프로젝트 데이터 관리 변수용으로도 많이 활용할 수 있다.
+    - 연관 Activity: Add Data Row, For Each Row, Get Row Item, Remove Data Row, Remove Duplicate Rows 등
+    - 데이터 테이블: Build Data Table의 값을 가지고 있을 DataTable의 변수를 지정한다.
+- For Each Row in Data Table: DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역할을 하는 Activity 이다.
+    - 데이터 테이블: DataTable의 Row 정보들을 꺼내올 DataTable 변수를 입력 변수로 넣는다.
+    - 인덱스: DataTable 변수의 Row 개수를 Count하는 변수를 지정한다. (0부터 시작)
 
 ## Methods
 - ToString: 문자열로 타입변환. 예시: iAge.ToString
