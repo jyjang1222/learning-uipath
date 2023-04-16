@@ -33,16 +33,35 @@
 - 모든 Activity들은 속성 값을 가지고 있고, 특성마다 셋팅되는 구성 및 값들이 다르다.
 
 ## Activitys
-- Assign: 변수 설정. 기본타입: String, 단축키: ctrl+k
-- Log Message: 로그 메세지를 남긴다.
-- For Each: 주로 Array, DataTable타입 변수들에 사용되며, 하나의 변수가 다수의 정보를 가지고 있을 때, 이들의 해당 값들을 하나씩 참조하는 역할을 한다.
-    - 인덱스: 카운터 변수를 선언 가능하며 기본 타입은 Integer이다.
-- Build Data Table: 엑셀 데이터 읽기 및 쓰기 시 유용하게 활용 가능하며, 개발 프로젝트 데이터 관리 변수용으로도 많이 활용할 수 있다.
-    - 연관 Activity: Add Data Row, For Each Row, Get Row Item, Remove Data Row, Remove Duplicate Rows 등
+### Assign
+변수 설정. 기본타입: String, 단축키: ctrl+k
+### Log Message
+로그 메세지를 남긴다.
+### For Each
+주로 Array, DataTable타입 변수들에 사용되며, 하나의 변수가 다수의 정보를 가지고 있을 때, 이들의 해당 값들을 하나씩 참조하는 역할을 한다.
+- 속성
+    - TypeArgument: 묶음 변수 내 값들의 변수 Type을 정의한다.
+    - Values: 묶음 변수 명을 넣는다.
+    - 인덱스: 묶음 변수의 개수를 카운트 하는 카운터 변수를 선언 가능하며 기본 타입은 Integer이다.
+### Build Data Table
+엑셀 데이터 읽기 및 쓰기 시 유용하게 활용 가능하며, 개발 프로젝트 데이터 관리 변수용으로도 많이 활용할 수 있다.
+- 연관 Activity: Add Data Row, For Each Row, Get Row Item, Remove Data Row, Remove Duplicate Rows 등
+- 속성
     - 데이터 테이블: Build Data Table의 값을 가지고 있을 DataTable의 변수를 지정한다.
-- For Each Row in Data Table: DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역할을 하는 Activity 이다.
+### For Each Row in Data Table
+DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역할을 하는 Activity 이다.
+- 속성
     - 데이터 테이블: DataTable의 Row 정보들을 꺼내올 DataTable 변수를 입력 변수로 넣는다.
     - 인덱스: DataTable 변수의 Row 개수를 Count하는 변수를 지정한다. (0부터 시작)
+- 예시:  row("Name").ToString, row(0).ToString
+### Add Data Row
+- DataTable에 Data Row를 추가할 때 사용되는 Activity이다.
+- DataTable의 Columns의 개수 만큼에 항목 데이터를 Row로 넣을 수 있으며, 각 칼럼 데이터 형식에 맞게 데이터를 넣어야 한다.
+- Row 데이터는 컬럼 순서에 맞게 배열 형식으로 나열하여 넣거나, DataRow 형식으로 Row Item을 넣을 수 있는 방식이다.
+- 속성
+    - ArrayRow: Array 형식으로 컬럼의 생성 순서에 맞게 데이터를 넣는다.
+    - DataRow: DataRow 형식의 Row 전체의 객체 값을 넣을 때 사용한다.
+    - 데이터 테이블: Add Data Row를 통해 데이터 Row를 추가할 Data Table 변수를 선언한다.
 
 ## Methods
 - ToString: 문자열로 타입변환. 예시: iAge.ToString
