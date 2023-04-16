@@ -13,9 +13,36 @@
 
 1. 기초편
 - Variable
-- ForEach
+- For Each
+- Build Data Table
+- For Each Row in Data Table
+- Add Data Row
+- Remove Data Row
+- Update Row Item
+- Remove Duplicate Rows
+
 2. 응용편
 3. 고급편
+
+
+## 변수 명명 규칙
+|접두어|의미|
+|:---:|:---|
+|**a**|Array 배열|
+|b|Boolean형 변수|
+|By|BYTE형 변수|
+|**d**|DateTime 날짜형 변수|
+|dbl|Double 형 변수 (소수점 포함)|
+|f|Float 형 변수 (소수점 포함)|
+|**g_**|Global 변수 (전역 변수)|
+|h|Handle 형 변수|
+|**i**|정수 (int)형 변수|
+|l|long 형 변수|
+|**s**|String 문자열|
+|**dt**|DataTable 형 변수|
+- 변수명의 첫 글자는 변수 타입을 의미하는 접두어를 사용하며 소문자로 표현해준다.
+    - 예시 : aNameList, sName, iAge, g_global, dYear
+- 카멜 표기법을 따른다.
 
 ## UiPath 언어 선택, visual basic vs c#
 사실 VB냐 C# 이냐는 크게 차이가 없고 둘다 비슷하다.  
