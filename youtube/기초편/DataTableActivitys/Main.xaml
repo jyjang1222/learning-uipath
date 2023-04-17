@@ -80,7 +80,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,2142" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,2195" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Temp" />
       <Variable x:TypeArguments="x:Int32" Name="iRowIdx" />
@@ -91,8 +91,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dt_Temp]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Age&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;빠코&lt;/Name&gt;&#xA;    &lt;Age&gt;10&lt;/Age&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;홍길동&lt;/Name&gt;&#xA;    &lt;Age&gt;20&lt;/Age&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;영심이&lt;/Name&gt;&#xA;    &lt;Age&gt;30&lt;/Age&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="DataTable에 이름과 나이를 넣습니다." DataTable="[dt_Temp]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="484,91" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Age&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;빠코&lt;/Name&gt;&#xA;    &lt;Age&gt;10&lt;/Age&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;홍길동&lt;/Name&gt;&#xA;    &lt;Age&gt;20&lt;/Age&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;영심이&lt;/Name&gt;&#xA;    &lt;Age&gt;30&lt;/Age&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BuildDataTable>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -115,7 +121,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;============================&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;============================&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -123,7 +129,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;빠코&quot;, &quot;10&quot;}]" DataTable="[dt_Temp]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;빠코&quot;, &quot;10&quot;}]" DataTable="[dt_Temp]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -131,7 +137,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AddDataRow>
-    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;둘리&quot;, &quot;100&quot;}]" DataTable="[dt_Temp]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;둘리&quot;, &quot;100&quot;}]" DataTable="[dt_Temp]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -139,7 +145,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AddDataRow>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -162,8 +168,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;============================&quot;]" />
-    <ui:RemoveDataRow Row="{x:Null}" DataTable="[dt_Temp]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="RemoveDataRow_2" RowIndex="1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;============================&quot;]" />
+    <ui:RemoveDataRow Row="{x:Null}" DataTable="[dt_Temp]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="RemoveDataRow_2" RowIndex="1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -171,7 +177,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:RemoveDataRow>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -194,8 +200,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;============================&quot;]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="Update in Data Table" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;============================&quot;]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="Update in Data Table" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -218,7 +224,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,53" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -241,15 +247,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;============================&quot;]" />
-    <ui:RemoveDuplicateRows DataTable="[dt_Temp]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="484,80" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" OutputDataTable="[dt_Temp1]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,547" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;============================&quot;]" />
+    <ui:RemoveDuplicateRows DataTable="[dt_Temp]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="484,81" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" OutputDataTable="[dt_Temp1]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iRowIdx]" DataTable="[dt_Temp1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,552" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="450,430" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="getName" />
             </Sequence.Variables>
@@ -258,12 +264,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="0" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="388,187" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
+            <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="0" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
               <ui:GetRowItem.Value>
                 <OutArgument x:TypeArguments="x:String">[getName]</OutArgument>
               </ui:GetRowItem.Value>
             </ui:GetRowItem>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Row Index [&quot; + iRowIdx.ToString + &quot;] 이름 : &quot; + getName + &quot; / 나이 : &quot; + row(&quot;Age&quot;).ToString]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Row Index [&quot; + iRowIdx.ToString + &quot;] 이름 : &quot; + getName + &quot; / 나이 : &quot; + row(&quot;Age&quot;).ToString]" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
