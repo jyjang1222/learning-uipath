@@ -130,6 +130,23 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
     - "년빼기 : " + DateDiff("YYYY", DateAdd("YYYY", -1, Now).ToString("yyyy-MM-dd"), Now.ToString("yyyy-MM-dd")).ToString
     - "년빼기 : " + DateDiff("YYYY", "2022-04-17", "2023-04-17").ToString
 
+### Excel Process Scope
+- Excel 프로세스를 열거나 재사용합니다, "Use Excel File" Activity와 함꼐 Excel 문서를 여는 데 사용됩니다.
+- 속성
+    - 표시되는 행만 : 체크하면 엑셀 시트에서 숨겨진 데이터는 읽어오지 않는다.
+    - 저장 위치 : 읽어온 데이터를 저장할 변수를 정함(DataTable).
+
+### Use Excel File
+- 회사에서는 엑셀파일에 문서 보안이 걸려있기 때문에 Use Excel File 과 Read Range Activity들을 통해 데이터 참조를 하는 것이 좋다.
+- 속성
+    - 암호 : 읽기 패스워드. 엑셀 파일에 암호가 있을 때 사용.
+    - 암호 편집 : 편집 패스워드. 엑셀 파일에 암호가 있을 때 사용.
+
+### Read Range
+- 시트에 있는 데이터를 가져오는 Activity
+- 속성
+    - 범위 : 어떤 시트에서 데이터를 읽어올 것인지 정함.
+
 ## Methods
 - ToString : 문자열로 타입변환. 예시 : iAge.ToString
 
