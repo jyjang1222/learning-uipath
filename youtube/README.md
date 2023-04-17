@@ -115,15 +115,10 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 |:---|:---|
 |DateTime.Now|현재 시각, 예) 01/29/20 16:45:28|
 |DateTime.Now.ToString("yyyy-MM-dd")|DateTime String으로 Format하여 출력|
-|DateTime.Now.Year<br>DateTime.Now.Month|DateTime.Now 의 각 항목을 출력|
-|dbl|Double 형 변수 (소수점 포함)|
-|f|Float 형 변수 (소수점 포함)|
-|**g_**|Global 변수 (전역 변수)|
-|h|Handle 형 변수|
-|**i**|정수 (int)형 변수|
-|l|long 형 변수|
-|**s**|String 문자열|
-|**dt**|DataTable 형 변수|
+|DateTime.Now.Year<br>DateTime.Now.Month<br>DateTime.Now.Day<br>DateTime.Now.Hour<br>DateTime.Now.Minute<br>DateTime.Now.Second<br>DateTime.Now.Millisecond|DateTime.Now 의 각 항목을 출력|
+|Weekday(DateTime.Now)|DateTime.Now 의 요일 숫자 반환(일:1 ~ 토:7)|
+|DateAdd("YYYY", 10, DateTime.Now)|DateTime.Now 항목에 정수만큼 더한 Date 출력<br>첫번째 인자 값 - (년:YYYY, 월:m, 일:d) 기준으로 DateAdd|
+|DateDiff("d", DateTime_1, DateTime_2)|DateTime_2 에서 DateTime_1을 뺀 값<br>첫번째 인자 값 - (년:YYYY, 월:m, 일:d) 기준으로 DateDiff 처리되며, 해당 항목의 차가 정수로 출력|
 
 ## Methods
 - ToString : 문자열로 타입변환. 예시 : iAge.ToString
