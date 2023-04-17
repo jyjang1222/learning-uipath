@@ -68,10 +68,17 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Remove Duplicate Rows
 - DataTable 에 Data Row를 삭제할 때 사용되는 Activity 이다.
-- DataTable에 동일한 Row 값을 없애고자 할 때 사용되며, 입력 값에 중복 Row 값을 체크할 DataTable을 입력하고, 출력에 DataTable 형식의 변수를 지정해 주면 해당 변수로 중복이 제거된 DataTable 값이 출력된다.
+- DataTable에 동일한 Row 값을 없애고자 할 때 사용되며, 입력 값에 중복 Row 값을 체크할 DataTable을 입력하고, **출력에 DataTable 형식의 변수를 지정해 주면 해당 변수로 중복이 제거된 DataTable 값이 출력**된다.
 - 속성
     - 입력 > 데이터 테이블 : 중복 제거를 위해 입력하는 DataTable 변수를 입력 값으로 넣는다.
     - 출력 > 데이터 테이블 : 중복 제거 후 출력되는 값을 담을 DataTable Type의 출력 변수를 넣는다.
+
+### Get Row Item
+- For Each Row와 잘 쓰이는 Activity이다.
+- 속성
+    - 행 : for each row에서 쓰인 행의 변수명을 작성
+    - 열 : 인덱스나 컬럼명을 작성
+    - 값 : 가져온 값을 저장할 변수명 선언
 
 ## Methods
 - ToString : 문자열로 타입변환. 예시 : iAge.ToString
@@ -79,3 +86,4 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 ## 단축키
 - ctrl + k : 변수 선언
 - ctrl + d : 주석 처리 
+- ctrl + e : 주석 해제

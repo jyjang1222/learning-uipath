@@ -21259,18 +21259,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jyjan\\.nuget\\packages\\": {},
-    "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder": {}
+    "C:\\Users\\keduit\\.nuget\\packages\\": {},
+    "C:\\Users\\keduit\\AppData\\Local\\UiPath\\NugetFallbackFolder": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "ForEach",
       "projectName": "ForEach",
-      "projectPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\ForEach\\.local",
-      "packagesPath": "C:\\Users\\jyjan\\.nuget\\packages\\",
-      "outputPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\ForEach\\.local",
+      "projectPath": "D:\\Jun\\learning-uipath\\youtube\\기초편\\ForEach\\.local",
+      "packagesPath": "C:\\Users\\keduit\\.nuget\\packages\\",
+      "outputPath": "D:\\Jun\\learning-uipath\\youtube\\기초편\\ForEach\\.local",
       "fallbackFolders": [
-        "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder"
+        "C:\\Users\\keduit\\AppData\\Local\\UiPath\\NugetFallbackFolder"
       ]
     },
     "frameworks": {
@@ -21302,7 +21302,7 @@
             "version": "[23.4.4, 23.4.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\jyjan\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\keduit\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
