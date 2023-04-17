@@ -108,15 +108,15 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### DateTime
 - UiPath의 경우 각 언어에 해당하는 다양한 함수를 사용할 수 있어서 DateTime 또한 동일하게 그 사용법을 활용할 수 있다.
-- yyyy : 년도, MM : 월, dd : 날짜, hh : 12시간 표현, dddd : 요일 표현, HH : 24시간 표현, mm : 분, ss : 초, ms : 밀리초
+- **yyyy** : 년도, **MM** : 월, **dd** : 날짜, **hh** : 12시간 표현, **dddd** : 요일 표현, **HH** : 24시간 표현, **mm** : 분, **ss** : 초, ms : 밀리초
     - 예) yyyy-MM-dd(2021-11-23), hh:mm:ss(10:44:23), HH:mm:ss (22:44:23)
 
 |메소드 형식|설명|
 |:---|:---|
 |DateTime.Now|현재 시각, 예) 01/29/20 16:45:28|
-|DateTime.Now.ToString("yyyy-MM-dd")|DateTime String으로 Format하여 출력|
+|DateTime.Now.ToString<br>("yyyy-MM-dd dddd HH:mm:ss")|DateTime String으로 Format하여 출력|
 |DateTime.Now.Year<br>DateTime.Now.Month<br>DateTime.Now.Day<br>DateTime.Now.Hour<br>DateTime.Now.Minute<br>DateTime.Now.Second<br>DateTime.Now.Millisecond|DateTime.Now 의 각 항목을 출력|
-|Weekday(DateTime.Now)|DateTime.Now 의 요일 숫자 반환(일:1 ~ 토:7)|
+|Weekday(DateTime.Now)|DateTime.Now 의 요일 숫자 반환(일:1 ~ 토:7)<br>예) Weekday(Now, FirstDayOfWeek.Monday).ToString|
 |DateAdd("YYYY", 10, DateTime.Now)|DateTime.Now 항목에 정수만큼 더한 Date 출력<br>첫번째 인자 값 - (년:YYYY, 월:m, 일:d) 기준으로 DateAdd|
 |DateDiff("d", DateTime_1, DateTime_2)|DateTime_2 에서 DateTime_1을 뺀 값<br>첫번째 인자 값 - (년:YYYY, 월:m, 일:d) 기준으로 DateDiff 처리되며, 해당 항목의 차가 정수로 출력|
 
