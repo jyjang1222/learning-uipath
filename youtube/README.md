@@ -138,6 +138,7 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Use Excel File
 - 회사에서는 엑셀파일에 문서 보안이 걸려있기 때문에 Use Excel File 과 Read Range Activity들을 통해 데이터 참조를 하는 것이 좋다.
+- 버전이 업데이트 되면서 Excel Process Scope Activity 내에서 사용 해야 한다.
 - 속성
     - 암호 : 읽기 패스워드. 엑셀 파일에 암호가 있을 때 사용.
     - 암호 편집 : 편집 패스워드. 엑셀 파일에 암호가 있을 때 사용.
@@ -152,6 +153,19 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 - 속성
     - 추가 : 기존 데이터에 데이터 추가
     - 헤더 제외 : 머릿글 제외
+
+### Check App State
+- 내가 의도한대로 응용 프로그램이 정상적으로 동작 했는지 상태를 확인하는 Activity (예외처리를 할때 쓰인다)
+- 타겟을 선택한 후 엘리먼트를 선택할 때 F4키를 누르면 엘리먼트의 선택 범위 기준을 바꿀 수 있다.
+- '브랜치 전환' 버튼을 눌러서 타겟이 나타날때와 나타나지 않을때의 분기를 선택 가능하다.
+- 엘리먼트 선택 범위 (단축키F4)
+    - 자동 : AA 보다 선택 범위가 세세하다
+    - AA : 자동 보다 선택 범위가 단순해진다
+    - UIA
+
+### Click
+- 클릭 이벤트를 사용가능하다. (클릭을 해서 창을 닫을 때 유용)
+- 엑셀 정식 인증 알림창을 끄려면 UiPath가 안정화가 덜돼서 버그로 인해 Use Application/Browser Activity내에서 Click이벤트를 만든 후 잘라내기를 이용해서 Check App State로 이동시키고 다시 Use Excel파일 내로 옮겨야 에러가 사라진다. 
 
 ## Methods
 - ToString : 문자열로 타입변환. 예시 : iAge.ToString
