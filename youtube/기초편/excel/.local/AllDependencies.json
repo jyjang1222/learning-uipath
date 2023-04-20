@@ -21259,18 +21259,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\keduit\\.nuget\\packages\\": {},
-    "C:\\Users\\keduit\\AppData\\Local\\UiPath\\NugetFallbackFolder": {}
+    "C:\\Users\\jyjan\\.nuget\\packages\\": {},
+    "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "excel",
       "projectName": "excel",
-      "projectPath": "D:\\Jun\\learning-uipath\\youtube\\기초편\\excel\\.local",
-      "packagesPath": "C:\\Users\\keduit\\.nuget\\packages\\",
-      "outputPath": "D:\\Jun\\learning-uipath\\youtube\\기초편\\excel\\.local",
+      "projectPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\excel\\.local",
+      "packagesPath": "C:\\Users\\jyjan\\.nuget\\packages\\",
+      "outputPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\excel\\.local",
       "fallbackFolders": [
-        "C:\\Users\\keduit\\AppData\\Local\\UiPath\\NugetFallbackFolder"
+        "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder"
       ]
     },
     "frameworks": {
@@ -21302,7 +21302,7 @@
             "version": "[23.4.1-preview, 23.4.1-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\keduit\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\jyjan\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

@@ -147,6 +147,12 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 - 속성
     - 범위 : 어떤 시트에서 데이터를 읽어올 것인지 정함.
 
+### Write DataTable to Excel
+- DataTable에 있는 데이터를 엑셀에 입력하는 Activity
+- 속성
+    - 추가 : 기존 데이터에 데이터 추가
+    - 헤더 제외 : 머릿글 제외
+
 ## Methods
 - ToString : 문자열로 타입변환. 예시 : iAge.ToString
 
