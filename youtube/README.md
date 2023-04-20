@@ -145,6 +145,8 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Read Range
 - 시트에 있는 데이터를 가져오는 Activity
+- 특정 범위의 데이터를 가져올때는 Range() 메서드를 사용해야한다.
+- 예) Excel.Sheet("Sheet2").Range("B4:G7"), Excel.Sheet("Sheet1").Range("B9")
 - 속성
     - 범위 : 어떤 시트에서 데이터를 읽어올 것인지 정함.
 
