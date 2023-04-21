@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dt_Temp&Sequence_12",
         "dt_Temp&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
