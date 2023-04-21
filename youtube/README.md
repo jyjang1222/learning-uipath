@@ -150,13 +150,29 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 - 엘리먼트 선택 범위 (단축키F4)
     - 자동 : AA 보다 선택 범위가 세세하다
     - AA : 자동 보다 선택 범위가 단순해진다
-    - UIA
+    - UIA : 기본 라이브러리에서 선택되지 않고, WPF와 같이 비교적 최근 도입된 UI 프레임워크 기반의 프로그램의 엘리먼트를 선택해야할 경우 사용하여 선택 지정
+
+### Read Cell Value
+- 원래 Read만 가능한 Activity 였지만 업데이트 되면서 Read를 하면서 동시에 Cell에 Write도 가능하게 바뀌었다.
+
+### Write Cell
+- Read Cell Value가 Write기능이 없던 때 쓰던 Activity이다.
+
 
 ### Click
 - 클릭 이벤트를 사용가능하다. (클릭을 해서 창을 닫을 때 유용)
 - 엑셀 정식 인증 알림창을 끄려면 UiPath가 안정화가 덜돼서 버그로 인해 Use Application/Browser Activity내에서 Click이벤트를 만든 후 잘라내기를 이용해서 Check App State로 이동시키고 다시 Use Excel파일 내로 옮겨야 에러가 사라진다.
+- 속성
+    - Click type : 원클릭, 더블, 마우스업, 마우스다운
+    - Mouse button : 마우스 좌클, 마우스 우클
 
-### Read Cell Value
 
-### Write Cell
+### Get Text
+- Application UI의 Text 영역에 값을 읽어 올때 사용
+
+### Set Text
+- Application UI의 Text 입력 영역에 Text를 입력 시 사용
+
+### Type Info
+- Set Text와 기능이 비슷하고 입력하는 텍스트의 타입과 입력하기 전에 필드 비우기나 입력하기 전에 클릭 같은 기능을 추가로 사용 가능하다.
 
