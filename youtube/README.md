@@ -158,6 +158,9 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 ### Write Cell
 - Read Cell Value가 Write기능이 없던 때 쓰던 Activity이다.
 
+### Use Application/Browser
+- 자동화할 응용 프로그램이나 웹브라우저를 선택하는 Activity
+- Click Activity 를 사용하기 위한 필요 조건
 
 ### Click
 - 클릭 이벤트를 사용가능하다. (클릭을 해서 창을 닫을 때 유용)
@@ -166,11 +169,11 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
     - Click type : 원클릭, 더블, 마우스업, 마우스다운
     - Mouse button : 마우스 좌클, 마우스 우클
 
-
 ### Get Text
 - Application UI의 Text 영역에 값을 읽어 올때 사용
+- 타겟을 선택 후 닻 모양의 아이콘인 앵커를 추가적으로 선택할 수 있다.
 
-### Set Text
+### 엘리먼트 > 컨트롤 > Set Text
 - Application UI의 Text 입력 영역에 Text를 입력 시 사용
 
 ### Type Info
