@@ -12,15 +12,6 @@
 - https://www.youtube.com/@user-yx5yw3ok2q
 
 1. 기초편
-- Variable
-- For Each
-- Build Data Table
-- For Each Row in Data Table
-- Add Data Row
-- Remove Data Row
-- Update Row Item
-- Remove Duplicate Rows
-
 2. 응용편
 3. 고급편
 
@@ -95,13 +86,7 @@
 - ctrl + e : Activity 활성화
 - shift + f2 : 주석 넣기
 
-## UiPath 언어 선택, visual basic vs c#
-사실 VB냐 C# 이냐는 크게 차이가 없고 둘다 비슷하다.  
-하지만 만약, 둘 중 선택을 해야 한다면 VB를 하는 것이 좋다.  
-왜냐면 UiPath가 기본언어로 선택한 것이 VB이기 때문이다.  
-.NET 기반이라 크게 차이는 없겠지만, 그래도 VB 가 더 잘 호환되어 구동되지 않을까? 생각된다.
-
-### PDF 데이터 가져오기
+## PDF 데이터 가져오기
 - PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
 - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
 1. Read PDF Text를 통해 pdf문서의 데이터를 string으로 가져와서 '출력 > 텍스트'를 통해 string변수에 저장한다.
@@ -109,3 +94,9 @@
 3. 위에서 저장한 pdf문서의 데이터를 split메서드를 활용하여 배열에 개행 문자열로 나누어서 저장한다.
 4. split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
 5. split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries
+
+## UiPath 언어 선택, visual basic vs c#
+사실 VB냐 C# 이냐는 크게 차이가 없고 둘다 비슷하다.  
+하지만 만약, 둘 중 선택을 해야 한다면 VB를 하는 것이 좋다.  
+왜냐면 UiPath가 기본언어로 선택한 것이 VB이기 때문이다.  
+.NET 기반이라 크게 차이는 없겠지만, 그래도 VB 가 더 잘 호환되어 구동되지 않을까? 생각된다.
