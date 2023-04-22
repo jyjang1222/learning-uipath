@@ -24,11 +24,16 @@
 2. 응용편
 3. 고급편
 
-## 홈 메뉴
-### UiPath Extension
+## UiPath Extension
 - uipath홈에서 도구를 통해 확장기능을 추가 할수있다.
 - 확장기능을 설치한 후 해당 브라우저에 접속하면 확장프로그램이 설치된다.
 - 확장프로그램이 설치된 후에 설정에 들어가서 '시크릿 모드에서 허용'과 '파일 URL에 대한 액세스 허용'에 체크를 해주어야 한다.
+
+## 패키지 관리
+- 디자인 메뉴에서 패키지관리를 통해 플러그인 설치 가능
+- 추천
+    - UiPath.Excel.Activities
+    - UiPath.PDF.Activities
 
 ## 변수 명명 규칙
 |접두어|의미|
@@ -71,7 +76,14 @@
 - 모든 Activity들은 속성 값을 가지고 있고, 특성마다 셋팅되는 구성 및 값들이 다르다.
 
 ## Methods
-- ToString : 문자열로 타입변환. 예시 : iAge.ToString
+- ToString : 문자열로 타입변환. 
+    - 예) iAge.ToString
+- split : 옵션을 추가할때는 , 로 구분한다.
+    - split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
+    - split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries
+    - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
+- Contains : 해당 문자열에 명시한 문자열이 있으면 true 없으면 false 반환
+    - 예) row.Contains("성명")
 
 ## 주석 넣기
 - Activity 기능에 대한 설명 및 변수 사용에 대해 설명을 주석을 통해 넣을 수 있다.
@@ -88,3 +100,12 @@
 하지만 만약, 둘 중 선택을 해야 한다면 VB를 하는 것이 좋다.  
 왜냐면 UiPath가 기본언어로 선택한 것이 VB이기 때문이다.  
 .NET 기반이라 크게 차이는 없겠지만, 그래도 VB 가 더 잘 호환되어 구동되지 않을까? 생각된다.
+
+### PDF 데이터 가져오기
+- PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
+- 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
+1. Read PDF Text를 통해 pdf문서의 데이터를 string으로 가져와서 '출력 > 텍스트'를 통해 string변수에 저장한다.
+2. Assign을 통해 pdf 데이터를 저장할 배열을 만든다.
+3. 위에서 저장한 pdf문서의 데이터를 split메서드를 활용하여 배열에 개행 문자열로 나누어서 저장한다.
+4. split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
+5. split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries
