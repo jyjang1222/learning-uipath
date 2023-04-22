@@ -157,6 +157,7 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Write Cell
 - Read Cell Value가 Write기능이 없던 때 쓰던 Activity이다.
+- 예) Excel.Sheet("Sheet1").Cell("B2")
 
 ### Use Application/Browser
 - 자동화할 응용 프로그램이나 웹브라우저를 선택하는 Activity
@@ -205,3 +206,9 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
     - 서식 유지 : 데이터를 추출할 때 텍스트가 깨진다면 true/false 바꿔가며 테스트
     - 범위 : 가져올 페이지를 설정 가능하다. 예) "1". 기본값은 "All"
     - 텍스트 : 가져온 텍스트를 저장할 변수 설정
+
+### Try ~ Catch ~ Finally
+- 안정적인 코드와 예외 처리를 대응하기 위해 사용되는 Activity 이다.
+- Try 부분에 일반적인 로직을 넣고 Catch 부분에는 예외가 발생하였을때의 로직을 넣는다.
+- Add new Catch 클릭으로 예외를 추가하고 System.Exception을 선택하면 된다.
+- Finally는 오류가 발생했든 안했든 실행하는 로직으로 작성해도 되고 작성하지 않아도 된다.
