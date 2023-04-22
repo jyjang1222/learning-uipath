@@ -59,22 +59,29 @@
     - AA : 기본 라이브러리에서 선택되지 않고, MFC, VB6 버전과 같이 오래 전 개발된 프로그램의 엘리먼트를 선택 해야할 경우 사용하여 선택 지정
     - UIA : 기본 라이브러리에서 선택되지 않고, WPF와 같이 비교적 최근 도입된 UI 프레임워크 기반의 프로그램의 엘리먼트를 선택해야할 경우 사용하여 선택 지정
 
-## Activity
-- RPA 개발 프로세스는 크게 2가지 유형이며 Sequence, Flow Chart 방식이다.
-- Sequence는 작업을 순차적으로 수행할 때 사용하고, Flow Chart는 여러 브랜치나 조건 분기가 있을 경우 사용한다.
-- Activity는 드래그앤드롭으로 세팅이 가능하다.
-- Activity는 RPA 프로세스를 개발하는데 필요한 기능들이다.
-- 모든 Activity들은 속성 값을 가지고 있고, 특성마다 셋팅되는 구성 및 값들이 다르다.
-
 ## Methods
 - ToString : 문자열로 타입변환. 
     - 예) iAge.ToString
-- split : 옵션을 추가할때는 , 로 구분한다.
+- split : 옵션을 추가할때는 , 로 구분한다. 나누는 기준의 디폴트는 공백이다.
     - split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
     - split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries
     - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
+    - 예) sVar.split, Split(sVariable, " ")
 - Contains : 해당 문자열에 명시한 문자열이 있으면 true 없으면 false 반환
     - 예) row.Contains("성명")
+- Length : 문자열의 길이나 배열의 길이를 반환
+    - 예) sVar.Length, Len(sVar)
+- Trim : 양끝의 공백을 제거한다. 
+    - 예) "Trim : [" + sVariable.Trim + "]"
+- Ltrim : 왼쪽편의 공백을 제거한다.
+    - 예) "Ltrim : [" + LTrim(sVariable) + "]"
+- Rtrim : 오른쪽편의 공백을 제거한다.
+    - 예) "Rtrim : [" + RTrim(sVariable.Trim) + "]"
+- Replace
+- Remove
+- Left
+- Right
+- Substring
 
 ## 주석 넣기
 - Activity 기능에 대한 설명 및 변수 사용에 대해 설명을 주석을 통해 넣을 수 있다.
