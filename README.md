@@ -77,11 +77,16 @@
     - 예) "Ltrim : [" + LTrim(sVariable) + "]"
 - Rtrim : 오른쪽편의 공백을 제거한다.
     - 예) "Rtrim : [" + RTrim(sVariable.Trim) + "]"
-- Replace
-- Remove
-- Left
-- Right
-- Substring
+- Replace : 특정 문자열을 교체한다.
+    - 예) "Replace : [" + sVariable.Replace("동해", "서해") + "]"
+- Remove : 문자열을 index부터 count만큼 삭제한다. 인덱스는 0부터 시작
+    - 예) sVariable.Remove(startIndex, Count)
+- Left : 왼쪽에서부터 Length만큼만 반환한다.
+    - 예) "Left : [" + Left(sVariable, length) + "]"
+- Right : 오른쪽에서부터 Length만큼만 반환한다.
+    - 예) "Right : [" + Right(sVariable, 6) + "]"
+- Substring : 문자열을 index부터 count만큼만 반환한다. 인덱스는 0부터 시작
+    - 예) "Substring : [" + sVariable.Substring(startIndex, count) + "]"
 
 ## 주석 넣기
 - Activity 기능에 대한 설명 및 변수 사용에 대해 설명을 주석을 통해 넣을 수 있다.
