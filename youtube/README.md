@@ -224,3 +224,19 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 - Try 부분에 일반적인 로직을 넣고 Catch 부분에는 예외가 발생하였을때의 로직을 넣는다.
 - Add new Catch 클릭으로 예외를 추가하고 System.Exception을 선택하면 된다.
 - Finally는 오류가 발생했든 안했든 실행하는 로직으로 작성해도 되고 작성하지 않아도 된다.
+
+### Trigger Scope
+- 다양한 트리거를 정의한다.
+- 로그 메세지를 통해 파일 변경 내용 확인이 가능하다.
+- 예) "File Change Trigger : " + args.FileChangeInfo.FullPath
+
+### File Change Trigger
+- Trigger Scope Activity내에서 사용되는 Activity이다.
+- 폴더의 변경 사항이 생기면 발생하는 트리거(동작)
+- 폴더 내의 변경 내용을 모니터링하고자 할 때 사용 된다.
+- 자동화의 산출물을 체크하여 다음 로직을 진행하고자 할때 사용된다.
+- 속성
+    - FileNameFilter : 체크할 파일명을 명시한다. 예) "*.xlsx"
+    - IncludeSubdirectories : true이면 하위 폴더의 변화 까지도 체크하게 된다.
+    - 필터 알림 :
+    - 형식 변경 : 변경 내용을 체크할 기준을 변경할 수 있다.
