@@ -256,3 +256,6 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 ### Flow Decision
 - True / False 로 로직을 나눌 때 사용 한다.
 - Condition 부분에 bool변수를 선언한다.
+
+### Flow Switch
+- Condition변수에 의해 로직을 나눌 때 사용한다.
