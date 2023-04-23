@@ -223,6 +223,7 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 - 안정적인 코드와 예외 처리를 대응하기 위해 사용되는 Activity 이다.
 - Try 부분에 일반적인 로직을 넣고 Catch 부분에는 예외가 발생하였을때의 로직을 넣는다.
 - Add new Catch 클릭으로 예외를 추가하고 System.Exception을 선택하면 된다.
+- exception.Message를 통해 예외 오류 메세지도 확인이 가능하다.
 - Finally는 오류가 발생했든 안했든 실행하는 로직으로 작성해도 되고 작성하지 않아도 된다.
 
 ### Trigger Scope
@@ -240,3 +241,18 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
     - IncludeSubdirectories : true이면 하위 폴더의 변화 까지도 체크하게 된다.
     - 필터 알림 :
     - 형식 변경 : 변경 내용을 체크할 기준을 변경할 수 있다.
+
+### Find Element
+- 지정한 UI 엘리먼트가 화면에 나타났는지 체크
+- 속성
+    - 시간 제한 : 디폴트 30초
+
+### Terminate Workflow
+- Try Catch Activity에서 exception에 넣어서 프로세스를 종료 시킬 때 사용된다.
+- 속성
+    - Exception : 예외에 대행 정보를 담은 exception변수를 넣는다. (Try Catch Activity에서 exception변수가 생성된다.)
+    - Reason : 오류가 발생한 이유에 대해 메세지를 남길때
+
+### Flow Decision
+- True / False 로 로직을 나눌 때 사용 한다.
+- Condition 부분에 bool변수를 선언한다.
