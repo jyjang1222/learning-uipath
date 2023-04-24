@@ -259,3 +259,6 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Flow Switch
 - Condition변수에 의해 로직을 나눌 때 사용한다.
+
+### Move Window
+- 응용 프로그램의 창 위치를 이동 시킬 때 사용한다.
