@@ -262,3 +262,11 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Move Window
 - 응용 프로그램의 창 위치를 이동 시킬 때 사용한다.
+
+### Compress/Zip Files
+- 파일 및 폴더를 압축하기 위해 사용된다.
+- 버티컬바 | 를 통해 여러개의 파일 또는 폴더를 입력할 수 있다.
+- 예) "test.zip|test2.zip|F:\Jun\learning\learning-uipath\youtube\기초편\ZipUnZip\templates|F:\Jun\learning\learning-uipath\youtube\기초편\ZipUnZip\tmh"
+
+### Extract/UnZip Files
+- 압축된 파일 및 폴더를 해제하기 위해 사용된다.

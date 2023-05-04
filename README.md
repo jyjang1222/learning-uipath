@@ -1,6 +1,6 @@
 # UiPath 학습저장소
 
-## uipath rpa 개발자 코스 - udemy
+## UiPath rpa 개발자 코스 - udemy
 - https://www.udemy.com/course/complete-uipath-rpa-developer-course/
 
 1. 첫 자동화 프로그램 만들기
@@ -87,6 +87,7 @@
     - 예) "Right : [" + Right(sVariable, 6) + "]"
 - Substring : 문자열을 index부터 count만큼만 반환한다. 인덱스는 0부터 시작
     - 예) "Substring : [" + sVariable.Substring(startIndex, count) + "]"
+- Environment.NewLine : 개행
 
 ## 주석 넣기
 - Activity 기능에 대한 설명 및 변수 사용에 대해 설명을 주석을 통해 넣을 수 있다.
