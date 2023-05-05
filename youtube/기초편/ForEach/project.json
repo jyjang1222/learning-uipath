@@ -1,7 +1,7 @@
 {
   "name": "ForEach",
   "description": "ForEach실습",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "2d125bd6-abae-4550-8003-335134600f3c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "2036dcbf-dd4d-4b2c-865c-b44768765d55",
       "input": [],
       "output": []
     }
