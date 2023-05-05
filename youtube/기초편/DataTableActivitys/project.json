@@ -1,7 +1,7 @@
 {
   "name": "DataTableActivitys",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "cb7dafd1-df07-4cb3-917d-89b2ff14e435",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "25317eba-1bba-4388-9e1a-3af9d45d58a2",
       "input": [],
       "output": []
     }
