@@ -1,7 +1,7 @@
 {
   "name": "CopyFIlePathExistsIf",
   "description": "CopyFIle, PathExists, If 액티비티 실습",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "5347308f-1a37-4189-a66b-921a0a02245c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "e7a9a37d-3a05-4ebc-a466-2131dd1be19f",
       "input": [],
       "output": []
     }
