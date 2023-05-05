@@ -18,6 +18,17 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "실습.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "aGugudan&Sequence_1",
+        "iIdx&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
