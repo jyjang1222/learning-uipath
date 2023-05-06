@@ -1,7 +1,7 @@
 {
   "name": "excel",
   "description": "엑셀 시트 데이터 읽기쓰기 실습",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "6de2d3a6-6a14-407f-a0ae-b7193ae05eaf",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "d65f495b-2248-49c1-a833-b70892371420",
       "input": [],
       "output": []
     }

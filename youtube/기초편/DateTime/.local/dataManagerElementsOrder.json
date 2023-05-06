@@ -25,6 +25,9 @@
       "Path": "실습.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "sDay&Sequence_1",
+        "sMonth&Sequence_1",
+        "sYear&Sequence_1",
         "dNow&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
