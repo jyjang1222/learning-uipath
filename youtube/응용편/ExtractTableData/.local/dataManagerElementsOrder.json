@@ -12,19 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "fFileInfo&Sequence_1",
-        "sFolder&Sequence_1",
-        "sFile&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "실습.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "sFile&Sequence_1"
+        "ExtractDataTable&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

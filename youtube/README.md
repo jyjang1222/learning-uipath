@@ -270,3 +270,8 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Extract/UnZip Files
 - 압축된 파일 및 폴더를 해제하기 위해 사용된다.
+
+### Extract Table Data
+- 리스트 형이면서 페이징 처리가 된 정보를 추출해 오고자 할 때 사용되는 Acitivity이다.
+- **추출된 데이터 정보들은 DataTable 형식으로 추출된다.**
+- 상단의 '테이블 추출' 버튼을 통해 추출이 가능하다.
