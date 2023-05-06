@@ -9,11 +9,22 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "실습.xaml",
+      "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "iCondition&Flowchart_1",
         "bResult&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "실습.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bBool&Flowchart_1",
+        "iState&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

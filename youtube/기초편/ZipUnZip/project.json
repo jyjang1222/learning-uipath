@@ -1,7 +1,7 @@
 {
   "name": "ZipUnZip",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "f983729c-53ab-4f84-9729-3965e4d24a7b",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "16e89047-06de-42cb-910c-25d3229f5d6f",
       "input": [],
       "output": []
     }
