@@ -19,6 +19,18 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "실습.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sVal&Sequence_2",
+        "dt_temp2&Sequence_2",
+        "dt_temp&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "UI Selector",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "d2e4f819-f331-4e89-a392-e62735c58451",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "59772b02-302a-4172-8820-ac13874a9372",
       "input": [],
       "output": []
     }
