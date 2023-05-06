@@ -137,6 +137,7 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
     - 암호 편집 : 편집 패스워드. 엑셀 파일에 암호가 있을 때 사용.
 
 ### Read Range
+- Use Excel File 과 같이 쓰이는 activity이다.
 - 시트에 있는 데이터를 가져오는 Activity
 - 특정 범위의 데이터를 가져올때는 Range() 메서드를 사용해야한다.
 - 예) Excel.Sheet("Sheet2").Range("B4:G7"), Excel.Sheet("Sheet1").Range("B9")
@@ -275,3 +276,13 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 - 리스트 형이면서 페이징 처리가 된 정보를 추출해 오고자 할 때 사용되는 Acitivity이다.
 - **추출된 데이터 정보들은 DataTable 형식으로 추출된다.**
 - 상단의 '테이블 추출' 버튼을 통해 추출이 가능하다.
+
+### Write Range Workbook
+- DataTable의 데이터를 가져와서 엑셀 시트에 데이터를 작성할 수 있는 Activity이다.
+
+### Write DataTable to Excel
+- DataTable의 데이터를 가져와서 엑셀 시트에 데이터를 작성할 수 있는 Activity이다.
+- Write Range Workbook 과 다르게 use excel 과 excel process scope Activity들과 같이 써야한다.
+- 속성
+    - 기록할 데이터 : 데이터테이블을 인자로 넣는다.
+    - 대상 : 작성위치를 넣는다. 예) Excel.Sheet("Sheet1").Range("A1")
