@@ -1,7 +1,7 @@
 {
   "name": "FileChangeTrigger",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "b1a77594-6712-4bd8-9f05-03db47b84e6c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "d3ddc768-8c90-4c87-8139-11e24d6693f0",
       "input": [],
       "output": []
     }
