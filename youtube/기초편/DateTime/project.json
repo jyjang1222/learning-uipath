@@ -1,7 +1,7 @@
 {
   "name": "DateTime",
   "description": "DateTime 실습",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "ead7acfd-d4ea-42ce-adaa-13e727d7553e",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "34d1dfdc-d58e-4afd-bf70-02e57e605c7a",
       "input": [],
       "output": []
     }
