@@ -190,7 +190,7 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 ### 엘리먼트 > 컨트롤 > Set Text
 - Application UI의 Text 입력 영역에 Text를 입력 시 사용
 
-### Type Info
+### Type Into
 - Set Text와 기능이 비슷하고 입력하는 텍스트의 타입과 입력하기 전에 필드 비우기나 입력하기 전에 클릭 같은 기능을 추가로 사용 가능하다.
 
 ### Start Process
