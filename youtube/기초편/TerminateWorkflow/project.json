@@ -1,7 +1,7 @@
 {
   "name": "TerminateWorkflow",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "f59ab68c-7707-4147-ab98-25614494c41f",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "0391589d-e6f8-4a72-88c7-f094a32e5a94",
       "input": [],
       "output": []
     }
