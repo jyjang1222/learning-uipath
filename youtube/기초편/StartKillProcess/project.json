@@ -1,7 +1,7 @@
 {
   "name": "StartKillProcess",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "3d711795-b5da-403d-856e-886ca33c12c6",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "207ee5d7-0073-4263-95a5-f7253f00cba5",
       "input": [],
       "output": []
     }

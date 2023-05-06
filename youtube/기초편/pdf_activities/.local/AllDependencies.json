@@ -21946,8 +21946,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jyjan\\.nuget\\packages\\": {},
-    "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder": {}
+    "C:\\Users\\jyjan\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -21955,10 +21954,7 @@
       "projectName": "pdf_activities",
       "projectPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\pdf_activities\\.local",
       "packagesPath": "C:\\Users\\jyjan\\.nuget\\packages\\",
-      "outputPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\pdf_activities\\.local",
-      "fallbackFolders": [
-        "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder"
-      ]
+      "outputPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\pdf_activities\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {

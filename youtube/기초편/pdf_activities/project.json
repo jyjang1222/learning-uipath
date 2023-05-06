@@ -1,7 +1,7 @@
 {
   "name": "pdf_activities",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -51,6 +51,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "2f0b3a3e-123a-462f-aed4-65aaa1602ee9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "f5dc9376-957c-404d-80dd-3851d906e821",
       "input": [],
       "output": []
     }
