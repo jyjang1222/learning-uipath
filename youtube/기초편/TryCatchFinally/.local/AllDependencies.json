@@ -21259,8 +21259,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jyjan\\.nuget\\packages\\": {},
-    "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder": {}
+    "C:\\Users\\jyjan\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -21268,10 +21267,7 @@
       "projectName": "TryCatchFinally",
       "projectPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\TryCatchFinally\\.local",
       "packagesPath": "C:\\Users\\jyjan\\.nuget\\packages\\",
-      "outputPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\TryCatchFinally\\.local",
-      "fallbackFolders": [
-        "C:\\Users\\jyjan\\AppData\\Local\\UiPath\\NugetFallbackFolder"
-      ]
+      "outputPath": "F:\\Jun\\learning\\learning-uipath\\youtube\\기초편\\TryCatchFinally\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {

@@ -1,7 +1,7 @@
 {
   "name": "TryCatchFinally",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "실습.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "705d8077-efec-4fe8-98d3-d147b7ab349d",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "실습.xaml",
+      "uniqueId": "c97cd2db-962d-4975-90c0-a611f8157e22",
       "input": [],
       "output": []
     }
