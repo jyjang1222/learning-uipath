@@ -1,5 +1,5 @@
 {
-  "name": "notepad",
+  "name": "day1",
   "description": "빈 프로세스",
   "main": "getWeather.xaml",
   "dependencies": {
