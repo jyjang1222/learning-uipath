@@ -25,6 +25,28 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "naverlogin.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sPw&Sequence_1",
+        "sId&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "getCorona.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bBool&Sequence_2",
+        "iTodayCoronaCount&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
