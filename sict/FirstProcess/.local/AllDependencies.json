@@ -21263,8 +21263,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "FirstProcess",
-      "projectName": "FirstProcess",
+      "projectUniqueName": "notepad",
+      "projectName": "notepad",
       "projectPath": "C:\\Jun\\learning-uipath\\sict\\FirstProcess\\.local",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Jun\\learning-uipath\\sict\\FirstProcess\\.local"
