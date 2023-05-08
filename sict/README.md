@@ -9,6 +9,9 @@
 - send hotkey
 - on element appear
     - 속성 : 영구 반복 False를 해주어야 중지된다.
+- get credential
 
 ## 팁
 - docs.uipath.com 에 접속하면 uipath와 관련된 정보를 찾을 수 있다.
+- int로 타입 변환. 예) i_확진자 : Convert.TOInt32(s_확진자.Replace(","c, ""))
+- str로 타입 변환 예) String.Format("오늘 확진자는 {0}명입니다", s_확진자)

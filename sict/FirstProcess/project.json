@@ -1,7 +1,7 @@
 {
   "name": "notepad",
   "description": "빈 프로세스",
-  "main": "notepad.xaml",
+  "main": "naverlogin.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -56,6 +56,12 @@
     {
       "filePath": "notepad.xaml",
       "uniqueId": "fd3a24d2-ba67-4958-9bba-68b669aad9dc",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "naverlogin.xaml",
+      "uniqueId": "e480d755-5d01-4467-afba-dac44dcb7489",
       "input": [],
       "output": []
     }
