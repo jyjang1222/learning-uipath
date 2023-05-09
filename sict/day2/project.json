@@ -1,7 +1,7 @@
 {
   "name": "day2",
   "description": "빈 프로세스",
-  "main": "DataScrap.xaml",
+  "main": "DataScrap2.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -56,6 +56,12 @@
     {
       "filePath": "DataScrap.xaml",
       "uniqueId": "f56eba77-98ed-413e-b2a1-31c53406fc15",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DataScrap2.xaml",
+      "uniqueId": "01207cea-7bd2-4c10-a053-370dd2b7d489",
       "input": [],
       "output": []
     }
