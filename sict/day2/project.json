@@ -1,7 +1,7 @@
 {
   "name": "day2",
   "description": "빈 프로세스",
-  "main": "DataScrap2.xaml",
+  "main": "FlowChart.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -62,6 +62,30 @@
     {
       "filePath": "DataScrap2.xaml",
       "uniqueId": "01207cea-7bd2-4c10-a053-370dd2b7d489",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "AttachWindow.xaml",
+      "uniqueId": "b19c0845-f2f3-49e2-b0a7-462bf217c1f3",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DataScrap3.xaml",
+      "uniqueId": "c888da17-bc48-4488-b2f8-7b68effe801d",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "IfSwitch1.xaml",
+      "uniqueId": "4d0861b9-0f14-4a01-ba00-746ade119eee",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "FlowChart.xaml",
+      "uniqueId": "c18f7811-11a7-4355-89bb-42bdafddf092",
       "input": [],
       "output": []
     }

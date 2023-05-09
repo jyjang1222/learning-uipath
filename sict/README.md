@@ -9,7 +9,9 @@
 - send hotkey
 - on element appear
     - 속성 : 영구 반복 False를 해주어야 중지된다.
-- get credential
+- 스크린 스크래핑
+- 데이터 스크래핑
+- attach window : 띄워져있는 윈도우창을 핸들링한다.
 
 ## 팁
 - docs.uipath.com 에 접속하면 uipath와 관련된 정보를 찾을 수 있다.
