@@ -1,0 +1,165 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="739.2,1387.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="689.6,1322.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="627.2,1210.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e35ebd7e-e3fe-412d-9095-57d48855ace5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="593.6,993.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="iCnt" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="531.2,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[iCnt]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[iCnt &lt; 3]" DisplayName="While" sap:VirtualizedContainerService.HintSize="531.2,756" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,588.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e35ebd7e-e3fe-412d-9095-57d48855ace5" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://prod.danawa.com/list/?cate=112758&amp;src=adwords&amp;kw=GA0456808&amp;gad=1&amp;gclid=EAIaIQobChMI-oeO16jn_gIVmq2WCh1sxgjdEAAYAiAAEgISmvD_BwE" CvElementArea="555, 652, 38, 37" CvTextArea="569, 664, 10, 16" CvTextArgument="1" CvType="InputBox" DesignTimeRectangle="558, 654, 35, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl aaname='1' parentid='productListArea' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1' parentid='productListArea' tag='A' type='' class='num now_on' check:innerText='1' /&gt;" Guid="29471ee7-486d-46ef-bcd7-88a81052090c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC4SURBVFhH7dgxCgIxEIVhb5CbCN7BYwS8wN4kN7C22j1E6rXIKSJsaRGwfDqwhCAIOizuiO+HFEmK+erZwHC/gSulIKWEGOMqR2aLoa3i5DPnPN++n8wWQ1vFiX7tng3EvRtx2ojTRpy2/8Rd0xF+5+BcwDi/fdrCuBumc49w2D5QArOEu/TwFWUQ1+07hGHEePLGcE3TQJwu4rQRp404baZxS0ScNuK0EaftJc70Csz08tBixOkC7mOs628fKr2fAAAAAElFTkSuQmCC" InformativeScreenshot="802c3e94825723ff45af0e975161317d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='노트북 전체 : 다나와 가격비교' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='새 열 0' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="171, 574, 1235, 15425" DesignTimeScaleFactor="1.25" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl class='product_list' parentid='productListArea' tag='UL' /&gt;" Guid="29962c12-f6aa-4a19-9c05-3b8b510f87ce" InformativeScreenshot="c123d6b558f0d37c45706397f8a7c3f9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='노트북 전체 : 다나와 가격비교' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[iCnt]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[iCnt + 1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="4eaaf4b9fcc17cdacf78c38c68ed494b.jpg" Selector="&lt;html app='chrome.exe' title='노트북 전체 : 다나와 가격비교' /&gt;" Title="노트북 전체 : 다나와 가격비교" Url="https://prod.danawa.com/list/?cate=112758&amp;src=adwords&amp;kw=GA0456808&amp;gad=1&amp;gclid=EAIaIQobChMI-oeO16jn_gIVmq2WCh1sxgjdEAAYAiAAEgISmvD_BwE" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
