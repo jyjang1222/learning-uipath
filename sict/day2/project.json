@@ -1,7 +1,7 @@
 {
   "name": "day2",
   "description": "빈 프로세스",
-  "main": "Clipboard.xaml",
+  "main": "TodayPractice.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -116,6 +116,12 @@
     {
       "filePath": "Clipboard.xaml",
       "uniqueId": "a47a22ea-8193-4e93-a178-f2ac772c8ba9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TodayPractice.xaml",
+      "uniqueId": "a1f2dd7f-2a32-45bc-bdf4-25c33548e715",
       "input": [],
       "output": []
     }
