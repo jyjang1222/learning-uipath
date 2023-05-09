@@ -87,6 +87,10 @@
     - 예) "Right : [" + Right(sVariable, 6) + "]"
 - Substring : 문자열을 index부터 count만큼만 반환한다. 인덱스는 0부터 시작
     - 예) "Substring : [" + sVariable.Substring(startIndex, count) + "]"
+- StartsWith
+- EndsWith
+- Format
+- IndexOf
 - Environment.NewLine : 개행
 
 ## 주석 넣기

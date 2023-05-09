@@ -1,6 +1,4 @@
 # SICT 교육 저장소 - 오규혁 이사님
-## 1일차
-- 메모장 활용
 
 ## Activity
 - open application / close application
