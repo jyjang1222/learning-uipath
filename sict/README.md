@@ -17,6 +17,10 @@
 - parallel : 병렬적으로 수행 하는 액티비티
 - BuildDataTable
 - input dialog : 입력폼
+- modify date : 날짜 변경
+
+## Method
+- datetime 메소드 : addDays , addHours
 
 ## 팁
 - docs.uipath.com 에 접속하면 uipath와 관련된 정보를 찾을 수 있다.

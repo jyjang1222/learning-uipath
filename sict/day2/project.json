@@ -1,7 +1,7 @@
 {
   "name": "day2",
   "description": "빈 프로세스",
-  "main": "BuildDataTable.xaml",
+  "main": "DateTime.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -104,6 +104,12 @@
     {
       "filePath": "BuildDataTable.xaml",
       "uniqueId": "4b6d5737-5251-4f9e-b790-657369b9b58b",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DateTime.xaml",
+      "uniqueId": "3604310f-6fbf-44dc-b703-581340fe568a",
       "input": [],
       "output": []
     }

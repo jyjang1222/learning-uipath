@@ -87,8 +87,8 @@
     - 예) "Right : [" + Right(sVariable, 6) + "]"
 - Substring : 문자열을 index부터 count만큼만 반환한다. 인덱스는 0부터 시작
     - 예) "Substring : [" + sVariable.Substring(startIndex, count) + "]"
-- StartsWith
-- EndsWith
+- StartsWith : 특정 문자열로 시작하는지.. true or false 로 반환
+- EndsWith : 특정 문자열로 끝나는지.. true or false 로 반환
 - Format
 - IndexOf
 - Environment.NewLine : 개행
