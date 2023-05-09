@@ -1,17 +1,24 @@
-# SICT 교육 저장소 - 오규혁 강사님
+# SICT 교육 저장소 - 오규혁 이사님
 ## 1일차
 - 메모장 활용
 
 ## Activity
 - open application / close application
 - get text
-- set text / type into
+- set text / type into : typeinto는 직접 타이핑하는 것 처럼 입력됨.
 - send hotkey
 - on element appear
     - 속성 : 영구 반복 False를 해주어야 중지된다.
 - 스크린 스크래핑
 - 데이터 스크래핑
 - attach window : 띄워져있는 윈도우창을 핸들링한다.
+    - 보통 open browser 와 같이 쓰인다.
+- switch
+- for each row in data table
+- maximize window
+- parallel : 병렬적으로 수행 하는 액티비티
+- BuildDataTable
+- input dialog : 입력폼
 
 ## 팁
 - docs.uipath.com 에 접속하면 uipath와 관련된 정보를 찾을 수 있다.
