@@ -1,7 +1,7 @@
 {
   "name": "day2",
   "description": "빈 프로세스",
-  "main": "TodayPractice.xaml",
+  "main": "TodayDegreePractice.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -120,8 +120,8 @@
       "output": []
     },
     {
-      "filePath": "TodayPractice.xaml",
-      "uniqueId": "a1f2dd7f-2a32-45bc-bdf4-25c33548e715",
+      "filePath": "TodayDegreePractice.xaml",
+      "uniqueId": "92469266-b84f-496a-b8a2-f170a678687a",
       "input": [],
       "output": []
     }
