@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cOUshWj4Sk/sBcpW25KPAsG5EqKXRrySBvYLI60FeNpSy5eJj/qQLu6ne85sBuEiFpyYQRSnsW285AkxYdQG5w==",
+  "dgSpecHash": "ISdzXkKtExtJOW216cf8QU5pOiipiStKKxooX7yoix/bHFyit8ug6u0Kg70IY1z6DVP7KUZQTTLNferIKRaQGg==",
   "success": true,
-  "projectFilePath": "C:\\Jun\\learning-uipath\\youtube\\응용편\\ExtractTableData\\.local\\",
+  "projectFilePath": "C:\\Jun\\learning-uipath\\sict\\day2\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",

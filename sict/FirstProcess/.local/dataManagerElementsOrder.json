@@ -47,6 +47,20 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "getWeather.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "aCityDegree&Sequence_1",
+        "aCityName&Sequence_1",
+        "sDegrees&Sequence_1",
+        "dt_Temp&Sequence_1",
+        "sDegree&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
