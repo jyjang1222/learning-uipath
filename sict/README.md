@@ -1,5 +1,9 @@
 # SICT 교육 저장소 - 오규혁 이사님
 
+- 교육자료
+    - http://naver.me/F1MYsFiv
+    - http://naver.me/GSUPzLSe
+
 ## Activity
 - open application / close application
 - get text
@@ -18,6 +22,8 @@
 - BuildDataTable
 - input dialog : 입력폼
 - modify date : 날짜 변경
+- set to clipboard
+- get from clipboard
 
 ## Method
 - datetime 메소드 : addDays , addHours
@@ -27,3 +33,4 @@
 - rpachallenge.com 에 접속하면 가이드에 맞게 수행이 가능하다.
 - int로 타입 변환. 예) i_확진자 : Convert.TOInt32(s_확진자.Replace(","c, ""))
 - str로 타입 변환 예) String.Format("오늘 확진자는 {0}명입니다", s_확진자)
+
