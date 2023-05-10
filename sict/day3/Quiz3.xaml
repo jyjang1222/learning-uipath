@@ -257,7 +257,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e53737a-24c9-464e-a9e9-2aea21c127ee" InformativeScreenshot="c7c339483469ae78b0cdcf00220e0e78" Selector="&lt;html app='chrome.exe' omit:title='받은편지함 (16) - jyjang5866@gmail.com - Gmail' /&gt;&lt;webctrl aaname='편지쓰기' aria-role='button' tag='DIV' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e53737a-24c9-464e-a9e9-2aea21c127ee" InformativeScreenshot="c7c339483469ae78b0cdcf00220e0e78" Selector="&lt;html app='chrome.exe' title='받은편지함 (16) - jyjang5866@gmail.com - Gmail' /&gt;&lt;webctrl aaname='편지쓰기' aria-role='button' tag='DIV' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>

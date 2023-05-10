@@ -1,0 +1,100 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Recording.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EditableText&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReadRange.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Quiz1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "browser&Sequence_1",
+        "sAddress&Sequence_1",
+        "sPhone&Sequence_1",
+        "sBirth&Sequence_1",
+        "sGender&Sequence_1",
+        "sName&Sequence_1",
+        "dt_Profile&Sequence_1",
+        "iIdx&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Quiz2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_res&Sequence_6",
+        "dt_excel&Sequence_1",
+        "sheetName&Sequence_6",
+        "dt_DirtyName&Sequence_6",
+        "sDirtyName&Sequence_6",
+        "browser&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Quiz3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sFilePath&Sequence_1",
+        "pdfName&Sequence_1",
+        "mailContent&Sequence_1",
+        "mailTitle&Sequence_1",
+        "sendedEmailAdd&Sequence_1",
+        "searchName&Sequence_1",
+        "browser2&Sequence_1",
+        "browser1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Quiz4.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "imgName&Sequence_1",
+        "sImgPath&Sequence_1",
+        "mailContent&Sequence_1",
+        "sFilePath&Sequence_1",
+        "fileName&Sequence_1",
+        "mailTitle&Sequence_1",
+        "sendedEmailAdd&Sequence_1",
+        "browser2&Sequence_1",
+        "browser1&Sequence_1",
+        "dt_Temp&Sequence_1",
+        "image&Sequence_1",
+        "searchName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
