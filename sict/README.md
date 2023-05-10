@@ -8,7 +8,7 @@
 - open application / close application
 - get text
 - set text / type into : typeinto는 직접 타이핑하는 것 처럼 입력됨.
-- send hotkey
+- send hotkey : 단축키를 입력시킬 때 사용된다.
 - on element appear
     - 속성 : 영구 반복 False를 해주어야 중지된다.
 - 스크린 스크래핑
@@ -16,15 +16,13 @@
 - attach window : 띄워져있는 윈도우창을 핸들링한다.
     - 보통 open browser 와 같이 쓰인다.
 - switch
-- for each row in data table
-- maximize window
+- maximize window : open browser와 같이 쓰인다.
 - parallel : 병렬적으로 수행 하는 액티비티
-- BuildDataTable
 - input dialog : 입력폼
 - modify date : 날짜 변경
 - set to clipboard
 - get from clipboard
-- repeat number of times
+- repeat number of times : 특정 횟수 만큼 for문을 돌릴 때 사용된다.
 
 ## Method
 - datetime 메소드 : addDays , addHours
