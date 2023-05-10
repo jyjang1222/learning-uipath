@@ -24,6 +24,7 @@
 - modify date : 날짜 변경
 - set to clipboard
 - get from clipboard
+- repeat number of times
 
 ## Method
 - datetime 메소드 : addDays , addHours
