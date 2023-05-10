@@ -79,6 +79,27 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "TodayDegreePractice.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "aCitys&Sequence_16",
+        "dt_Temp&Sequence_16",
+        "sDegree&Sequence_17",
+        "currentTime&Sequence_17",
+        "sDaeguDegree&Sequence_33",
+        "sMsg&Sequence_19",
+        "aCitys&Sequence_3",
+        "dt_Temp&Sequence_3",
+        "sDegree&Sequence_5",
+        "currentTime&Sequence_5",
+        "sDaeguDegree&Sequence_11",
+        "sMsg&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
