@@ -24,15 +24,24 @@
 - get from clipboard
 - repeat number of times : 특정 횟수 만큼 for문을 돌릴 때 사용된다.
 - copy sheet
+- use gmail
+- take screenshot
+- save image
+- invoke method : 메소드를 호출한다.
 
 ## Method
 - datetime 메소드 : addDays , addHours
+
+## 패키지
+- google workspace : 패키지관리에서 gsuite 검색
 
 ## 팁
 - docs.uipath.com 에 접속하면 uipath와 관련된 정보를 찾을 수 있다.
 - rpachallenge.com 에 접속하면 가이드에 맞게 수행이 가능하다.
 - int로 타입 변환. 예) i_확진자 : Convert.TOInt32(s_확진자.Replace(","c, ""))
 - str로 타입 변환 예) String.Format("오늘 확진자는 {0}명입니다", s_확진자)
+- clipboard.setimage : https://learn.microsoft.com/ko-kr/dotnet/api/system.windows.forms.clipboard.setimage?view=windowsdesktop-7.0
+- select편집 에서 불필요한 것들을 체크해제하면 셀렉트가 더 잘된다..
 
 ## 9, 10일차 자유과제
 - 범위 : 본인이 필요하거나 회사에서 필요할만한 과제 선정
