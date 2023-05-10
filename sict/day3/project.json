@@ -1,7 +1,7 @@
 {
   "name": "day3",
   "description": "asdf",
-  "main": "Quiz2.xaml",
+  "main": "Quiz3.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -68,6 +68,12 @@
     {
       "filePath": "Quiz2.xaml",
       "uniqueId": "ebff493d-f3b9-4c5e-ae66-91fbe85d5060",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Quiz3.xaml",
+      "uniqueId": "48778424-7603-478d-ae64-936f0ba332e3",
       "input": [],
       "output": []
     }
