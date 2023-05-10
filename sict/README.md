@@ -23,6 +23,7 @@
 - set to clipboard
 - get from clipboard
 - repeat number of times : 특정 횟수 만큼 for문을 돌릴 때 사용된다.
+- copy sheet
 
 ## Method
 - datetime 메소드 : addDays , addHours
