@@ -91,7 +91,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="800,2043.1999999999998" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="800,2524" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_person" />
       <Variable x:TypeArguments="s:DateTime" Name="firstTime" />
@@ -125,26 +125,26 @@
         </InArgument>
       </ui:ReadRange.Range>
     </ui:ReadRange>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="737.6,1560" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://search.naver.com/search.naver?where=news&amp;sm=tab_jum&amp;query=%ED%83%9C%EC%97%B0">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="737.6,2040.8" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://search.naver.com/search.naver?where=news&amp;sm=tab_jum&amp;query=%ED%83%9C%EC%97%B0">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="704,1457.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="704,1938.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="641.6,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_person]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="641.6,1280.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_person]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="641.6,1761.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="for each1" sap:VirtualizedContainerService.HintSize="608,1164.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="for each1" sap:VirtualizedContainerService.HintSize="608,1645.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="s:DateTime" Name="currentTime" />
                       <Variable x:TypeArguments="x:String" Name="sCurrentTime" />
@@ -168,21 +168,44 @@
                         <OutArgument x:TypeArguments="x:String">[sCurrentTime]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[currentTime.ToString("yyyyMMdd")]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[currentTime.ToString("yyyyMMddhhmmss")]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  nx_query'" EmptyField="True" sap:VirtualizedContainerService.HintSize="545.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[row(&quot;멤버명&quot;).ToString+ &quot;[k(enter)]&quot;]">
-                      <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="25dfff85-8154-432f-94d3-619ef7052086" InformativeScreenshot="2d8f22f7e411b210398e8684aee20d3a" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:TypeInto.Target>
-                    </ui:TypeInto>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="545.6,250.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:NavigateTo Browser="{x:Null}" Url="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="545.6,325.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,247.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  nx_query'" EmptyField="True" sap:VirtualizedContainerService.HintSize="387.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[row(&quot;멤버명&quot;).ToString+ &quot;[k(enter)]&quot;]">
+                            <ui:TypeInto.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="25dfff85-8154-432f-94d3-619ef7052086" InformativeScreenshot="2d8f22f7e411b210398e8684aee20d3a" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:TypeInto.Target>
+                          </ui:TypeInto>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
                     <Sequence DisplayName="Recording Sequence" sap:VirtualizedContainerService.HintSize="545.6,478.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">

@@ -1,7 +1,7 @@
 {
   "name": "day4",
   "description": "빈 프로세스",
-  "main": "test2.xaml",
+  "main": "test1.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
