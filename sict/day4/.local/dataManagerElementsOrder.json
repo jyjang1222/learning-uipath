@@ -39,6 +39,39 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "test1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_person&Sequence_1",
+        "firstTime&Sequence_1",
+        "sFirstTime&Sequence_1",
+        "currentTime&Sequence_6",
+        "sCurrentTime&Sequence_6",
+        "dt_scrap&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_person&Sequence_1",
+        "bCondition&Sequence_3",
+        "firstName&Sequence_2",
+        "lastName&Sequence_2",
+        "companyName&Sequence_2",
+        "roleInCompany&Sequence_2",
+        "address&Sequence_2",
+        "email&Sequence_2",
+        "phoneNumber&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
