@@ -12,6 +12,12 @@
       "Path": "practice1.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "prev1Year&Sequence_1",
+        "sFilePath&Sequence_1",
+        "sMailAddress&Sequence_1",
+        "sMailPw&Sequence_1",
+        "bFolderState&Sequence_37",
+        "bFileState&Sequence_37",
         "totalCnt통계&Sequence_1",
         "totalCnt컴활&Sequence_1",
         "totalCnt회계&Sequence_1",
@@ -68,6 +74,23 @@
         "address&Sequence_2",
         "email&Sequence_2",
         "phoneNumber&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "practice2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "i_TotalPost&Sequence_2",
+        "s_TotalPost&Sequence_2",
+        "childCount&Sequence_17",
+        "findChild&Sequence_17",
+        "importFileIdx&Sequence_17",
+        "trIdx&Sequence_8",
+        "loopCnt&Sequence_8",
+        "pagerIdx&Sequence_8"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

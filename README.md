@@ -1,5 +1,8 @@
 # UiPath 학습저장소
 
+## RPA Challenges
+- https://community.robotict.com/c/challenge/9
+
 ## UiPath rpa 개발자 코스 - udemy
 - https://www.udemy.com/course/complete-uipath-rpa-developer-course/
 
