@@ -1,0 +1,25 @@
+오늘 아침 quiz
+
+. 아래의 activity를 추가해서 어제 "0410_실습1_엑셀_프로세스_Data_Result.xlsx" 과제를 아래와 같이 수정해 주세요.
+- 사전 준비
+	- "0410_실습1_엑셀_프로세스_Data_Result.xlsx"파일 "Output" sheet의 데이터 입력되어 있으면 해당 데이터 지워주세요.
+
+
+- 작업 내용
+	- create folder activity를 통해서 1년 전 날짜의 "c:\temp\yyyy_MM_dd"형식의 이름 폴더가 없다면 생성.
+
+	- c:\temp\yyyy_MM_dd\learn_yyyy_MM_dd.xlsx 파일이 존재한다면 삭제
+
+	- copy file activity를 통해서 기존의 파일("0410_실습1_엑셀_프로세스_Data_Result.xlsx")을 복사하여 새로만든 "yyyy_MM_dd"폴더로 붙여넣기.
+	   복사 된 파일명은 "learn_yyyy_MM_dd.xlsx"
+
+	- 복사된 파일에 작업한 후, 저장하기.
+
+	- "Send SMTP Mail Message" Activity(smtp 서버는 gmail 사용)를 사용하여 본인에게 저장된 파일 보내주기
+                설정법 및 에러 해결 방법은 인터넷에서 검색해서 해결해 주세요.
+
+** 사전준비는 자동화할 필요가 없다.
+** 원본파일을 가지고 작업하는 경우는 없다.
+** 다른 여러 사람이 사용할 수 있게 만들자 
+
+포트 465
