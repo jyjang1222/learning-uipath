@@ -95,6 +95,7 @@
 - Format
 - IndexOf
 - Environment.NewLine : 개행
+- system.Environment.UserName : 사용자 계정 이름 가져오기
 
 ## 주석 넣기
 - Activity 기능에 대한 설명 및 변수 사용에 대해 설명을 주석을 통해 넣을 수 있다.
@@ -115,6 +116,9 @@
 4. split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
 5. split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries
 
+## SMTP 첨부파일 여러개 넣기
+- 예) Directory.GetFiles("C:\Users\" + pcAccountId+ "\Downloads\temp")
+
 ## UiPath 언어 선택, visual basic vs c#
 사실 VB냐 C# 이냐는 크게 차이가 없고 둘다 비슷하다.  
 하지만 만약, 둘 중 선택을 해야 한다면 VB를 하는 것이 좋다.  
@@ -123,3 +127,4 @@
 
 ## 팁
 - 프로젝트 패널에서 프로젝트 이름을 더블클릭하면 해당 폴더가 열린다.
+- 크롬에서 auto resume downloads 확장을 설치하면 파일 다운로드가 실패해도 자동 다시 시작
