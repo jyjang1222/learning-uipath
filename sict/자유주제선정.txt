@@ -1,0 +1,2 @@
+중소벤처기업부 통계자료 스크래핑
+https://www.mss.go.kr/site/smba/foffice/ex/statDB/MainStat.do
