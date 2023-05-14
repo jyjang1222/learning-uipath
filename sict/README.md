@@ -1,4 +1,4 @@
-# SICT 교육 저장소 - 오규혁 이사님
+# SICT 교육 저장소
 
 - 교육자료
     - http://naver.me/F1MYsFiv
