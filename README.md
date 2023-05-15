@@ -118,6 +118,18 @@
 
 ## SMTP 첨부파일 여러개 넣기
 - 예) Directory.GetFiles("C:\Users\" + pcAccountId+ "\Downloads\temp")
+- gmail
+    - 서버 : "smtp.gmail.com"
+    - 포트 : 465
+
+
+## Get IMAP Mail Message Activity
+- 가져온 메일 데이터는 for each문을 돌려서 확인한다.
+    - 타이틀 : item.Subject
+    - 본문 : item.Body
+- gmail
+    - 서버 : "imtp.gmail.com"
+    - 포트 : 993
 
 ## UiPath 언어 선택, visual basic vs c#
 사실 VB냐 C# 이냐는 크게 차이가 없고 둘다 비슷하다.  

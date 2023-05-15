@@ -1,0 +1,41 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "NaverData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "variable1&Sequence_1",
+        "idx_i&Sequence_1",
+        "sheetChar&Sequence_1",
+        "asciiCode&Sequence_1",
+        "idx_rank&Sequence_14",
+        "startIdx&Sequence_1",
+        "dt_DataLab&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "afternoon.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "searchName&Sequence_7",
+        "dt_SearchName&Sequence_1",
+        "chkNewSearch&Sequence_4",
+        "toMailAddr&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
