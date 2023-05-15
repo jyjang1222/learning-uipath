@@ -4,3 +4,4 @@
 https://www.mss.go.kr/site/smba/foffice/ex/statDB/MainStat.do
 2. 보도자료 스크래핑 후 메일 발송
 https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=86
+3. 국가자격종목별 시험일정조회 자동화

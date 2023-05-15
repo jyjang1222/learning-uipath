@@ -21263,11 +21263,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "day4",
-      "projectName": "day4",
-      "projectPath": "F:\\Jun\\learning\\learning-uipath\\sict\\day5\\.local",
+      "projectUniqueName": "MyProcess",
+      "projectName": "MyProcess",
+      "projectPath": "F:\\Jun\\learning\\learning-uipath\\sict\\MyProcess\\.local",
       "packagesPath": "C:\\Users\\jyjan\\.nuget\\packages\\",
-      "outputPath": "F:\\Jun\\learning\\learning-uipath\\sict\\day5\\.local"
+      "outputPath": "F:\\Jun\\learning\\learning-uipath\\sict\\MyProcess\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {

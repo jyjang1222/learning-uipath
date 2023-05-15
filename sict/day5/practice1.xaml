@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1012,1587" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1062,1587" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -164,13 +164,13 @@
     <ui:CopyFile ContinueOnError="{x:Null}" Destination="[sFilePath]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="450,154" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="C:\Jun\learning-uipath\sict\day4\0410_실습1_엑셀_프로세스_Data_Result.xlsx" />
     <ui:CommentOut sap2010:Annotation.AnnotationText="- 성능향상가이드&#xA;1. Copy File 덮어쓰기 체크를 하면 파일이 이미 존재하는지 체크를 안해도 된다.&#xA;2. Create Folder 액티비티는 폴더가 이미 있는지 체크하지 않아도 된다.&#xA;3. if else 액티비티에서 else가 필요업다면 elseif를 단독으로 쓰면된다." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,214" sap2010:WorkflowViewState.IdRef="CommentOut_4">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="535.2,1489.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
+        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="534,1316" sap2010:WorkflowViewState.IdRef="Sequence_40">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="폴더를 만들어서 파일 복사하기" DisplayName="Sequence1" sap:VirtualizedContainerService.HintSize="472.8,1207.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
+          <Sequence sap2010:Annotation.AnnotationText="폴더를 만들어서 파일 복사하기" DisplayName="Sequence1" sap:VirtualizedContainerService.HintSize="472,1204" sap2010:WorkflowViewState.IdRef="Sequence_37">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="bFolderState" />
               <Variable x:TypeArguments="x:Boolean" Name="bFileState" />
@@ -182,8 +182,8 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bFolderState]" sap:VirtualizedContainerService.HintSize="410.4,90.4" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;c:\temp\&quot; + prev1Year]" PathType="Folder" />
-            <If Condition="[bFolderState = False]" sap:VirtualizedContainerService.HintSize="410.4,183.2" sap2010:WorkflowViewState.IdRef="If_12">
+            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bFolderState]" sap:VirtualizedContainerService.HintSize="410,90" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;c:\temp\&quot; + prev1Year]" PathType="Folder" />
+            <If Condition="[bFolderState = False]" sap:VirtualizedContainerService.HintSize="410,182" sap2010:WorkflowViewState.IdRef="If_12">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="376.8,170.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
                   <sap:WorkflowViewStateService.ViewState>
@@ -800,7 +800,7 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[prev1Year]" DisplayName="Send SMTP Mail Message" Email="[sMailAddress]" EnableSSL="True" From="[sMailAddress]" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="unnamed_person" Password="ffndbfhimmjtkljy" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[prev1Year]" To="[sMailAddress]">
+      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[prev1Year]" DisplayName="Send SMTP Mail Message" Email="[sMailAddress]" EnableSSL="True" From="[sMailAddress]" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="unnamed_person" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[prev1Year]" To="[sMailAddress]">
         <ui:SendMail.Files>
           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
             <InArgument x:TypeArguments="x:String">[sFilePath]</InArgument>

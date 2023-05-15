@@ -83,7 +83,6 @@
       "Path": "practice2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "exception&Sequence_41",
         "sAppPw&Sequence_1",
         "sMailAddress&Sequence_1",
         "bFileState&Sequence_22",
