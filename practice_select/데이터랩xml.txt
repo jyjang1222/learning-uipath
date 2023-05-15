@@ -1,0 +1,21 @@
+<extract>
+	<row exact='1'>
+		<webctrl tag='div' />
+	</row>
+	<column exact='1' name='Column1' attr='fulltext'>
+		<webctrl tag='div' class='keyword_rank' idx='9' />
+		<webctrl tag='div' idx='1' />
+	</column>
+	<column exact='1' name='Column1' attr='fulltext'>
+		<webctrl tag='div' class='keyword_rank' idx='10' />
+		<webctrl tag='div' idx='1' />
+	</column>
+	<column exact='1' name='Column1' attr='fulltext'>
+		<webctrl tag='div' class='keyword_rank' idx='11' />
+		<webctrl tag='div' idx='1' />
+	</column>
+	<column exact='1' name='Column1' attr='fulltext'>
+		<webctrl tag='div' class='keyword_rank' idx='12' />
+		<webctrl tag='div' idx='1' />
+	</column>
+</extract>

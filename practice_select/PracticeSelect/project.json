@@ -1,7 +1,7 @@
 {
-  "name": "MyProcess",
+  "name": "PracticeSelect",
   "description": "자유 주제 자동화 프로세스",
-  "main": "CertificationExamSchedule.xaml",
+  "main": "SelectPractice.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -48,8 +48,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "CertificationExamSchedule.xaml",
-      "uniqueId": "19b9de6f-ad13-428e-8510-c0ebd09eeaaa",
+      "filePath": "SelectPractice.xaml",
+      "uniqueId": "b3ae6eb2-42e4-4925-87fe-e081b2e6894c",
       "input": [],
       "output": []
     }

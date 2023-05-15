@@ -21263,11 +21263,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "MyProcess",
-      "projectName": "MyProcess",
-      "projectPath": "F:\\Jun\\learning\\learning-uipath\\sict\\MyProcess\\.local",
+      "projectUniqueName": "SelectPractice",
+      "projectName": "SelectPractice",
+      "projectPath": "F:\\Jun\\learning\\learning-uipath\\practice_select\\PracticeSelect\\.local",
       "packagesPath": "C:\\Users\\jyjan\\.nuget\\packages\\",
-      "outputPath": "F:\\Jun\\learning\\learning-uipath\\sict\\MyProcess\\.local"
+      "outputPath": "F:\\Jun\\learning\\learning-uipath\\practice_select\\PracticeSelect\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
