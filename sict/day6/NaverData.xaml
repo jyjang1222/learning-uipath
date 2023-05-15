@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="860,3737.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="860,3307.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -94,7 +94,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="784,3672.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="766.4,3242.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_DataLab" />
       <Variable x:TypeArguments="x:Int32" Name="startIdx" />
@@ -108,7 +108,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="데이터랩 스크래핑하기" DisplayName="data scrap" sap:VirtualizedContainerService.HintSize="721.6,1158.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap2010:Annotation.AnnotationText="데이터랩 스크래핑하기" DisplayName="data scrap" sap:VirtualizedContainerService.HintSize="704,1158.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -205,7 +205,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:OpenBrowser>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="721.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="545.6,464" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
@@ -244,7 +244,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Assign sap:VirtualizedContainerService.HintSize="721.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="704,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[startIdx]</OutArgument>
       </Assign.To>
@@ -252,7 +252,7 @@
         <InArgument x:TypeArguments="x:Int32">[dt_DataLab.RowCount - 1]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="721.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign sap:VirtualizedContainerService.HintSize="704,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[asciiCode]</OutArgument>
       </Assign.To>
@@ -260,7 +260,7 @@
         <InArgument x:TypeArguments="x:Int32">65</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="721.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign sap:VirtualizedContainerService.HintSize="704,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[sheetChar]</OutArgument>
       </Assign.To>
@@ -268,33 +268,33 @@
         <InArgument x:TypeArguments="x:String">[Convert.ToChar(asciiCode)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="721.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+    <Assign sap:VirtualizedContainerService.HintSize="704,81.6" sap2010:WorkflowViewState.IdRef="Assign_9">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[idx_i]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+        <InArgument x:TypeArguments="x:Int32">1</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="721.6,1650.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="NaverDataLab.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="704,1220" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="NaverDataLab.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="688,1540.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="592,1110.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="625.6,1428.8" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_4" NumberOfTimes="4" StartAt="1">
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="529.6,998.4" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_4" NumberOfTimes="4" StartAt="1">
               <ui:RepeatNumberOfTimesX.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="print column" sap:VirtualizedContainerService.HintSize="592,1269.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="print column" sap:VirtualizedContainerService.HintSize="496,839.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Int32" Name="idx_rank" />
                     </Sequence.Variables>
@@ -303,14 +303,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelWriteCell sap2010:Annotation.AnnotationText="print date" Cell="[sheetChar + idx_i.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="529.6,119.2" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="[dt_DataLab.Rows(startIdx).item(0).ToString]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:ExcelWriteCell>
-                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="529.6,512" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_5" NumberOfTimes="10" StartAt="0">
+                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_5" NumberOfTimes="10" StartAt="0">
                       <ui:RepeatNumberOfTimesX.Body>
                         <ActivityAction x:TypeArguments="x:Int32">
                           <ActivityAction.Argument>
@@ -340,8 +333,21 @@
                           </Sequence>
                         </ActivityAction>
                       </ui:RepeatNumberOfTimesX.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </ui:RepeatNumberOfTimesX>
-                    <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <ui:ExcelWriteCell sap2010:Annotation.AnnotationText="print date" Cell="[sheetChar + idx_i.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,119.2" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="[dt_DataLab.Rows(startIdx).item(0).ToString]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ExcelWriteCell>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[asciiCode]</OutArgument>
                       </Assign.To>
@@ -349,7 +355,7 @@
                         <InArgument x:TypeArguments="x:Int32">[asciiCode + 1]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_8">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[sheetChar]</OutArgument>
                       </Assign.To>
@@ -357,7 +363,7 @@
                         <InArgument x:TypeArguments="x:String">[Convert.ToChar(asciiCode)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[startIdx]</OutArgument>
                       </Assign.To>
@@ -365,7 +371,7 @@
                         <InArgument x:TypeArguments="x:Int32">[startIdx - 1]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[idx_i]</OutArgument>
                       </Assign.To>
@@ -381,6 +387,6 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="721.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[dt_DataLab.RowCount.ToString]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="704,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[dt_DataLab.RowCount.ToString]" />
   </Sequence>
 </Activity>
