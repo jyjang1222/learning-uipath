@@ -1,7 +1,7 @@
 {
   "name": "day6",
   "description": "빈 프로세스",
-  "main": "NaverData.xaml",
+  "main": "afternoon.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "NaverData.xaml",
       "uniqueId": "78bca584-c12c-4364-b15d-707b549cb404",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "afternoon.xaml",
+      "uniqueId": "d9ce9dcd-091c-4ed7-9528-4ba89c026402",
       "input": [],
       "output": []
     }
