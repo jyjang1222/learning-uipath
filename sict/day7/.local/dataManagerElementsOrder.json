@@ -1,0 +1,64 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "diff1YearCount&Sequence_57",
+        "prev1YearFirstDay&Sequence_57",
+        "d_prevMonthLastDay&Sequence_57",
+        "d_prev1YearFirstDay&Sequence_57",
+        "a_SheetName&Sequence_57",
+        "isExist&Sequence_57",
+        "isExist&Sequence_59",
+        "thirdMonthCnt&Sequence_39",
+        "ans_3&Sequence_50",
+        "temp&Sequence_50",
+        "secondMonthCnt&Sequence_39",
+        "ans_2&Sequence_47",
+        "firstMonthCount&Sequence_39",
+        "temp&Sequence_47",
+        "ans_1&Sequence_46",
+        "temp&Sequence_46",
+        "dt_TotalData&Sequence_39",
+        "reNameTemplatePath&Sequence_1",
+        "dt_Jeju&Sequence_1",
+        "dt_Gyeonggi&Sequence_1",
+        "dt_personTotal&Sequence_1",
+        "dt_age&Sequence_1",
+        "dt_gender&Sequence_1",
+        "temp&Sequence_15",
+        "readRangeNum&Sequence_15",
+        "prevMonthLastDay&Sequence_1",
+        "reName&Sequence_1",
+        "toMovePath&Sequence_1",
+        "isExist&Sequence_2",
+        "curTime_yymmdd&Sequence_2",
+        "downFileName&Sequence_2",
+        "pcAccountName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "mergeTest.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_temp1&Sequence_1",
+        "dt_temp2&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
