@@ -52,6 +52,12 @@
       "uniqueId": "9df92129-212d-41b1-a5eb-c70504d20341",
       "input": [],
       "output": []
+    },
+    {
+      "filePath": "mergeTest.xaml",
+      "uniqueId": "750ef742-f614-4996-b01b-9395cc9af920",
+      "input": [],
+      "output": []
     }
   ],
   "isTemplate": false,
