@@ -18,6 +18,17 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "PracticeSelect.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "idx_type&Sequence_2",
+        "dt_NaverLab&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

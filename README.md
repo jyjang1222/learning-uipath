@@ -122,7 +122,6 @@
     - 서버 : "smtp.gmail.com"
     - 포트 : 465
 
-
 ## Get IMAP Mail Message Activity
 - 가져온 메일 데이터는 for each문을 돌려서 확인한다.
     - 타이틀 : item.Subject
