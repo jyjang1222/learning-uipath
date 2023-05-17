@@ -1,7 +1,7 @@
 {
   "name": "PracticeSelect",
   "description": "자유 주제 자동화 프로세스",
-  "main": "SelectPractice.xaml",
+  "main": "PracticeSelect.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "SelectPractice.xaml",
       "uniqueId": "b3ae6eb2-42e4-4925-87fe-e081b2e6894c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "PracticeSelect.xaml",
+      "uniqueId": "02903639-9eb6-4737-abcf-480146e61a0a",
       "input": [],
       "output": []
     }

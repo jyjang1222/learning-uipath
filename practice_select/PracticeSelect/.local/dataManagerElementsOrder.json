@@ -23,8 +23,7 @@
       "Path": "PracticeSelect.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "idx_type&Sequence_2",
-        "dt_NaverLab&Sequence_17"
+        "idx_type&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
