@@ -28,10 +28,12 @@
       "Path": "afternoon.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "searchName&Sequence_7",
-        "dt_SearchName&Sequence_1",
-        "chkNewSearch&Sequence_4",
-        "toMailAddr&Sequence_1"
+        "b_isDuplicate&Sequence_25",
+        "getMailTitle&Sequence_23",
+        "dt_searchName&Sequence_10",
+        "searchName&Sequence_23",
+        "totalUnreadMail&Sequence_10",
+        "idx_mail&Sequence_10"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
