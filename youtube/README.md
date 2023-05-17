@@ -299,3 +299,6 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Wait for Download
 - 애플리케이션에서 파일 다운로드를 탐지하고 자동화에 파일 추가로 처리하기 전에 다운로드가 완료될 때가지 기다립니다.
+
+### Find Children
+- 설명 : https://community.robotict.com/t/uipath-find-children-element-activity/69

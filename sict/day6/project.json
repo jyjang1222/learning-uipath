@@ -1,7 +1,7 @@
 {
   "name": "day6",
   "description": "빈 프로세스",
-  "main": "NaverData.xaml",
+  "main": "afternoon.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
