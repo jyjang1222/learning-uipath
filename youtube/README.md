@@ -302,3 +302,7 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 
 ### Find Children
 - 설명 : https://community.robotict.com/t/uipath-find-children-element-activity/69
+
+### Navigate To
+- 입력한 url로 이동하는 액티비티이다.
+- 입력값으로 브라우저 변수와 url를 넣으면 된다.
