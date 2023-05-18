@@ -282,7 +282,6 @@
                       </ActivityAction.Argument>
                       <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="670.4,1463.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <Sequence.Variables>
-                          <Variable x:TypeArguments="ui:Browser" Name="browser2" />
                           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_testInfo" />
                           <Variable x:TypeArguments="x:String" Name="testInfoCaption" />
                         </Sequence.Variables>
