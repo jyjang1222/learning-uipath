@@ -1,7 +1,7 @@
 {
   "name": "day10",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "test.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "209a2627-60aa-4a1c-a233-286be7cf1d3a",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "test.xaml",
+      "uniqueId": "fb54fefe-1622-4996-b990-8a568c6ff5c7",
       "input": [],
       "output": []
     }
