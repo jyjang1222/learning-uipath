@@ -21,16 +21,6 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
-    },
-    {
-      "Path": "test.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "dt_temp&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
     }
   ]
 }
