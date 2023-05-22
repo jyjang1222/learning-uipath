@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="afternoon" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1318.4,8012.8" sap2010:WorkflowViewState.IdRef="afternoon_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="afternoon" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1318.4,9380" sap2010:WorkflowViewState.IdRef="afternoon_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -121,7 +121,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1328.8,7948" sap2010:WorkflowViewState.IdRef="Sequence_12">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1328.8,9315.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="excelPath" />
     </Sequence.Variables>
@@ -148,7 +148,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="RPA를 통해 받은 메일함 모니터링 (메일 발송 딜레이 60초)" sap:VirtualizedContainerService.HintSize="1266.4,7681.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence sap2010:Annotation.AnnotationText="RPA를 통해 받은 메일함 모니터링 (메일 발송 딜레이 60초)" sap:VirtualizedContainerService.HintSize="1266.4,9048.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <Sequence.Variables>
         <Variable x:TypeArguments="ui:Browser" Name="browser1" />
       </Sequence.Variables>
@@ -158,13 +158,13 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1204,7538.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" UiBrowser="[browser1]" Url="https://mail.google.com/mail/u/0/#inbox">
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1204,8905.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" UiBrowser="[browser1]" Url="https://mail.google.com/mail/u/0/#inbox">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="실행1" sap:VirtualizedContainerService.HintSize="1170.4,7436" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="실행1" sap:VirtualizedContainerService.HintSize="1170.4,8803.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="idx_mail">
                   <Variable.Default>
@@ -239,13 +239,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:BuildDataTable>
-              <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="메일 수 만큼 반복" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="1108,5838.4" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="[idx_mail]" StartAt="1">
+              <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="메일 수 만큼 반복" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="1108,7205.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="[idx_mail]" StartAt="1">
                 <ui:RepeatNumberOfTimesX.Body>
                   <ActivityAction x:TypeArguments="x:Int32">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="실행2" sap:VirtualizedContainerService.HintSize="1074.4,5648" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <Sequence DisplayName="실행2" sap:VirtualizedContainerService.HintSize="1074.4,7015.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="searchName" />
                         <Variable x:TypeArguments="x:Boolean" Name="b_isDuplicate" />
@@ -362,12 +362,12 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ForEachRow>
-                      <ui:IfElseIf sap2010:Annotation.AnnotationText="중복이 아니라면 수행할 로직을 여기 넣는다" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1012,4083.2" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+                      <ui:IfElseIf sap2010:Annotation.AnnotationText="중복이 아니라면 수행할 로직을 여기 넣는다" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1012,5450.4" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                         <ui:IfElseIf.ConditionBlocks>
                           <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                             <ui:IfElseIfBlock BlockType="If" Condition="[b_isDuplicate = False]">
                               <ui:IfElseIfBlock.Then>
-                                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="910.4,3856" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="960,5223.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_board" />
                                   </Sequence.Variables>
@@ -376,8 +376,8 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{searchName}]" DataTable="[dt_searchName]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="848,188" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-                                  <Sequence sap2010:Annotation.AnnotationText="나라장터 검색하기 해서 메일 회신" sap:VirtualizedContainerService.HintSize="848,3516" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{searchName}]" DataTable="[dt_searchName]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="897.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                  <Sequence sap2010:Annotation.AnnotationText="나라장터 검색하기 해서 메일 회신" sap:VirtualizedContainerService.HintSize="897.6,4883.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="ui:Browser" Name="browser2" />
                                     </Sequence.Variables>
@@ -387,19 +387,19 @@
                                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="785.6,3308" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" UiBrowser="[browser2]" Url="https://www.g2b.go.kr/index.jsp">
+                                    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="835.2,4675.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" UiBrowser="[browser2]" Url="https://www.g2b.go.kr/index.jsp">
                                       <ui:OpenBrowser.Body>
                                         <ActivityAction x:TypeArguments="x:Object">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="752,3205.6" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="801.6,4572.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <Sequence sap2010:Annotation.AnnotationText="공고 검색" sap:VirtualizedContainerService.HintSize="689.6,114.4" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                            <Sequence sap2010:Annotation.AnnotationText="공고 검색" sap:VirtualizedContainerService.HintSize="739.2,114.4" sap2010:WorkflowViewState.IdRef="Sequence_50">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -464,14 +464,15 @@
                                                 </ui:Click.Target>
                                               </ui:Click>
                                             </Sequence>
-                                            <Sequence sap2010:Annotation.AnnotationText="테이블 추출" sap:VirtualizedContainerService.HintSize="689.6,352" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                            <Sequence sap2010:Annotation.AnnotationText="배정예산을 제외한 값 모두 추출 및 엑셀에 작성" sap:VirtualizedContainerService.HintSize="739.2,788.8" sap2010:WorkflowViewState.IdRef="Sequence_51">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0895ef51-c815-4d77-ae01-11110b341d03" Version="V2">
+                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="483.2,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0895ef51-c815-4d77-ae01-11110b341d03" Version="V2">
                                                 <uix:NApplicationCard.Body>
                                                   <ActivityAction x:TypeArguments="x:Object">
                                                     <ActivityAction.Argument>
@@ -483,12 +484,12 @@
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_board]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='공고번호-차수' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='공고명' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='공고기관' ReferenceName='Column2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='수요기관' ReferenceName='Column3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='계약방법' ReferenceName='Column4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='입력일시' ReferenceName='Column5'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='url' ReferenceName='Column7'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='8' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column7' attr='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Timeout="0" Version="V3">
+                                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_board]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='공고번호-차수' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='공고명' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='공고기관' ReferenceName='Column2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='수요기관' ReferenceName='Column3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='계약방법' ReferenceName='Column4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='입력일시' ReferenceName='Column5'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='url' ReferenceName='Column6'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='8' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Timeout="0" Version="V3">
                                                         <uix:NExtractData.NextLink>
                                                           <uix:TargetAnchorable BrowserURL="https://www.g2b.go.kr:8101/ep/tbid/tbidList.do?taskClCds=&amp;bidNm=rpa&amp;searchDtType=1&amp;fromBidDt=2023/02/19&amp;toBidDt=2023/05/22&amp;fromOpenBidDt=&amp;toOpenBidDt=&amp;radOrgan=1&amp;instNm=&amp;area=&amp;regYn=Y&amp;bidSearchType=1&amp;searchType=1" CvTextArgument="+ 957" CvType="Text" DesignTimeRectangle="725, 926, 78, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'+ 더보기'" FullSelectorArgument="&lt;webctrl tag='FRAME' idx='2' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='A' aaname='+ 더보기' innertext='+ 더보기' visibleinnertext='+ 더보기' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='A' aaname='+ 더보기' innertext='+ 더보기' visibleinnertext='+ 더보기' type='' class='default' check:text='+ 더보기' /&gt;" Guid="8764a5e0-e0a1-4fbe-a086-3c638d1d1847" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAaCAYAAAAkJwuaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALHSURBVGhD7ZbPZyNhGMf3fxqWOSzDMvQQytayYdnYw0ZpKB3LRg/by8op9hB7qJaqsCPU9FCzrNnTWyo5VJZWSr0lzCEMZchhCN99JjOJ+ZVqm7dM13x4SF6ZvPN+3u/74wUKhFCIFEQhUhCFSEEUIgVRiBREIVIQhUhB5FPkmEPfUFFtD+CFTZi44GcW2IUTNiS4HYD9ZuBu+P0eeEMT9VIZrfMHPLSAucjLy8vw09Pjnu+hIkmQkvWuhb4/pvEAh+sqKgcRkZ4NY0tF+Ucf7iRsi+D2mlhTqtCvwycmDtg3Nd2HVMLOL3v6v75IbWUNzV6uRHqwzy1YveAlF+OBd2qQXlbQONChd2ZlwDzjgaSFIhWUvhroXgwwuIpX96gO9VVEJOFeMZhHkT7aTdReS/PJyKdISoC1rUDeMmDfaTIQKa820L0Nm5IsFJlMV7LiIlM4DI1VBdpxnhO5lEhK85kJ48iYlt5uobYiPyyRnXQikzinwfI/vAp+kx+REw/OkAeDuWDYW5chfWzB+hsMjt848FL7WYZIOkj6Pxuof9agbVFtVlCihC21RyahA8yfCIUmmo+DpvyIdPtovc9aYmGtNMBSh+zjl7b5hSYqq59ZyRqMmyyR1OcxJVamEzoiLd+J/PCIRM4YO+DXHPYoQyThOTa435dfp4eoKTKquwz9sI0Ps/uz/1BaSXRlP57mZ79H2icaZElBeZOWMS3n6tto0lTsHFvY+5QWGWNkYaekoh5eZTLxHHTbGlT63/J3lnqvZy6ScDnYCR0q86uPDuOEkkWHCHfo4cTSjiVxVrNE7rN4O9V0JdAFXd/wJ6iEeqcPJ2NfzadIP2k9E+ZpeBdchphIOoh2y5HE3qPeNNEd+e/D0B0ulpRTkQLJOmyegEKkIP5/kYQ7suEsP767md46bLgCZmsusmA5CpGCKEQKohApBOAfD8e2MxUJ2ukAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='나라장터: 국가종합전자조달' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
                                                         </uix:NExtractData.NextLink>
                                                         <uix:NExtractData.Target>
-                                                          <uix:TargetAnchorable DesignTimeRectangle="244, 536, 1000, 931" DesignTimeScaleFactor="1.25" FriendlyName="'용역 20230531807-00 일반'" FullSelectorArgument="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="8037e88e-2747-4997-ae87-c46435772da1" InformativeScreenshot="a1cbd027083df2d1d3d4988cecf08dca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='나라장터: 국가종합전자조달' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                          <uix:TargetAnchorable DesignTimeRectangle="244, 536, 1000, 931" DesignTimeScaleFactor="1.25" FriendlyName="'용역 20230531807-00 일반'" FullSelectorArgument="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="3a732732-046f-46b9-8f27-9b982cb275d3" InformativeScreenshot="59ab5121108ca449ba87edfb3b298083.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='나라장터: 국가종합전자조달' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                         </uix:NExtractData.Target>
                                                       </uix:NExtractData>
                                                     </Sequence>
@@ -499,24 +500,79 @@
                                                 </uix:NApplicationCard.TargetApp>
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </uix:NApplicationCard>
-                                              <ui:WriteRange AddHeaders="True" DataTable="[dt_board]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A0" WorkbookPath="[excelPath]" />
+                                              <ui:WriteRange AddHeaders="True" DataTable="[dt_board]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="483.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A0" WorkbookPath="[excelPath]" />
                                             </Sequence>
-                                            <Sequence sap2010:Annotation.AnnotationText="게시판글 반복 돌아서 배정예산 가져오기" sap:VirtualizedContainerService.HintSize="689.6,2547.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
-                                              <Sequence.Variables>
-                                                <Variable x:TypeArguments="x:Boolean" Name="b_add" />
-                                              </Sequence.Variables>
+                                            <Sequence sap2010:Annotation.AnnotationText="더보기가 나오도록 검색 초기화" sap:VirtualizedContainerService.HintSize="739.2,397.6" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:UiElementExists DisplayName="Element Exists 'A  javascript:to_more(1...'" Exists="[b_add]" sap:VirtualizedContainerService.HintSize="627.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:toSrch();'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                <ui:Click.CursorPosition>
+                                                  <ui:CursorPosition Position="Center">
+                                                    <ui:CursorPosition.OffsetX>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetX>
+                                                    <ui:CursorPosition.OffsetY>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetY>
+                                                  </ui:CursorPosition>
+                                                </ui:Click.CursorPosition>
+                                                <ui:Click.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4fcdcaac-7432-4fcf-b9c0-f9558de449ab" InformativeScreenshot="d3b67ee5554c417b6b6ba2c876bcfe10" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl class='btn_mdl' omit:parentid='resultForm' tag='A' /&gt;">
+                                                    <ui:Target.TimeoutMS>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:Target.TimeoutMS>
+                                                    <ui:Target.WaitForReady>
+                                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                    </ui:Target.WaitForReady>
+                                                  </ui:Target>
+                                                </ui:Click.Target>
+                                              </ui:Click>
+                                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:toSearch(...'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                <ui:Click.CursorPosition>
+                                                  <ui:CursorPosition Position="Center">
+                                                    <ui:CursorPosition.OffsetX>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetX>
+                                                    <ui:CursorPosition.OffsetY>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetY>
+                                                  </ui:CursorPosition>
+                                                </ui:Click.CursorPosition>
+                                                <ui:Click.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1fd42dc7-771d-4240-bef1-e242ac7df22d" InformativeScreenshot="fe51d1876eb26d8b01aeab2fdef9ceb3" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl parentid='buttonwrap' tag='A' /&gt;">
+                                                    <ui:Target.TimeoutMS>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:Target.TimeoutMS>
+                                                    <ui:Target.WaitForReady>
+                                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                    </ui:Target.WaitForReady>
+                                                  </ui:Target>
+                                                </ui:Click.Target>
+                                              </ui:Click>
+                                            </Sequence>
+                                            <Sequence sap2010:Annotation.AnnotationText="게시판글 반복 돌아서 배정예산 가져와서 엑셀에 작성" DisplayName="Sequence budget" sap:VirtualizedContainerService.HintSize="739.2,3040" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                              <Sequence.Variables>
+                                                <Variable x:TypeArguments="x:Boolean" Name="b_add" />
+                                                <Variable x:TypeArguments="sd:DataTable" Name="dt_budget" />
+                                              </Sequence.Variables>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:BuildDataTable DataTable="[dt_budget]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="676.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;배정예산&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                                              <ui:UiElementExists DisplayName="Element Exists 'A  javascript:to_more(1...'" Exists="[b_add]" sap:VirtualizedContainerService.HintSize="676.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                                                 <ui:UiElementExists.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="02b38fb4-5281-4ea5-82b0-5b31b18135cf" InformativeScreenshot="6f7dea589ba9c5ba8b5c2d3cbb9a933d" Selector="&lt;webctrl tag='FRAME' idx='2' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='A' aaname='+ 더보기' innertext='+ 더보기' visibleinnertext='+ 더보기' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -528,22 +584,24 @@
                                                   </ui:Target>
                                                 </ui:UiElementExists.Target>
                                               </ui:UiElementExists>
-                                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="더보기 버튼이 없으면 종료" DisplayName="While" sap:VirtualizedContainerService.HintSize="627.2,2100.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="더보기 버튼이 없으면 종료" DisplayName="While" sap:VirtualizedContainerService.HintSize="676.8,2337.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
                                                 <ui:InterruptibleWhile.Body>
-                                                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="592,1902.4" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                                  <Sequence DisplayName="while" sap:VirtualizedContainerService.HintSize="641.6,2139.2" sap2010:WorkflowViewState.IdRef="Sequence_48">
                                                     <Sequence.Variables>
-                                                      <Variable x:TypeArguments="sd:DataTable" Name="dt_budget" />
                                                       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="el_trs2" />
                                                       <Variable x:TypeArguments="x:Int32" Name="trCnt" />
-                                                      <Variable x:TypeArguments="x:Int32" Name="cellNum" />
+                                                      <Variable x:TypeArguments="x:Int32" Name="idx_tr">
+                                                        <Variable.Default>
+                                                          <Literal x:TypeArguments="x:Int32" Value="1" />
+                                                        </Variable.Default>
+                                                      </Variable>
                                                     </Sequence.Variables>
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ui:BuildDataTable DataTable="[dt_budget]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="529.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;배정예산&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-                                                    <ui:FindChildren Children="[el_trs2]" DisplayName="Find Children 'TD'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="529.6,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_CHILDREN">
+                                                    <ui:FindChildren Children="[el_trs2]" DisplayName="Find Children 'TD'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="579.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_CHILDREN">
                                                       <ui:FindChildren.Target>
                                                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7e48cf4e-717e-47e7-ae17-f228815bf649" InformativeScreenshot="65f8a70c222cd75c7567af678f3c924e" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;">
                                                           <ui:Target.TimeoutMS>
@@ -555,7 +613,15 @@
                                                         </ui:Target>
                                                       </ui:FindChildren.Target>
                                                     </ui:FindChildren>
-                                                    <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                                    <Assign sap:VirtualizedContainerService.HintSize="579.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:Int32">[idx_tr]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                    <Assign sap:VirtualizedContainerService.HintSize="579.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_13">
                                                       <Assign.To>
                                                         <OutArgument x:TypeArguments="x:Int32">[trCnt]</OutArgument>
                                                       </Assign.To>
@@ -563,27 +629,14 @@
                                                         <InArgument x:TypeArguments="x:Int32">[el_trs2.Count]</InArgument>
                                                       </Assign.Value>
                                                     </Assign>
-                                                    <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_16">
-                                                      <Assign.To>
-                                                        <OutArgument x:TypeArguments="x:Int32">[cellNum]</OutArgument>
-                                                      </Assign.To>
-                                                      <Assign.Value>
-                                                        <InArgument x:TypeArguments="x:Int32">2</InArgument>
-                                                      </Assign.Value>
-                                                    </Assign>
-                                                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="529.6,1152.8" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_5" NumberOfTimes="[trCnt]" StartAt="1">
+                                                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="579.2,1489.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_5" NumberOfTimes="[trCnt]" StartAt="1">
                                                       <ui:RepeatNumberOfTimesX.Body>
                                                         <ActivityAction x:TypeArguments="x:Int32">
                                                           <ActivityAction.Argument>
                                                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                                                           </ActivityAction.Argument>
-                                                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="496,993.6" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="545.6,1330.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                                             <Sequence.Variables>
-                                                              <Variable x:TypeArguments="x:Int32" Name="idx_tr">
-                                                                <Variable.Default>
-                                                                  <Literal x:TypeArguments="x:Int32" Value="1" />
-                                                                </Variable.Default>
-                                                              </Variable>
                                                               <Variable x:TypeArguments="x:String" Name="budget" />
                                                             </Sequence.Variables>
                                                             <sap:WorkflowViewStateService.ViewState>
@@ -591,9 +644,9 @@
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                               <ui:Click.CursorPosition>
-                                                                <ui:CursorPosition Position="Center">
+                                                                <ui:CursorPosition Position="TopLeft">
                                                                   <ui:CursorPosition.OffsetX>
                                                                     <InArgument x:TypeArguments="x:Int32" />
                                                                   </ui:CursorPosition.OffsetX>
@@ -613,9 +666,60 @@
                                                                 </ui:Target>
                                                               </ui:Click.Target>
                                                             </ui:Click>
-                                                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_5">
+                                                            <ui:OnUiElementAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" sap2010:Annotation.AnnotationText="팝업창 예외 처리" DisplayName="On Element Appear 'DIV  epDialog'" sap:VirtualizedContainerService.HintSize="483.2,427.2" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_1">
+                                                              <ui:OnUiElementAppear.Body>
+                                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,219.2" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:closeEpDi...'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                                    <ui:Click.CursorPosition>
+                                                                      <ui:CursorPosition Position="Center">
+                                                                        <ui:CursorPosition.OffsetX>
+                                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                                        </ui:CursorPosition.OffsetX>
+                                                                        <ui:CursorPosition.OffsetY>
+                                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                                        </ui:CursorPosition.OffsetY>
+                                                                      </ui:CursorPosition>
+                                                                    </ui:Click.CursorPosition>
+                                                                    <ui:Click.Target>
+                                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa308419-33b0-42d3-8be4-8b742f5cf182" InformativeScreenshot="ba35f4175d47fe7dceaf824f0fee5a4d" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl parentid='epDialogBtns' tag='A' /&gt;">
+                                                                        <ui:Target.TimeoutMS>
+                                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                                        </ui:Target.TimeoutMS>
+                                                                        <ui:Target.WaitForReady>
+                                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                        </ui:Target.WaitForReady>
+                                                                      </ui:Target>
+                                                                    </ui:Click.Target>
+                                                                  </ui:Click>
+                                                                </Sequence>
+                                                              </ui:OnUiElementAppear.Body>
+                                                              <ui:OnUiElementAppear.RepeatForever>
+                                                                <Literal x:TypeArguments="x:Boolean" />
+                                                              </ui:OnUiElementAppear.RepeatForever>
+                                                              <ui:OnUiElementAppear.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f454ddc1-fa94-4dfe-91b9-fe10ec5483be" InformativeScreenshot="4e097386e13fe5666a64b515df4c8908" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl id='epDialog' tag='DIV' /&gt;">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:OnUiElementAppear.Target>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:OnUiElementAppear>
+                                                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="GetValue_6">
                                                               <ui:GetValue.Target>
-                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ea6f70d8-4485-4b89-9cb1-44478932936a" InformativeScreenshot="9f4d769e0bbde7b6c430efa8e682a00c" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl aaname='예정가격 결정 및 입찰금액 정보' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='DIV' /&gt;">
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f2831d4e-3aad-49f7-bf81-2f8e063b4044" InformativeScreenshot="3e5ca527b2ce725dcd26a355133e8c91" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='DIV' rowName='배정예산' /&gt;">
                                                                   <ui:Target.TimeoutMS>
                                                                     <InArgument x:TypeArguments="x:Int32" />
                                                                   </ui:Target.TimeoutMS>
@@ -628,17 +732,8 @@
                                                                 <OutArgument x:TypeArguments="x:String">[budget]</OutArgument>
                                                               </ui:GetValue.Value>
                                                             </ui:GetValue>
-                                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{budget}]" DataTable="[dt_budget]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
-                                                            <ui:WriteRange AddHeaders="False" DataTable="[dt_budget]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="[&quot;G&quot; + cellNum.ToString]" WorkbookPath="[excelPath]" />
-                                                            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_17">
-                                                              <Assign.To>
-                                                                <OutArgument x:TypeArguments="x:Int32">[cellNum]</OutArgument>
-                                                              </Assign.To>
-                                                              <Assign.Value>
-                                                                <InArgument x:TypeArguments="x:Int32">[cellNum + trCnt]</InArgument>
-                                                              </Assign.Value>
-                                                            </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{budget}]" DataTable="[dt_budget]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="483.2,188" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                                            <Assign sap:VirtualizedContainerService.HintSize="483.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_14">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:Int32">[idx_tr]</OutArgument>
                                                               </Assign.To>
@@ -646,6 +741,28 @@
                                                                 <InArgument x:TypeArguments="x:Int32">[idx_tr + 1]</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
+                                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:history.g...'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                              <ui:Click.CursorPosition>
+                                                                <ui:CursorPosition Position="Center">
+                                                                  <ui:CursorPosition.OffsetX>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetX>
+                                                                  <ui:CursorPosition.OffsetY>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetY>
+                                                                </ui:CursorPosition>
+                                                              </ui:Click.CursorPosition>
+                                                              <ui:Click.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ea5da489-900b-4bbc-b4a3-6a573bbf317b" InformativeScreenshot="0eb4cf5f5c88842c3b5e356fc433d410" Selector="&lt;webctrl id='sub' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl aaname='목록' class='btn_mdl' tag='A' /&gt;">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:Click.Target>
+                                                            </ui:Click>
                                                           </Sequence>
                                                         </ActivityAction>
                                                       </ui:RepeatNumberOfTimesX.Body>
@@ -656,7 +773,7 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ui:RepeatNumberOfTimesX>
-                                                    <ui:UiElementExists DisplayName="Element Exists 'A  javascript:to_more(1...'" Exists="[b_add]" sap:VirtualizedContainerService.HintSize="529.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                                    <ui:UiElementExists DisplayName="Element Exists 'A  javascript:to_more(1...'" Exists="[b_add]" sap:VirtualizedContainerService.HintSize="579.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                                                       <ui:UiElementExists.Target>
                                                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="02b38fb4-5281-4ea5-82b0-5b31b18135cf" InformativeScreenshot="6f7dea589ba9c5ba8b5c2d3cbb9a933d" Selector="&lt;webctrl tag='FRAME' idx='2' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='A' aaname='+ 더보기' innertext='+ 더보기' visibleinnertext='+ 더보기' /&gt;">
                                                           <ui:Target.TimeoutMS>
@@ -681,13 +798,14 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:InterruptibleWhile>
-                                              <ui:WriteCell Cell="G1" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="627.2,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="배정예산" WorkbookPath="[excelPath]" />
+                                              <ui:WriteCell Cell="H1" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="676.8,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="배정예산" WorkbookPath="[excelPath]" />
+                                              <ui:WriteRange AddHeaders="False" DataTable="[dt_budget]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="676.8,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="H2" WorkbookPath="[excelPath]" />
                                             </Sequence>
                                           </Sequence>
                                         </ActivityAction>
                                       </ui:OpenBrowser.Body>
                                     </ui:OpenBrowser>
-                                    <ui:CloseTab Browser="[browser2]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="785.6,24.8" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+                                    <ui:CloseTab Browser="[browser2]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="835.2,24.8" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
                                   </Sequence>
                                 </Sequence>
                               </ui:IfElseIfBlock.Then>
