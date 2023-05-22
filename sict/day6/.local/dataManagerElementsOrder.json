@@ -28,9 +28,12 @@
       "Path": "afternoon.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "excelName&Sequence_12",
+        "mailAdd&Sequence_12",
+        "searchName&Sequence_75",
+        "dt_searchName&Sequence_75",
         "budget&Sequence_68",
         "b_existBudget&Sequence_68",
-        "b_pop&Sequence_62",
         "dt_budget&Sequence_33",
         "excelPath&Sequence_12",
         "b_add&Sequence_33",
@@ -39,10 +42,16 @@
         "browser1&Sequence_11",
         "el_trs&Sequence_10",
         "b_isDuplicate&Sequence_23",
-        "dt_searchName&Sequence_10",
-        "searchName&Sequence_23",
         "idx_mail&Sequence_10"
       ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "메일.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
