@@ -28,7 +28,7 @@
       "Path": "afternoon.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "b_isDuplicate&Sequence_25",
+        "b_isDuplicate&Sequence_23",
         "getMailTitle&Sequence_23",
         "dt_searchName&Sequence_10",
         "searchName&Sequence_23",
