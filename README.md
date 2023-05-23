@@ -112,6 +112,9 @@
 - ctrl + e : Activity 활성화
 - shift + f2 : 주석 넣기
 
+## UiElement 변수 사용법에 대해
+- https://forum.uipath.com/t/variable-uielement/275353
+
 ## PDF 데이터 가져오기
 - PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
 - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)

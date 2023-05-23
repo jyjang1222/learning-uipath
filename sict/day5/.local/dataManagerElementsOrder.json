@@ -83,6 +83,9 @@
       "Path": "practice2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "isUploadComp&Sequence_56",
+        "trCnt&Sequence_6",
+        "el_tbody&Sequence_6",
         "idxFile&Sequence_57",
         "idxFile&Sequence_52",
         "totalFile&Sequence_48",
