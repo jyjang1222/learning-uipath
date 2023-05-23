@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>996,6197.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1229.6,8470.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>practice3_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -132,18 +132,19 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="practice2" sap:VirtualizedContainerService.HintSize="1006.4,6132.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="practice2" sap:VirtualizedContainerService.HintSize="1240,8405.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pcAccountId" />
       <Variable x:TypeArguments="x:String" Name="sMailAddress" />
+      <Variable x:TypeArguments="x:String" Name="filePath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="944,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome.exe" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="944,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1177.6,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome.exe" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1177.6,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -162,10 +163,18 @@
               <InArgument x:TypeArguments="x:String">jyjang5866@gmail.com</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[filePath]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">["C:\Users\" + pcAccountId + "\Downloads\temp"]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <Sequence sap2010:Annotation.AnnotationText="1개월간의 공지사항 조회하기" sap:VirtualizedContainerService.HintSize="944,5674.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="1개월간의 공지사항 조회하기" sap:VirtualizedContainerService.HintSize="1177.6,7915.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -173,13 +182,13 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="881.6,5531.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://unipass.customs.go.kr/csp/index.do">
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1115.2,7772" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://unipass.customs.go.kr/csp/index.do">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="848,5428.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="1081.6,7669.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="s_TotalPost" />
                 <Variable x:TypeArguments="x:Int32" Name="i_TotalPost" />
@@ -191,8 +200,8 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="785.6,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-              <Sequence DisplayName="공지사항 1개월 테이블 페이지 열기" sap:VirtualizedContainerService.HintSize="785.6,704" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1019.2,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+              <Sequence DisplayName="공지사항 1개월 테이블 페이지 열기" sap:VirtualizedContainerService.HintSize="1019.2,704" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -277,7 +286,7 @@
                   </ui:Click.Target>
                 </ui:Click>
               </Sequence>
-              <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="공지사항 테이블 데이터 수 체크" DisplayName="Get Text 'STRONG  recordCount'" sap:VirtualizedContainerService.HintSize="785.6,138.4" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="공지사항 테이블 데이터 수 체크" DisplayName="Get Text 'STRONG  recordCount'" sap:VirtualizedContainerService.HintSize="1019.2,138.4" sap2010:WorkflowViewState.IdRef="GetValue_1">
                 <ui:GetValue.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="181dd796-545c-4fe9-81dc-257300167ee9" InformativeScreenshot="9077bc4c3479412f0847f9ee15aef549" Selector="&lt;html app='chrome.exe' title='공지사항 | 국가관세종합정보망 서비스' /&gt;&lt;webctrl id='recordCount' tag='STRONG' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -297,7 +306,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="785.6,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1019.2,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -327,7 +336,7 @@
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <ui:IfElseIf sap2010:Annotation.AnnotationText="총 게시글 수를 10으로 나웠을 때의 나머지가 0이 아니면" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="785.6,420.8" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+              <ui:IfElseIf sap2010:Annotation.AnnotationText="총 게시글 수를 10으로 나웠을 때의 나머지가 0이 아니면" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1019.2,420.8" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If" Condition="[Convert.ToDouble(i_TotalPost) mod 10.0 &lt;&gt; 0.0]">
@@ -357,20 +366,20 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:IfElseIf>
-              <If sap2010:Annotation.AnnotationText="게시글이 없으면 프로세스 종료" Condition="[i_TotalPost &gt; 0]" sap:VirtualizedContainerService.HintSize="785.6,3664.8" sap2010:WorkflowViewState.IdRef="If_1">
+              <If sap2010:Annotation.AnnotationText="게시글이 없으면 프로세스 종료" Condition="[i_TotalPost &gt; 0]" sap:VirtualizedContainerService.HintSize="1019.2,5905.6" sap2010:WorkflowViewState.IdRef="If_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="752,3270.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap:VirtualizedContainerService.HintSize="985.6,5511.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="708.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_28">
+                    <Assign sap:VirtualizedContainerService.HintSize="942.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_28">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[idxPage]</OutArgument>
                       </Assign.To>
@@ -378,13 +387,13 @@
                         <InArgument x:TypeArguments="x:Int32">1</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="총페이지수 만큼 반복돌기" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="708.8,3059.2" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_6" NumberOfTimes="[totalPage]" StartAt="1">
+                    <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="총페이지수 만큼 반복돌기" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="942.4,5300" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_6" NumberOfTimes="[totalPage]" StartAt="1">
                       <ui:RepeatNumberOfTimesX.Body>
                         <ActivityAction x:TypeArguments="x:Int32">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="for depth1" sap:VirtualizedContainerService.HintSize="675.2,2868.8" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                          <Sequence DisplayName="for depth1" sap:VirtualizedContainerService.HintSize="908.8,5109.6" sap2010:WorkflowViewState.IdRef="Sequence_46">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="el_trs" />
                               <Variable x:TypeArguments="x:Int32" Name="totalTr" />
@@ -395,7 +404,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="idxPage만큼 페이지 클릭" ClickType="CLICK_SINGLE" DisplayName="Click 'STRONG'" sap:VirtualizedContainerService.HintSize="612.8,138.4" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="idxPage만큼 페이지 클릭" ClickType="CLICK_SINGLE" DisplayName="Click 'STRONG'" sap:VirtualizedContainerService.HintSize="846.4,138.4" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
@@ -422,7 +431,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:Click>
-                            <ui:FindChildren Children="[el_trs]" DisplayName="Find Children 'TD'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="612.8,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_CHILDREN">
+                            <ui:FindChildren Children="[el_trs]" DisplayName="Find Children 'TD'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="846.4,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_CHILDREN">
                               <ui:FindChildren.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f886239b-391b-4d69-b242-cbd65e854ded" InformativeScreenshot="03c67bac4f8697c37f11ab0a7603ebf2" Selector="&lt;webctrl tag='TBODY' parentclass='grid_list' /&gt;">
                                   <ui:Target.TimeoutMS>
@@ -434,7 +443,7 @@
                                 </ui:Target>
                               </ui:FindChildren.Target>
                             </ui:FindChildren>
-                            <Assign sap:VirtualizedContainerService.HintSize="612.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+                            <Assign sap:VirtualizedContainerService.HintSize="846.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_32">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[totalTr]</OutArgument>
                               </Assign.To>
@@ -442,7 +451,7 @@
                                 <InArgument x:TypeArguments="x:Int32">[el_trs.Count]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="612.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+                            <Assign sap:VirtualizedContainerService.HintSize="846.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[idxTr]</OutArgument>
                               </Assign.To>
@@ -450,19 +459,27 @@
                                 <InArgument x:TypeArguments="x:Int32">1</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="한 페이지 tr(게시글)수만큼 반복돌기" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="612.8,1427.2" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_7" NumberOfTimes="[totalTr]" StartAt="1">
+                            <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="한 페이지 tr(게시글)수만큼 반복돌기" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="846.4,3668" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_7" NumberOfTimes="[totalTr]" StartAt="1">
                               <ui:RepeatNumberOfTimesX.Body>
                                 <ActivityAction x:TypeArguments="x:Int32">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="for depth2" sap:VirtualizedContainerService.HintSize="574.4,1236.8" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                  <Sequence DisplayName="for depth2" sap:VirtualizedContainerService.HintSize="812.8,3477.6" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="postTitle" />
+                                      <Variable x:TypeArguments="x:String" Name="postContent" />
+                                      <Variable x:TypeArguments="sd:DataTable" Name="dt_fileName" />
+                                      <Variable x:TypeArguments="x:String" Name="fileName" />
+                                      <Variable x:TypeArguments="x:String" Default="1" Name="fileNameIdx" />
+                                      <Variable x:TypeArguments="x:Int32" Name="totalFile" />
+                                    </Sequence.Variables>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #linkNtarTtle'" sap:VirtualizedContainerService.HintSize="512,107.2" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #linkNtarTtle'" sap:VirtualizedContainerService.HintSize="750.4,107.2" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="TopLeft">
                                           <ui:CursorPosition.OffsetX>
@@ -484,14 +501,14 @@
                                         </ui:Target>
                                       </ui:Click.Target>
                                     </ui:Click>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="512,677.6" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="750.4,2918.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence sap2010:Annotation.AnnotationText="제목, 내용 데이터 스크래핑" sap:VirtualizedContainerService.HintSize="449.6,114.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                      <Sequence sap2010:Annotation.AnnotationText="제목, 내용 데이터 스크래핑" sap:VirtualizedContainerService.HintSize="688,114.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -514,8 +531,6 @@
                                                 <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="485.6,391.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                                   <Sequence.Variables>
                                                     <Variable x:TypeArguments="sd:DataTable" Name="dt_Post" />
-                                                    <Variable x:TypeArguments="x:String" Name="postTitle" />
-                                                    <Variable x:TypeArguments="x:String" Name="postContent" />
                                                   </Sequence.Variables>
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -559,14 +574,10 @@
                                           </ui:BrowserScope>
                                         </Sequence>
                                       </Sequence>
-                                      <Sequence sap2010:Annotation.AnnotationText="첨부파일 받기" DisplayName="download attachments" sap:VirtualizedContainerService.HintSize="449.6,114.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                      <Sequence sap2010:Annotation.AnnotationText="첨부파일 받기" DisplayName="download attachments" sap:VirtualizedContainerService.HintSize="688,114.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Default="1" Name="importFileIdx" />
                                           <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="findChild" />
-                                          <Variable x:TypeArguments="x:Int32" Name="childCount" />
-                                          <Variable x:TypeArguments="sd:DataTable" Name="dt_fileName" />
-                                          <Variable x:TypeArguments="x:String" Name="fileName" />
-                                          <Variable x:TypeArguments="x:String" Default="1" Name="fileNameIdx" />
                                           <Variable x:TypeArguments="x:Int32" Name="idx_i" />
                                         </Sequence.Variables>
                                         <sap:WorkflowViewStateService.ViewState>
@@ -576,7 +587,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:FindChildren Children="[findChild]" DisplayName="Find Children 'TD'" Filter="&lt;webctrl tag='br'/&gt;" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+                                        <ui:FindChildren Children="[findChild]" DisplayName="Find Children 'TD'" Filter="&lt;webctrl tag='br'/&gt;" sap:VirtualizedContainerService.HintSize="529.6,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
                                           <ui:FindChildren.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e4057245-055e-474a-b5f1-3dc28c1e4ecf" InformativeScreenshot="e5e1b98231c4ef99028f041d7f361a1c" Selector="&lt;webctrl parentname='ntarBrkdRsltVo' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TD' /&gt;">
                                               <ui:Target.TimeoutMS>
@@ -588,23 +599,23 @@
                                             </ui:Target>
                                           </ui:FindChildren.Target>
                                         </ui:FindChildren>
-                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                        <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_17">
                                           <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Int32">[childCount]</OutArgument>
+                                            <OutArgument x:TypeArguments="x:Int32">[totalFile]</OutArgument>
                                           </Assign.To>
                                           <Assign.Value>
                                             <InArgument x:TypeArguments="x:Int32">[Cint(findChild.Count.ToString)]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <ui:BuildDataTable sap2010:Annotation.AnnotationText="파일명 데이터 테이블" DataTable="[dt_fileName]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;파일명&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                                        <ui:BuildDataTable sap2010:Annotation.AnnotationText="파일명 데이터 테이블" DataTable="[dt_fileName]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="529.6,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;파일명&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:BuildDataTable>
-                                        <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[&quot;C:\Users\&quot; + pcAccountId + &quot;\Downloads\temp&quot;]" />
-                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                        <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="529.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[&quot;C:\Users\&quot; + pcAccountId + &quot;\Downloads\temp&quot;]" />
+                                        <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_21">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:Int32">[idx_i]</OutArgument>
                                           </Assign.To>
@@ -612,7 +623,7 @@
                                             <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="첨부파일 다운" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_5" NumberOfTimes="[childCount]" StartAt="1">
+                                        <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="첨부파일 다운" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="529.6,531.2" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_5" NumberOfTimes="[totalFile]" StartAt="1">
                                           <ui:RepeatNumberOfTimesX.Body>
                                             <ActivityAction x:TypeArguments="x:Int32">
                                               <ActivityAction.Argument>
@@ -660,12 +671,12 @@
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:RepeatNumberOfTimesX>
-                                        <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="첨부파일 temp폴더로 이동" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="[childCount]" StartAt="0">
+                                        <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="첨부파일 temp폴더로 이동" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="529.6,112.8" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="[totalFile]" StartAt="0">
                                           <ui:RepeatNumberOfTimesX.Body>
                                             <ActivityAction x:TypeArguments="x:Int32">
                                               <ActivityAction.Argument>
@@ -753,17 +764,225 @@
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:RepeatNumberOfTimesX>
                                       </Sequence>
-                                      <Sequence sap2010:Annotation.AnnotationText="메일 보내기" sap:VirtualizedContainerService.HintSize="449.6,136" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                      <Sequence sap2010:Annotation.AnnotationText="메일 보내기" sap:VirtualizedContainerService.HintSize="688,2376.8" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
+                                        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="625.6,2233.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://mail.google.com/mail/u/0/#inbox">
+                                          <ui:OpenBrowser.Body>
+                                            <ActivityAction x:TypeArguments="x:Object">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="592,2131.2" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:Int32" Name="idxFile" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="편지쓰기" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="529.6,138.4" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                  <ui:Click.CursorPosition>
+                                                    <ui:CursorPosition Position="Center">
+                                                      <ui:CursorPosition.OffsetX>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:CursorPosition.OffsetX>
+                                                      <ui:CursorPosition.OffsetY>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:CursorPosition.OffsetY>
+                                                    </ui:CursorPosition>
+                                                  </ui:Click.CursorPosition>
+                                                  <ui:Click.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bfc4774c-8509-4d5c-8ace-8e47ceeee8a2" InformativeScreenshot="8a11a7ee263504c92a5757ba02c48af7" Selector="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='편지쓰기' aria-role='button' tag='DIV' /&gt;">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:Click.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:Click>
+                                                <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="받는사람" ClickBeforeTyping="True" DelayBefore="3000" DisplayName="Type Into 'INPUT  :ki'" sap:VirtualizedContainerService.HintSize="529.6,166.4" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[sMailAddress + &quot;[k(enter)]&quot;]">
+                                                  <ui:TypeInto.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93a5c75d-c9ea-4715-aa88-250e61ea8bdb" InformativeScreenshot="da4e45342f536e1ef5057a67f0253258" Selector="&lt;webctrl tableRow='1' tag='TABLE' idx='6' /&gt;&lt;webctrl tableRow='1' tag='SPAN' rowName='받는사람' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tableRow='1' tag='INPUT' class='agP aFw' rowName='받는사람' /&gt;">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:TypeInto.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:TypeInto>
+                                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="제목" DisplayName="Type Into 'INPUT  :fz'" sap:VirtualizedContainerService.HintSize="529.6,166.4" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[postTitle]">
+                                                  <ui:TypeInto.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="537f024b-39ff-4615-affc-9d93a423672d" InformativeScreenshot="9a4dde1aea30ce648d39a36a653eb87d" Selector="&lt;webctrl tag='DIV' class='aoD az6' /&gt;&lt;webctrl tag='INPUT' class='aoT' /&gt;">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:TypeInto.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:TypeInto>
+                                                <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[idxFile]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <ui:RepeatNumberOfTimesX sap2010:Annotation.AnnotationText="첨부파일 수 만큼 반복돌기" DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="529.6,1159.2" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_8" NumberOfTimes="[totalFile]" StartAt="1">
+                                                  <ui:RepeatNumberOfTimesX.Body>
+                                                    <ActivityAction x:TypeArguments="x:Int32">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="496,968.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV  :i8'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                          <ui:Click.CursorPosition>
+                                                            <ui:CursorPosition Position="Center">
+                                                              <ui:CursorPosition.OffsetX>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:CursorPosition.OffsetX>
+                                                              <ui:CursorPosition.OffsetY>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:CursorPosition.OffsetY>
+                                                            </ui:CursorPosition>
+                                                          </ui:Click.CursorPosition>
+                                                          <ui:Click.Target>
+                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65e570a5-a0cd-4cf1-84de-bff2d3a14385" InformativeScreenshot="82f658939230711e3eae6d4d154a6e2a" Selector="&lt;webctrl tag='DIV' class='a1 aaA aMZ' /&gt;">
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                              <ui:Target.WaitForReady>
+                                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                              </ui:Target.WaitForReady>
+                                                            </ui:Target>
+                                                          </ui:Click.Target>
+                                                        </ui:Click>
+                                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  이전 위치'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                          <ui:Click.CursorPosition>
+                                                            <ui:CursorPosition Position="Center">
+                                                              <ui:CursorPosition.OffsetX>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:CursorPosition.OffsetX>
+                                                              <ui:CursorPosition.OffsetY>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:CursorPosition.OffsetY>
+                                                            </ui:CursorPosition>
+                                                          </ui:Click.CursorPosition>
+                                                          <ui:Click.Target>
+                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e0364b97-1db6-470b-80bf-8d144781832c" InformativeScreenshot="777b9cb3f805a0837731e455e3d801eb" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;&lt;wnd cls='ToolbarWindow32' title='주소 밴드 도구 모음' /&gt;&lt;ctrl name='주소 밴드 도구 모음' role='tool bar' /&gt;&lt;ctrl name='이전 위치' role='push button' /&gt;">
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                              <ui:Target.WaitForReady>
+                                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                              </ui:Target.WaitForReady>
+                                                            </ui:Target>
+                                                          </ui:Click.Target>
+                                                        </ui:Click>
+                                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" EmptyField="True" sap:VirtualizedContainerService.HintSize="433.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[filePath+ &quot;[k(enter)]&quot;]">
+                                                          <ui:TypeInto.Target>
+                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d6262c5a-9a38-4beb-9e84-ae64cbcd3e8e" InformativeScreenshot="640d080c5fea8797db99627edcaf4eb1" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;&lt;wnd ctrlid='41477' /&gt;&lt;wnd ctrlid='41477' /&gt;">
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                              <ui:Target.WaitForReady>
+                                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                              </ui:Target.WaitForReady>
+                                                            </ui:Target>
+                                                          </ui:TypeInto.Target>
+                                                        </ui:TypeInto>
+                                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="433.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[dt_fileName.Rows(idxFile).Item(0).ToString + &quot;[k(enter)]&quot;]">
+                                                          <ui:TypeInto.Target>
+                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e84a6f1a-cf8f-4221-adc3-e1a26c4b4af6" InformativeScreenshot="f9bde35d6889966947cb5824cf3b67a6" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                              <ui:Target.WaitForReady>
+                                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                              </ui:Target.WaitForReady>
+                                                            </ui:Target>
+                                                          </ui:TypeInto.Target>
+                                                        </ui:TypeInto>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_37">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Int32">[idxFile]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:Int32">[idxFile + 1]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </ui:RepeatNumberOfTimesX.Body>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:RepeatNumberOfTimesX>
+                                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV  :gb'" sap:VirtualizedContainerService.HintSize="529.6,107.2" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                  <ui:Click.CursorPosition>
+                                                    <ui:CursorPosition Position="Center">
+                                                      <ui:CursorPosition.OffsetX>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:CursorPosition.OffsetX>
+                                                      <ui:CursorPosition.OffsetY>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:CursorPosition.OffsetY>
+                                                    </ui:CursorPosition>
+                                                  </ui:Click.CursorPosition>
+                                                  <ui:Click.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2bc96a57-dc4b-4d13-a52b-0c7d48857f98" InformativeScreenshot="a7b2713fb82d08d2cb4bcc51ac8613ca" Selector="&lt;webctrl tag='DIV' innertext='보내기' rowName='보내기' idx='1' /&gt;">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:Click.Target>
+                                                </ui:Click>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:OpenBrowser.Body>
+                                        </ui:OpenBrowser>
                                       </Sequence>
-                                      <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="449.6,80.8" sap2010:WorkflowViewState.IdRef="DeleteFolderX_1" Path="[&quot;C:\Users\&quot; + pcAccountId + &quot;\Downloads\temp&quot;]" Recursive="True" />
+                                      <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="688,80.8" sap2010:WorkflowViewState.IdRef="DeleteFolderX_1" Path="[&quot;C:\Users\&quot; + pcAccountId + &quot;\Downloads\temp&quot;]" Recursive="True" />
                                     </Sequence>
-                                    <Assign sap2010:Annotation.AnnotationText="게시글 인덱스 증가" sap:VirtualizedContainerService.HintSize="512,112.8" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                    <Assign sap2010:Annotation.AnnotationText="게시글 인덱스 증가" sap:VirtualizedContainerService.HintSize="750.4,112.8" sap2010:WorkflowViewState.IdRef="Assign_12">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[idxTr]</OutArgument>
                                       </Assign.To>
@@ -776,7 +995,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Assign>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  MYC0605014Q_btn...'" sap:VirtualizedContainerService.HintSize="512,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  MYC0605014Q_btn...'" sap:VirtualizedContainerService.HintSize="750.4,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="Center">
                                           <ui:CursorPosition.OffsetX>
@@ -809,7 +1028,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:RepeatNumberOfTimesX>
-                            <Assign sap2010:Annotation.AnnotationText="페이지수 증가" sap:VirtualizedContainerService.HintSize="612.8,112.8" sap2010:WorkflowViewState.IdRef="Assign_34">
+                            <Assign sap2010:Annotation.AnnotationText="페이지수 증가" sap:VirtualizedContainerService.HintSize="846.4,112.8" sap2010:WorkflowViewState.IdRef="Assign_34">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[idxPage]</OutArgument>
                               </Assign.To>
@@ -822,7 +1041,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <ui:IfElseIf sap2010:Annotation.AnnotationText="idxPage가 10이상이면 1로 초기화 하고 다음 페이저 이동" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="612.8,568" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                            <ui:IfElseIf sap2010:Annotation.AnnotationText="idxPage가 10이상이면 1로 초기화 하고 다음 페이저 이동" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="846.4,568" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
                               <ui:IfElseIf.ConditionBlocks>
                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                   <ui:IfElseIfBlock BlockType="If" Condition="[idxPage &gt;= 11]">
