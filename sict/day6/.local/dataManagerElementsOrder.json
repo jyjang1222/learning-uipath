@@ -28,10 +28,11 @@
       "Path": "afternoon.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dt_searchName&Sequence_12",
+        "existMail&Sequence_75",
         "excelName&Sequence_12",
         "mailAdd&Sequence_12",
         "searchName&Sequence_75",
-        "dt_searchName&Sequence_75",
         "budget&Sequence_68",
         "b_existBudget&Sequence_68",
         "dt_budget&Sequence_33",
