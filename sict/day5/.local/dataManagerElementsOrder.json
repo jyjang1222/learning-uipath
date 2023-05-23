@@ -83,6 +83,7 @@
       "Path": "practice2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "idxTr&Sequence_9",
         "sAppPw&Sequence_1",
         "sMailAddress&Sequence_1",
         "bFileState&Sequence_22",
@@ -91,7 +92,6 @@
         "fileName&Sequence_17",
         "dt_fileName&Sequence_17",
         "pcAccountId&Sequence_1",
-        "MailAttachments&Sequence_29",
         "postTitle&Sequence_9",
         "postContent&Sequence_9",
         "dt_Post&Sequence_28",
@@ -99,10 +99,7 @@
         "s_TotalPost&Sequence_2",
         "childCount&Sequence_17",
         "findChild&Sequence_17",
-        "importFileIdx&Sequence_17",
-        "trIdx&Sequence_8",
-        "loopCnt&Sequence_8",
-        "pagerIdx&Sequence_8"
+        "importFileIdx&Sequence_17"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

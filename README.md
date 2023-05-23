@@ -29,6 +29,11 @@
     - UiPath.Excel.Activities
     - UiPath.PDF.Activities
 
+## 연산자
+- \ : 몫
+- mod : 나머지
+- <> : 다른가
+
 ## 변수 명명 규칙
 |접두어|의미|
 |:---:|:---|
