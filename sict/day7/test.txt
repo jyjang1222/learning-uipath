@@ -1,3 +1,0 @@
-toMovePath + reName
-2023년5월16일_코로나 확진자 rawdata.xlsx
-
