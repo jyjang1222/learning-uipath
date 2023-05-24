@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1868,1438" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ucad="clr-namespace:UiPath.Core.Activities.DateModifications;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="869.6,3998.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ucad="clr-namespace:UiPath.Core.Activities.DateModifications;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -109,7 +109,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1373" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="779.2,3933.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pcAccountName" />
       <Variable x:TypeArguments="x:String" Name="toMovePath" />
@@ -129,7 +129,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="초기 세팅" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_86">
+    <Sequence sap2010:Annotation.AnnotationText="초기 세팅" sap:VirtualizedContainerService.HintSize="716.8,114.4" sap2010:WorkflowViewState.IdRef="Sequence_86">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -147,7 +147,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="브라우저를 열고 파일 다운 후 이름 변경 후 파일 이동" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_93">
+    <Sequence sap2010:Annotation.AnnotationText="브라우저를 열고 파일 다운 후 이름 변경 후 파일 이동" sap:VirtualizedContainerService.HintSize="716.8,114.4" sap2010:WorkflowViewState.IdRef="Sequence_93">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -296,7 +296,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:OpenBrowser>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="데이터 추출하기" DisplayName="get excel data" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_88">
+    <Sequence sap2010:Annotation.AnnotationText="데이터 추출하기" DisplayName="get excel data" sap:VirtualizedContainerService.HintSize="716.8,114.4" sap2010:WorkflowViewState.IdRef="Sequence_88">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="diff1YearCount" />
         <Variable x:TypeArguments="x:String" Name="prev1YearFirstDay" />
@@ -395,7 +395,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:ModifyDate CustomDateFormat="{x:Null}" OutText="{x:Null}" sap2010:Annotation.AnnotationText="코로나 엑셀파일 기준으로 2020년1월20일을 가져오기&#xD;&#xA;출력 : d_firstDate" DisplayName="Modify Date" sap:VirtualizedContainerService.HintSize="486,109" sap2010:WorkflowViewState.IdRef="ModifyDate_2" OutDate="[d_firstDate]" SourceDate="[Now]">
+      <ui:ModifyDate CustomDateFormat="{x:Null}" OutText="{x:Null}" sap2010:Annotation.AnnotationText="코로나 엑셀파일 기준으로 2020년1월20일을 가져오기&#xA;출력 : d_firstDate" DisplayName="Modify Date" sap:VirtualizedContainerService.HintSize="486,109" sap2010:WorkflowViewState.IdRef="ModifyDate_2" OutDate="[d_firstDate]" SourceDate="[Now]">
         <ui:ModifyDate.Body>
           <ActivityAction>
             <Sequence DisplayName="실행" sap2010:WorkflowViewState.IdRef="Sequence_103">
@@ -463,7 +463,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="read range 에 들어갈 시트 넘버&#xD;&#xA;셀 7부터 시작하여 +7을 해줌" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="486,174" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="read range 에 들어갈 시트 넘버&#xA;셀 7부터 시작하여 +7을 해줌" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="486,174" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -535,7 +535,7 @@
         </ui:ReadRange>
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="template 복사하기" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_89">
+    <Sequence sap2010:Annotation.AnnotationText="template 복사하기" sap:VirtualizedContainerService.HintSize="716.8,114.4" sap2010:WorkflowViewState.IdRef="Sequence_89">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -553,7 +553,7 @@
       </Assign>
       <ui:CopyFile ContinueOnError="{x:Null}" Destination="[reNameTemplatePath]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="최종Test Folder\template\Template.xlsx" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="데이터 병합해서 엑셀파일로 정리" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_90">
+    <Sequence sap2010:Annotation.AnnotationText="데이터 병합해서 엑셀파일로 정리" sap:VirtualizedContainerService.HintSize="716.8,114.4" sap2010:WorkflowViewState.IdRef="Sequence_90">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="isExist" />
       </Sequence.Variables>
@@ -604,7 +604,7 @@
         <ui:WriteRange AddHeaders="False" DataTable="[dt_age]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="확진자 자료" StartingCell="I9" WorkbookPath="[reNameTemplatePath]" />
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="입력한 데이터를 토대로 필요한 결과 얻기" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_91">
+    <Sequence sap2010:Annotation.AnnotationText="입력한 데이터를 토대로 필요한 결과 얻기" sap:VirtualizedContainerService.HintSize="716.8,2656" sap2010:WorkflowViewState.IdRef="Sequence_91">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dt_TotalData" />
         <Variable x:TypeArguments="x:String" Name="firstMonthCount" />
@@ -614,38 +614,38 @@
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BuildDataTable sap2010:Annotation.AnnotationText="정답 저장" DataTable="[dt_answer]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="654,91" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;answer&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+      <ui:BuildDataTable sap2010:Annotation.AnnotationText="정답 저장" DataTable="[dt_answer]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="654.4,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;answer&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:BuildDataTable>
-      <ui:ReadRange AddHeaders="True" DataTable="[dt_TotalData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="654,88" sap2010:WorkflowViewState.IdRef="ReadRange_6" Range="A8" SheetName="확진자 자료" WorkbookPath="[&quot;최종Test Folder\output\&quot;+DateTime.Now.Year.ToString + &quot;년&quot; + DateTime.Now.Month.ToString + &quot;월&quot; + DateTime.Now.Day.ToString + &quot;일 코로나 확진자 정리본.xlsx&quot;]" />
-      <Sequence sap:VirtualizedContainerService.HintSize="654,2117" sap2010:WorkflowViewState.IdRef="Sequence_99">
+      <ui:ReadRange AddHeaders="True" DataTable="[dt_TotalData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="654.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_6" Range="A8" SheetName="확진자 자료" WorkbookPath="[&quot;최종Test Folder\output\&quot;+DateTime.Now.Year.ToString + &quot;년&quot; + DateTime.Now.Month.ToString + &quot;월&quot; + DateTime.Now.Day.ToString + &quot;일 코로나 확진자 정리본.xlsx&quot;]" />
+      <Sequence sap:VirtualizedContainerService.HintSize="654.4,2097.6" sap2010:WorkflowViewState.IdRef="Sequence_99">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence sap2010:Annotation.AnnotationText="1번째 달 평균 하루 확진자" DisplayName="Sequence1" sap:VirtualizedContainerService.HintSize="592,1083" sap2010:WorkflowViewState.IdRef="Sequence_46">
+        <Sequence sap2010:Annotation.AnnotationText="1번째 달 평균 하루 확진자" DisplayName="Sequence1" sap:VirtualizedContainerService.HintSize="592,114.4" sap2010:WorkflowViewState.IdRef="Sequence_46">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="temp" />
             <Variable x:TypeArguments="x:Double" Name="ans_1" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_25">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[firstMonthCount]</OutArgument>
             </Assign.To>
@@ -653,7 +653,7 @@
               <InArgument x:TypeArguments="x:String">[DateAdd("d", -1, DateAdd("YYYY", -1, DateAdd("m", 1, Now.ToString("yyyy-MM"))).ToString("yyyy-MM-dd")).ToString("dd")]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_22">
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_22">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
             </Assign.To>
@@ -661,19 +661,19 @@
               <InArgument x:TypeArguments="x:Int32">0</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="530,349" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="[Cint(firstMonthCount)]" StartAt="0">
+          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="[Cint(firstMonthCount)]" StartAt="0">
             <ui:RepeatNumberOfTimesX.Body>
               <ActivityAction x:TypeArguments="x:Int32">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Int32" Name="idx_i" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_45">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_23">
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_23">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
                     </Assign.To>
@@ -686,12 +686,12 @@
             </ui:RepeatNumberOfTimesX.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:RepeatNumberOfTimesX>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_24">
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_24">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Double">[ans_1]</OutArgument>
             </Assign.To>
@@ -699,9 +699,9 @@
               <InArgument x:TypeArguments="x:Double">[Math.Round((temp / Convert.ToDouble(firstMonthCount)) * 10.0) / 10.0]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_1.ToString}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_1.ToString(&quot;#,##0&quot;)}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
         </Sequence>
-        <Sequence sap2010:Annotation.AnnotationText="2번째달 확진자 합계" DisplayName="Sequence2" sap:VirtualizedContainerService.HintSize="592,112" sap2010:WorkflowViewState.IdRef="Sequence_47">
+        <Sequence sap2010:Annotation.AnnotationText="2번째달 확진자 합계" DisplayName="Sequence2" sap:VirtualizedContainerService.HintSize="592,114.4" sap2010:WorkflowViewState.IdRef="Sequence_47">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="temp" />
             <Variable x:TypeArguments="x:Double" Name="ans_2" />
@@ -713,7 +713,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_26">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[secondMonthCnt]</OutArgument>
             </Assign.To>
@@ -721,15 +721,15 @@
               <InArgument x:TypeArguments="x:String">[DateAdd("d", -1, DateAdd("YYYY", -1, DateAdd("m", 2, Now.ToString("yyyy-MM"))).ToString("yyyy-MM-dd")).ToString("dd")]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,52" sap2010:WorkflowViewState.IdRef="CommentOut_32">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="529.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_32">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,196" sap2010:WorkflowViewState.IdRef="Sequence_68">
+              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,197.6" sap2010:WorkflowViewState.IdRef="Sequence_68">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_23" Text="[&quot;2번째달수 : &quot; + secondMonthCnt]" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_23" Text="[&quot;2번째달수 : &quot; + secondMonthCnt]" />
               </Sequence>
             </ui:CommentOut.Body>
             <sap:WorkflowViewStateService.ViewState>
@@ -739,7 +739,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_27">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_27">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
             </Assign.To>
@@ -747,19 +747,19 @@
               <InArgument x:TypeArguments="x:Int32">0</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="530,349" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="[Cint(secondMonthCnt)]" StartAt="0">
+          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="529.6,352.8" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="[Cint(secondMonthCnt)]" StartAt="0">
             <ui:RepeatNumberOfTimesX.Body>
               <ActivityAction x:TypeArguments="x:Int32">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Int32" Name="idx_i" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_49">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_28">
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_28">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
                     </Assign.To>
@@ -777,7 +777,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:RepeatNumberOfTimesX>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_29">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_29">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Double">[ans_2]</OutArgument>
             </Assign.To>
@@ -785,9 +785,9 @@
               <InArgument x:TypeArguments="x:Double">[Math.Round(Convert.ToDouble(temp) * 10.0) / 10.0]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_2.ToString}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_2.ToString(&quot;#,##0&quot;)}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
         </Sequence>
-        <Sequence sap2010:Annotation.AnnotationText="3번째달 최대 확진자수" DisplayName="Sequence3" sap:VirtualizedContainerService.HintSize="592,112" sap2010:WorkflowViewState.IdRef="Sequence_72">
+        <Sequence sap2010:Annotation.AnnotationText="3번째달 최대 확진자수" DisplayName="Sequence3" sap:VirtualizedContainerService.HintSize="592,114.4" sap2010:WorkflowViewState.IdRef="Sequence_72">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="temp" />
             <Variable x:TypeArguments="x:Double" Name="ans_3" />
@@ -799,7 +799,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="643,82" sap2010:WorkflowViewState.IdRef="Assign_30">
+          <Assign sap:VirtualizedContainerService.HintSize="642.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_30">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[thirdMonthCnt]</OutArgument>
             </Assign.To>
@@ -807,15 +807,15 @@
               <InArgument x:TypeArguments="x:String">[DateAdd("d", -1, DateAdd("YYYY", -1, DateAdd("m", 3, Now.ToString("yyyy-MM"))).ToString("yyyy-MM-dd")).ToString("dd")]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="643,52" sap2010:WorkflowViewState.IdRef="CommentOut_33">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="642.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_33">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,196" sap2010:WorkflowViewState.IdRef="Sequence_69">
+              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,197.6" sap2010:WorkflowViewState.IdRef="Sequence_69">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_24" Text="[&quot;3번째달수 : &quot; + thirdMonthCnt]" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_24" Text="[&quot;3번째달수 : &quot; + thirdMonthCnt]" />
               </Sequence>
             </ui:CommentOut.Body>
             <sap:WorkflowViewStateService.ViewState>
@@ -825,7 +825,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <Assign sap:VirtualizedContainerService.HintSize="643,82" sap2010:WorkflowViewState.IdRef="Assign_31">
+          <Assign sap:VirtualizedContainerService.HintSize="642.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_31">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
             </Assign.To>
@@ -833,13 +833,13 @@
               <InArgument x:TypeArguments="x:Int32">0</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="643,778" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_3" NumberOfTimes="[Cint(thirdMonthCnt)]" StartAt="0">
+          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="642.4,782.4" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_3" NumberOfTimes="[Cint(thirdMonthCnt)]" StartAt="0">
             <ui:RepeatNumberOfTimesX.Body>
               <ActivityAction x:TypeArguments="x:Int32">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Int32" Name="idx_i" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="609,622" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="608.8,623.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Int32" Name="calculate" />
                   </Sequence.Variables>
@@ -848,7 +848,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="547,82" sap2010:WorkflowViewState.IdRef="Assign_35">
+                  <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_35">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[calculate]</OutArgument>
                     </Assign.To>
@@ -856,18 +856,18 @@
                       <InArgument x:TypeArguments="x:Int32">[Cint(dt_TotalData.Rows((Cint(firstMonthCount) + Cint(secondMonthCnt) - 2) + 1 + idx_i).item(1).ToString)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,389" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,389.6" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                         <ui:IfElseIfBlock BlockType="If" Condition="[temp &lt; calculate]">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_54">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_32">
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_32">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
                                 </Assign.To>
@@ -891,7 +891,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:RepeatNumberOfTimesX>
-          <Assign sap:VirtualizedContainerService.HintSize="643,82" sap2010:WorkflowViewState.IdRef="Assign_33">
+          <Assign sap:VirtualizedContainerService.HintSize="642.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Double">[ans_3]</OutArgument>
             </Assign.To>
@@ -899,9 +899,9 @@
               <InArgument x:TypeArguments="x:Double">[Math.Round(Convert.ToDouble(temp) * 10.0) / 10.0]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_3.ToString}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="643,186" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_3.ToString(&quot;#,##0&quot;)}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="642.4,188" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
         </Sequence>
-        <Sequence sap2010:Annotation.AnnotationText="4번째달 최소 확진자수" DisplayName="Sequence4" sap:VirtualizedContainerService.HintSize="592,112" sap2010:WorkflowViewState.IdRef="Sequence_73">
+        <Sequence sap2010:Annotation.AnnotationText="4번째달 최소 확진자수" DisplayName="Sequence4" sap:VirtualizedContainerService.HintSize="592,114.4" sap2010:WorkflowViewState.IdRef="Sequence_73">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="temp" />
             <Variable x:TypeArguments="x:Double" Name="ans_4" />
@@ -914,7 +914,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="643,82" sap2010:WorkflowViewState.IdRef="Assign_36">
+          <Assign sap:VirtualizedContainerService.HintSize="642.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_36">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[fourthMonthCnt]</OutArgument>
             </Assign.To>
@@ -922,15 +922,15 @@
               <InArgument x:TypeArguments="x:String">[DateAdd("d", -1, DateAdd("YYYY", -1, DateAdd("m", 3, Now.ToString("yyyy-MM"))).ToString("yyyy-MM-dd")).ToString("dd")]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="643,52" sap2010:WorkflowViewState.IdRef="CommentOut_36">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="642.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_36">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,196" sap2010:WorkflowViewState.IdRef="Sequence_75">
+              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,197.6" sap2010:WorkflowViewState.IdRef="Sequence_75">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_25" Text="[&quot;3번째달수 : &quot; + thirdMonthCnt]" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_25" Text="[&quot;3번째달수 : &quot; + thirdMonthCnt]" />
               </Sequence>
             </ui:CommentOut.Body>
             <sap:WorkflowViewStateService.ViewState>
@@ -940,7 +940,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <Assign sap:VirtualizedContainerService.HintSize="643,82" sap2010:WorkflowViewState.IdRef="Assign_37">
+          <Assign sap:VirtualizedContainerService.HintSize="642.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_37">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
             </Assign.To>
@@ -948,13 +948,13 @@
               <InArgument x:TypeArguments="x:Int32">99999999</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="643,778" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_4" NumberOfTimes="[Cint(fourthMonthCnt)]" StartAt="0">
+          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="642.4,782.4" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_4" NumberOfTimes="[Cint(fourthMonthCnt)]" StartAt="0">
             <ui:RepeatNumberOfTimesX.Body>
               <ActivityAction x:TypeArguments="x:Int32">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Int32" Name="idx_i" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="609,622" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="608.8,623.2" sap2010:WorkflowViewState.IdRef="Sequence_74">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Int32" Name="calculate" />
                   </Sequence.Variables>
@@ -963,7 +963,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="547,82" sap2010:WorkflowViewState.IdRef="Assign_38">
+                  <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_38">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[calculate]</OutArgument>
                     </Assign.To>
@@ -971,18 +971,18 @@
                       <InArgument x:TypeArguments="x:Int32">[Cint(dt_TotalData.Rows((Cint(firstMonthCount) + Cint(secondMonthCnt) + Cint(thirdMonthCnt) - 3) + 1 + idx_i).item(1).ToString)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,389" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,389.6" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                         <ui:IfElseIfBlock BlockType="If" Condition="[temp &gt; calculate]">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_76">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_39">
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_39">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
                                 </Assign.To>
@@ -1006,7 +1006,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:RepeatNumberOfTimesX>
-          <Assign sap:VirtualizedContainerService.HintSize="643,82" sap2010:WorkflowViewState.IdRef="Assign_40">
+          <Assign sap:VirtualizedContainerService.HintSize="642.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_40">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Double">[ans_4]</OutArgument>
             </Assign.To>
@@ -1014,9 +1014,9 @@
               <InArgument x:TypeArguments="x:Double">[Math.Round(Convert.ToDouble(temp) * 10.0) / 10.0]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_4.ToString}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="643,186" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_4.ToString(&quot;#,##0&quot;)}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="642.4,188" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
         </Sequence>
-        <Sequence sap2010:Annotation.AnnotationText="(1년 기준)평균 하루  확진자 수&#xA;(1년 기준)총 확진자 수" DisplayName="Sequence5and6" sap:VirtualizedContainerService.HintSize="592,123" sap2010:WorkflowViewState.IdRef="Sequence_77">
+        <Sequence sap2010:Annotation.AnnotationText="(1년 기준)평균 하루  확진자 수&#xA;(1년 기준)총 확진자 수" DisplayName="Sequence5and6" sap:VirtualizedContainerService.HintSize="592,127.2" sap2010:WorkflowViewState.IdRef="Sequence_77">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="temp" />
             <Variable x:TypeArguments="x:Double" Name="temp2" />
@@ -1028,7 +1028,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_41">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_41">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
             </Assign.To>
@@ -1036,19 +1036,19 @@
               <InArgument x:TypeArguments="x:Int32">0</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TotalData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,310" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TotalData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,310.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_78">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_42">
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_42">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[temp]</OutArgument>
                     </Assign.To>
@@ -1060,15 +1060,15 @@
               </ActivityAction>
             </ui:ForEachRow.Body>
           </ui:ForEachRow>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_45">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_45">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[confirmedTotal]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">[temp.ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String">[temp.ToString("#,##0")]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_43">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_43">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Double">[temp2]</OutArgument>
             </Assign.To>
@@ -1076,18 +1076,18 @@
               <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(temp) / Convert.ToDouble(dt_TotalData.RowCount)]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_44">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_44">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[ans_5]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">[(Math.Round(temp2 * 10.0) / 10.0).ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String">[(Math.Round(temp2 * 10.0) / 10.0).ToString("#,##0")]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_5}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{confirmedTotal}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_5}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{confirmedTotal}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
         </Sequence>
-        <Sequence sap2010:Annotation.AnnotationText="(1년 기준)전국에서 제주도 확인자가 차지하는 비율" DisplayName="Sequence7" sap:VirtualizedContainerService.HintSize="592,112" sap2010:WorkflowViewState.IdRef="Sequence_79">
+        <Sequence sap2010:Annotation.AnnotationText="(1년 기준)전국에서 제주도 확인자가 차지하는 비율" DisplayName="Sequence7" sap:VirtualizedContainerService.HintSize="592,1046.4" sap2010:WorkflowViewState.IdRef="Sequence_79">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="confirmedJeju" />
             <Variable x:TypeArguments="x:Double" Name="calculate" />
@@ -1095,12 +1095,12 @@
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_46">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_46">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[confirmedJeju]</OutArgument>
             </Assign.To>
@@ -1108,19 +1108,19 @@
               <InArgument x:TypeArguments="x:Int32">0</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TotalData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,310" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TotalData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,310.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_81">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_48">
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_48">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[confirmedJeju]</OutArgument>
                     </Assign.To>
@@ -1132,7 +1132,7 @@
               </ActivityAction>
             </ui:ForEachRow.Body>
           </ui:ForEachRow>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_49">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_49">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Double">[calculate]</OutArgument>
             </Assign.To>
@@ -1140,17 +1140,17 @@
               <InArgument x:TypeArguments="x:Double">[(Convert.ToDouble(confirmedJeju) / Convert.ToDouble(confirmedTotal) * 100.0)]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_50">
+          <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_50">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[ans_7]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">[((Math.Round(calculate * 10.0) / 10.0) / 100.0).ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String">[((Math.Round(calculate * 10.0) / 10.0)).ToString + "%"]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_7}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataRow_7" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ans_7}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_7" />
         </Sequence>
-        <Sequence sap2010:Annotation.AnnotationText="(1년 기준)경기도 확진자 수가 2,000명 이하인 일 수" DisplayName="Sequence8" sap:VirtualizedContainerService.HintSize="592,112" sap2010:WorkflowViewState.IdRef="Sequence_80">
+        <Sequence sap2010:Annotation.AnnotationText="(1년 기준)경기도 확진자 수가 2,000명 이하인 일 수" DisplayName="Sequence8" sap:VirtualizedContainerService.HintSize="592,114.4" sap2010:WorkflowViewState.IdRef="Sequence_80">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="count" />
           </Sequence.Variables>
@@ -1161,7 +1161,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="643,82" sap2010:WorkflowViewState.IdRef="Assign_51">
+          <Assign sap:VirtualizedContainerService.HintSize="642.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
             </Assign.To>
@@ -1169,30 +1169,30 @@
               <InArgument x:TypeArguments="x:Int32">0</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TotalData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="643,617" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TotalData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="642.4,618.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="609,500" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="608.8,501.6" sap2010:WorkflowViewState.IdRef="Sequence_82">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,389" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,389.6" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                         <ui:IfElseIfBlock BlockType="If" Condition="[Cint(row(&quot;경기도 확진자&quot;)) &lt;= 2000]">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_83">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_52">
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_52">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                                 </Assign.To>
@@ -1210,12 +1210,12 @@
               </ActivityAction>
             </ui:ForEachRow.Body>
           </ui:ForEachRow>
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{count.ToString}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="643,186" sap2010:WorkflowViewState.IdRef="AddDataRow_8" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{count.ToString(&quot;#,##0&quot;)}]" DataTable="[dt_answer]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="642.4,188" sap2010:WorkflowViewState.IdRef="AddDataRow_8" />
         </Sequence>
       </Sequence>
-      <ui:WriteRange AddHeaders="False" DataTable="[dt_answer]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="654,116" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="확진자 자료" StartingCell="M2" WorkbookPath="[&quot;최종Test Folder\output\&quot;+DateTime.Now.Year.ToString + &quot;년&quot; + DateTime.Now.Month.ToString + &quot;월&quot; + DateTime.Now.Day.ToString + &quot;일 코로나 확진자 정리본.xlsx&quot;]" />
+      <ui:WriteRange AddHeaders="False" DataTable="[dt_answer]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="654.4,116" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="확진자 자료" StartingCell="M2" WorkbookPath="[&quot;최종Test Folder\output\&quot;+DateTime.Now.Year.ToString + &quot;년&quot; + DateTime.Now.Month.ToString + &quot;월&quot; + DateTime.Now.Day.ToString + &quot;일 코로나 확진자 정리본.xlsx&quot;]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="메일 보내기" sap:VirtualizedContainerService.HintSize="450,350" sap2010:WorkflowViewState.IdRef="Sequence_85">
+    <Sequence sap2010:Annotation.AnnotationText="메일 보내기" sap:VirtualizedContainerService.HintSize="716.8,353.6" sap2010:WorkflowViewState.IdRef="Sequence_85">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1223,7 +1223,7 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[DateAdd(&quot;YYYY&quot;, -1, DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;))).ToString(&quot;yyyy&quot;) +  &quot;년&quot; + DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;MM&quot;) + &quot;월&quot; + DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;dd&quot;) + &quot;일&quot; +&#xA;&quot; ~ &quot; +&#xA;DateTime.Now.Year.ToString + &quot;년&quot; + DateAdd(&quot;m&quot;, -1, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;MM&quot;) + &quot;월&quot; + DateAdd(&quot;d&quot;, -1, DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;))).ToString(&quot;dd&quot;) + &quot;일 총 확진자 수 : &quot; + confirmedTotal + &quot;명&quot; + Environment.NewLine +&#xA;&quot;하루 평균 확진자 수 : &quot; + ans_5 + &quot;명&quot; + Environment.NewLine +&#xA;&quot;감사합니다.&quot;]" DisplayName="Send SMTP Mail Message" Email="jyjang5866@gmail.com" EnableSSL="True" From="jyjang5866@gmail.com" sap:VirtualizedContainerService.HintSize="388,208" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="jjy" Password="ffndbfhimmjtkljy" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[DateTime.Now.Year.ToString + &quot;년&quot; + DateAdd(&quot;m&quot;, -1, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;MM&quot;) + &quot;월_Covid_1year data 발신&quot;]" To="jyjang5866@gmail.com">
+      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[DateAdd(&quot;YYYY&quot;, -1, DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;))).ToString(&quot;yyyy&quot;) +  &quot;년&quot; + DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;MM&quot;) + &quot;월&quot; + DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;dd&quot;) + &quot;일&quot; +&#xA;&quot; ~ &quot; +&#xA;DateTime.Now.Year.ToString + &quot;년&quot; + DateAdd(&quot;m&quot;, -1, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;MM&quot;) + &quot;월&quot; + DateAdd(&quot;d&quot;, -1, DateAdd(&quot;m&quot;, 0, Now.ToString(&quot;yyyy-MM&quot;))).ToString(&quot;dd&quot;) + &quot;일 총 확진자 수 : &quot; + confirmedTotal + &quot;명&quot; + Environment.NewLine +&#xA;&quot;하루 평균 확진자 수 : &quot; + ans_5 + &quot;명&quot; + Environment.NewLine +&#xA;&quot;감사합니다.&quot;]" DisplayName="Send SMTP Mail Message" Email="jyjang5866@gmail.com" EnableSSL="True" From="jyjang5866@gmail.com" sap:VirtualizedContainerService.HintSize="387.2,210.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="jjy" Password="ffndbfhimmjtkljy" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[DateTime.Now.Year.ToString + &quot;년&quot; + DateAdd(&quot;m&quot;, -1, Now.ToString(&quot;yyyy-MM&quot;)).ToString(&quot;MM&quot;) + &quot;월_Covid_1year data 발신&quot;]" To="jyjang5866@gmail.com">
         <ui:SendMail.Files>
           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
             <InArgument x:TypeArguments="x:String">["최종Test Folder\output\"+DateTime.Now.Year.ToString + "년" + DateTime.Now.Month.ToString + "월" + DateTime.Now.Day.ToString + "일 코로나 확진자 정리본.xlsx"]</InArgument>

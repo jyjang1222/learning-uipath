@@ -70,6 +70,7 @@
 ## Methods
 - ToString : 문자열로 타입변환. 
     - 예) iAge.ToString
+    - 숫자에 , 넣기 : Num.ToString("#,##0")
 - split : 옵션을 추가할때는 , 로 구분한다. 나누는 기준의 디폴트는 공백이다.
     - split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
     - split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries

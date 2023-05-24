@@ -21259,15 +21259,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jyjan\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "day7",
       "projectName": "day7",
-      "projectPath": "F:\\Jun\\learning\\learning-uipath\\sict\\day7\\.local",
-      "packagesPath": "C:\\Users\\jyjan\\.nuget\\packages\\",
-      "outputPath": "F:\\Jun\\learning\\learning-uipath\\sict\\day7\\.local"
+      "projectPath": "C:\\Jun\\learning-uipath\\sict\\day7\\.local",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Jun\\learning-uipath\\sict\\day7\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21298,7 +21298,7 @@
             "version": "[23.4.4, 23.4.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\jyjan\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
