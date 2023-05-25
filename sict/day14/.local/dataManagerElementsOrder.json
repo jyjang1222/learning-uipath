@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "idx_i&Sequence_3",
         "dt_sortedNonDate&Sequence_1",
         "dt_sortedDate&Sequence_1",
         "dt_sortedNonCountry&Sequence_1",
@@ -25,7 +26,6 @@
         "maxRainRateDay&Sequence_2",
         "maxRainRateCountry&Sequence_2",
         "mxRainRate&Sequence_15",
-        "idx_minRainRate&Sequence_3",
         "minRainRateCountry&Sequence_2",
         "minRainRateDay&Sequence_2",
         "dt_answer&Sequence_1",
@@ -47,7 +47,6 @@
         "maxTemperature&Sequence_4",
         "minTemperature&Sequence_4",
         "rainAfternoonRate&Sequence_4",
-        "idx_i&Sequence_3",
         "rainMorningRate&Sequence_4",
         "curDay&Sequence_4",
         "day&Sequence_4",

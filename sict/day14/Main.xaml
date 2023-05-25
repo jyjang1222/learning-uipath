@@ -445,7 +445,7 @@
                                 </ui:MultipleAssign.AssignOperations>
                               </ui:MultipleAssign>
                               <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{curDay, country, rainMorningRate, rainAfternoonRate, minTemp, maxTemp}]" DataTable="[dt_format]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="423,186" sap2010:WorkflowViewState.IdRef="AddDataRow_18" />
-                              <ui:MultipleAssign sap2010:Annotation.AnnotationText="서식 지우기" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,225" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                              <ui:MultipleAssign sap2010:Annotation.AnnotationText="서식(°, %) 지우기" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,225" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                                 <ui:MultipleAssign.AssignOperations>
                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
