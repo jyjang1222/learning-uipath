@@ -1,0 +1,62 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "d_avgMaxTemperature&Sequence_2",
+        "d_avgMinTemperature&Sequence_2",
+        "maxTempCountry&Sequence_2",
+        "minTempCountry&Sequence_2",
+        "maxTempDay&Sequence_2",
+        "minTempDay&Sequence_2",
+        "maxRainRateDay&Sequence_2",
+        "maxRainRateCountry&Sequence_2",
+        "mxRainRate&Sequence_15",
+        "idx_minRainRate&Sequence_3",
+        "minRainRateCountry&Sequence_2",
+        "minRainRateDay&Sequence_2",
+        "dt_answer&Sequence_1",
+        "mnRainRate&Sequence_15",
+        "maxTemp&Sequence_4",
+        "minTemp&Sequence_4",
+        "maxTemper&Sequence_2",
+        "minTemper&Sequence_2",
+        "avgMaxTemperature&Sequence_2",
+        "avgMinTemperature&Sequence_2",
+        "maxRainRate&Sequence_2",
+        "minRainRate&Sequence_2",
+        "minRainRateDate&Sequence_4",
+        "dt_sortedNonFormat&Sequence_1",
+        "dt_sortedFormat&Sequence_1",
+        "dt_nonFormat&Sequence_1",
+        "dt_format&Sequence_1",
+        "resultFilePath&Sequence_1",
+        "resultFileName&Sequence_1",
+        "templatePath&Sequence_1",
+        "maxTemperature&Sequence_4",
+        "minTemperature&Sequence_4",
+        "rainAfternoonRate&Sequence_4",
+        "idx_i&Sequence_3",
+        "rainMorningRate&Sequence_4",
+        "curDay&Sequence_4",
+        "day&Sequence_4",
+        "month&Sequence_4",
+        "year&Sequence_4",
+        "curDate&Sequence_3",
+        "countryList&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
