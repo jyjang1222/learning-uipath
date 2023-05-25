@@ -537,14 +537,14 @@
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedFormat 표현서식이 있는 테이블" ColumnName="지역명" DataTable="[dt_format]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_8" Order="Ascending" OutputDataTable="[dt_sortedCountry]" SortOrder="Ascending">
+              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedCountry 표현서식이 있는 테이블" ColumnName="지역명" DataTable="[dt_format]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_8" Order="Ascending" OutputDataTable="[dt_sortedCountry]" SortOrder="Ascending">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:SortDataTable>
-              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedNonFormat 표현서식이 없는 테이블" ColumnName="지역명" DataTable="[dt_nonFormat]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_9" Order="Ascending" OutputDataTable="[dt_sortedNonCountry]" SortOrder="Ascending">
+              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedNonCountry 표현서식이 없는 테이블" ColumnName="지역명" DataTable="[dt_nonFormat]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_9" Order="Ascending" OutputDataTable="[dt_sortedNonCountry]" SortOrder="Ascending">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -559,14 +559,14 @@
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedFormat 표현서식이 있는 테이블" ColumnName="날짜" DataTable="[dt_sortedCountry]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_5" Order="Ascending" OutputDataTable="[dt_sortedDate]" SortOrder="Ascending">
+              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedDate 표현서식이 있는 테이블" ColumnName="날짜" DataTable="[dt_sortedCountry]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_5" Order="Ascending" OutputDataTable="[dt_sortedDate]" SortOrder="Ascending">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:SortDataTable>
-              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedNonFormat 표현서식이 없는 테이블" ColumnName="날짜" DataTable="[dt_sortedNonCountry]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_7" Order="Ascending" OutputDataTable="[dt_sortedNonDate]" SortOrder="Ascending">
+              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="dt_sortedNonDate 표현서식이 없는 테이블" ColumnName="날짜" DataTable="[dt_sortedNonCountry]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="387.2,112" sap2010:WorkflowViewState.IdRef="SortDataTable_7" Order="Ascending" OutputDataTable="[dt_sortedNonDate]" SortOrder="Ascending">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
