@@ -116,6 +116,10 @@
 ## UiElement 변수 사용법에 대해
 - https://forum.uipath.com/t/variable-uielement/275353
 
+## How-to-sort-a-datatable-by-two-columns
+- https://forum.uipath.com/t/how-to-sort-a-datatable-by-two-columns/133795
+- datatablevariable = From x In datatablevariable.AsEnumerable() Order By convert.Tostring(x("Location)"),convert.ToString(x("Month")) Select x).CopyToDataTable
+
 ## PDF 데이터 가져오기
 - PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
 - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
