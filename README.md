@@ -121,6 +121,7 @@
 - dtTable = (From x In dtTable.AsEnumerable() Order By convert.ToString(x("Column1")), convert.ToString(x("Column2")) Select x).CopyToDataTable()
 - https://forum.uipath.com/t/how-to-sort-a-datatable-by-two-columns/133795
 - datatablevariable = From x In datatablevariable.AsEnumerable() Order By convert.Tostring(x("Location)"),convert.ToString(x("Month")) Select x).CopyToDataTable
+- invoke 라는 액티비티를 사용해서 저 쿼리문은 써야한다.
 
 ## PDF 데이터 가져오기
 - PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
@@ -162,3 +163,9 @@
 - excel파일을 핸들링할 때 excel scope 액티비티를 쓰는 것을 지양하도록 하자 엑셀 파일을 켜는데 시간이 걸리는데 Workbook 액티비티를 사용하면 엑셀 파일을 켜지 않아도 된다.
 - while문은 사용하는 것을 웬만해서 지양하도록 하자
 - 시간 걸리는 양 : 액티비티 > 메소드
+
+## 과제 검수 받을때
+- 서로 알고 있는 내용을 중점적으로 나만 알고 있는 내용은 상대방이 알아들을 수 있도록 상세히 충분히 설명 
+- 개발할 때 목적성을 가져야한다
+- 일단 해결이 급한 것은 맞지만 생각을 하면서 작업을 해야 실력이 는다
+- 다음주부터 신입사원 교육 시작하고 산수 수학 조금 생각 안하면 못품 시간 여유 많이 안줌 몇몇 문제는 테스트 용으로 나감
