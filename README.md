@@ -117,6 +117,8 @@
 - https://forum.uipath.com/t/variable-uielement/275353
 
 ## How-to-sort-a-datatable-by-two-columns
+- https://uipath.tistory.com/52
+- dtTable = (From x In dtTable.AsEnumerable() Order By convert.ToString(x("Column1")), convert.ToString(x("Column2")) Select x).CopyToDataTable()
 - https://forum.uipath.com/t/how-to-sort-a-datatable-by-two-columns/133795
 - datatablevariable = From x In datatablevariable.AsEnumerable() Order By convert.Tostring(x("Location)"),convert.ToString(x("Month")) Select x).CopyToDataTable
 
