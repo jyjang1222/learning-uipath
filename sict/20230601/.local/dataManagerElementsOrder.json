@@ -1,0 +1,62 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "idx_j&Sequence_9",
+        "idx_i&Sequence_8",
+        "idx_i&Sequence_7",
+        "idx_j&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "idx_i&Sequence_2",
+        "idx_j&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test4.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "scoreTotal&Sequence_6",
+        "idx_i&Sequence_5",
+        "students&Sequence_5",
+        "scoreScience&Sequence_5",
+        "scoreEng&Sequence_5",
+        "scoreMath&Sequence_5",
+        "scoreKor&Sequence_5",
+        "dt_score&Sequence_4",
+        "scoreList&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
