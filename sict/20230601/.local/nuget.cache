@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vE94i86lkA5vHFTI4FIYpg0xiPwudx7n00hZEp16PS59vSRJdK4b2ccXtaWVKJCAMrwjl0hN2OCzT/nfXBx9eA==",
+  "dgSpecHash": "BKvKRH6c78XTOEpVTBy11V/TEGmmab1RBOMl2KE2UM2j/ei2b8LzxVLf0n1uY+TxnSMRI+hK992wXE/Qbj2CcA==",
   "success": true,
-  "projectFilePath": "C:\\Jun\\20230601\\.local\\",
+  "projectFilePath": "C:\\Jun\\learning-uipath\\sict\\20230601\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
