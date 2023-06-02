@@ -150,6 +150,16 @@
 - String.Format("{idx1}{idx2}{idx3}", item1, item2, item3)
 - 예) String.Format("{0} : {1}, {2}", name, scoreTotal, scoreTotal / 4)
 
+## 반올림
+- Cint(), Math.round
+- 예)
+    - 0.5 -> 0
+    - 1.5 -> 2
+    - 2.5 -> 2
+    - 3.5 -> 4
+    - 4.5 -> 4
+    - 10.5 -> 10
+
 ## UiPath 언어 선택, visual basic vs c#
 사실 VB냐 C# 이냐는 크게 차이가 없고 둘다 비슷하다.  
 하지만 만약, 둘 중 선택을 해야 한다면 VB를 하는 것이 좋다.  
