@@ -1,9 +1,5 @@
 # SICT 교육 저장소
 
-- 교육자료
-    - http://naver.me/F1MYsFiv
-    - http://naver.me/GSUPzLSe
-
 ## Activity
 - open application / close application
 - get text
@@ -42,11 +38,6 @@
 - str로 타입 변환 예) String.Format("오늘 확진자는 {0}명입니다", s_확진자)
 - clipboard.setimage : https://learn.microsoft.com/ko-kr/dotnet/api/system.windows.forms.clipboard.setimage?view=windowsdesktop-7.0
 - select편집 에서 불필요한 것들을 체크해제하면 셀렉트가 더 잘된다..
-
-## 9, 10일차 자유과제
-- 범위 : 본인이 필요하거나 회사에서 필요할만한 과제 선정
-- 파일 : workflow, ppt
-- 발표예정..
 
 ## 엑셀파일 서식
 - **글자는 왼쪽정렬, 숫자는 오른쪽 정렬**

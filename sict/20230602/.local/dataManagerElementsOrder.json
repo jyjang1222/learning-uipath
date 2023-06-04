@@ -36,11 +36,11 @@
       "Path": "Main2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "midNum&Sequence_2",
         "answer&Sequence_1",
         "maxNum&Sequence_1",
         "minNum&Sequence_1",
-        "i_answer&Sequence_1",
-        "midNum&Sequence_1"
+        "i_answer&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
