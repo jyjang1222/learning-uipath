@@ -1,0 +1,82 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-003-1_test1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "midNum&Sequence_1",
+        "minNum&Sequence_1",
+        "maxNum&Sequence_1",
+        "i_answer&Sequence_1",
+        "answer&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-003-1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "midNum&Sequence_2",
+        "answer&Sequence_1",
+        "maxNum&Sequence_1",
+        "minNum&Sequence_1",
+        "i_answer&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-001-1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "idx_i&Sequence_7",
+        "idx_j&Sequence_4",
+        "idx_i&Sequence_8",
+        "idx_j&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-001-2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "idx_i&Sequence_2",
+        "idx_j&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-001-3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_score&Sequence_4",
+        "scoreList&Sequence_2",
+        "scoreKor&Sequence_5",
+        "scoreMath&Sequence_5",
+        "scoreEng&Sequence_5",
+        "scoreScience&Sequence_5",
+        "students&Sequence_5",
+        "idx_i&Sequence_5",
+        "scoreTotal&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
