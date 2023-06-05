@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>838.4,1991.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>956,2299.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -87,7 +87,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="593.6,1926.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="966.4,2234.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="answer" />
       <Variable x:TypeArguments="x:Double" Name="maxNum" />
@@ -101,7 +101,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="사용자에게 1~45까지의 임의의 숫자를 입력 받음" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="531.2,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="임의의 숫자 하나를 입력해주세요.">
+    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="사용자에게 1~45까지의 임의의 숫자를 입력 받음" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="904,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="임의의 숫자 하나를 입력해주세요.">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
       </ui:InputDialog.Result>
@@ -111,8 +111,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="531.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[&quot;input: &quot; + answer]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="531.2,194.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="904,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[&quot;input: &quot; + answer]" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="904,194.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -136,7 +136,7 @@
               <OutArgument x:TypeArguments="x:Double">[maxNum]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:Double">[startNum+1]</InArgument>
+              <InArgument x:TypeArguments="x:Double">[startNum]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -150,7 +150,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="531.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="904,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
@@ -164,15 +164,15 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[isSuccess = True]" DisplayName="While" sap:VirtualizedContainerService.HintSize="531.2,734.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_6">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[isSuccess = True]" DisplayName="While" sap:VirtualizedContainerService.HintSize="904,1042.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_6">
       <ui:InterruptibleWhile.Body>
-        <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,567.2" sap2010:WorkflowViewState.IdRef="Sequence_67">
+        <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="868.8,875.2" sap2010:WorkflowViewState.IdRef="Sequence_67">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
+          <Assign sap:VirtualizedContainerService.HintSize="806.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Double">[maxNum]</OutArgument>
             </Assign.To>
@@ -180,8 +180,7 @@
               <InArgument x:TypeArguments="x:Double">[startNum + endNum]</InArgument>
             </Assign.Value>
           </Assign>
-          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_26" Text="[String.Format(&quot;minNum: {0}, maxNum: {1}&quot;, minNum, maxNum)]" />
-          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_4" NumberOfTimes="7" StartAt="1">
+          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="806.4,81.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_4" NumberOfTimes="7" StartAt="1">
             <ui:RepeatNumberOfTimesX.Body>
               <ActivityAction x:TypeArguments="x:Int32">
                 <ActivityAction.Argument>
@@ -354,14 +353,38 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:RepeatNumberOfTimesX>
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_56">
-            <Assign.To>
-              <OutArgument x:TypeArguments="x:Int32">[endNum]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:Int32">[endNum + 1]</InArgument>
-            </Assign.Value>
-          </Assign>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="806.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_26" Text="[String.Format(&quot;minNum: {0}, endNum: {1}&quot;, minNum, endNum)]" />
+          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="806.4,389.6" sap2010:WorkflowViewState.IdRef="IfElseIf_26">
+            <ui:IfElseIf.ConditionBlocks>
+              <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                <ui:IfElseIfBlock BlockType="If" Condition="[isSuccess = True]">
+                  <ui:IfElseIfBlock.Then>
+                    <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_56">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[endNum]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[endNum + 1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ui:IfElseIfBlock.Then>
+                </ui:IfElseIfBlock>
+              </sc:BindingList>
+            </ui:IfElseIf.ConditionBlocks>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:IfElseIf>
         </Sequence>
       </ui:InterruptibleWhile.Body>
       <sap:WorkflowViewStateService.ViewState>
@@ -371,7 +394,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleWhile>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="531.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="[(minNum+endNum-2).ToString]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="531.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[isSuccess.ToString]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="904,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="[(minNum+endNum-2).ToString]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="904,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[isSuccess.ToString]" />
   </Sequence>
 </Activity>
