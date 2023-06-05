@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_11_004_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1228,3040.8" sap2010:WorkflowViewState.IdRef="_11_004_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_11_004_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,2720" sap2010:WorkflowViewState.IdRef="_11_004_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -82,7 +82,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="817.6,2976" sap2010:WorkflowViewState.IdRef="Sequence_24">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="817.6,2655.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="answer" />
       <Variable x:TypeArguments="x:Double" Name="maxNum" />
@@ -135,14 +135,14 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="755.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[minNum.ToString + &quot;,&quot; + maxNum.ToString]" />
-    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="755.2,2216.8" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="6" StartAt="1">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="755.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[minNum.ToString + &quot;~&quot; + answer + &quot;~&quot;+ maxNum.ToString]" />
+    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="755.2,1896" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="6" StartAt="1">
       <ui:RepeatNumberOfTimesX.Body>
         <ActivityAction x:TypeArguments="x:Int32">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="721.6,2058.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="721.6,1737.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,7 +182,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,1160" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,969.6" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[i_answer &gt; midNum]">
@@ -193,7 +193,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[String.Format(&quot;minNum: {0}, midNum: {1}, maxNum: {2}&quot;, minNum, midNum, maxNum)]" />
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[String.Format(&quot;minNum: {0}, (midNum: {1}), answer: {2}, maxNum: {3}&quot;, minNum, midNum, answer, maxNum)]" />
                         <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_15">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Double">[minNum]</OutArgument>
@@ -207,25 +207,14 @@
                   </ui:IfElseIfBlock>
                   <ui:IfElseIfBlock BlockType="ElseIf" Condition="[i_answer &lt; midNum]">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="547.2,514.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,324" sap2010:WorkflowViewState.IdRef="Sequence_26">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,280.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[String.Format(&quot;minNum: {0}, midNum: {1}, maxNum: {2}&quot;, minNum, midNum, maxNum)]" />
-                            </Sequence>
-                          </ui:CommentOut.Body>
-                        </ui:CommentOut>
-                        <Assign sap:VirtualizedContainerService.HintSize="484.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[String.Format(&quot;minNum: {0}, answer: {1}, (midNum: {2}), maxNum: {3}&quot;, minNum, answer, midNum, maxNum)]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_16">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Double">[maxNum]</OutArgument>
                           </Assign.To>
@@ -239,7 +228,6 @@
                 </sc:BindingList>
               </ui:IfElseIf.ConditionBlocks>
             </ui:IfElseIf>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="659.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[String.Format(&quot;minNum: {0}, answer:{1}, maxNum:{2}&quot;, minNum, answer, maxNum)]" />
           </Sequence>
         </ActivityAction>
       </ui:RepeatNumberOfTimesX.Body>
