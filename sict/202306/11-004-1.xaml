@@ -5,11 +5,13 @@
     <x:Property Name="in_endNum" Type="InArgument(x:Int32)" />
     <x:Property Name="in_failCnt" Type="InArgument(x:Int32)" />
     <x:Property Name="out_failCnt" Type="OutArgument(x:Int32)" />
+    <x:Property Name="in_isAllSuccess" Type="InArgument(x:Boolean)" />
+    <x:Property Name="out_isAllSuccess" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>844,853.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>904.8,3296.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -91,7 +93,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="548,788.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="915.2,3232" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="answer" />
       <Variable x:TypeArguments="x:Double" Name="maxNum" />
@@ -105,7 +107,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="485.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="852.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
       <ui:CommentOut.Body>
         <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="548,732" sap2010:WorkflowViewState.IdRef="Sequence_49">
           <sap:WorkflowViewStateService.ViewState>
@@ -171,14 +173,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence sap2010:Annotation.AnnotationText="1~45까지 테스트용" sap:VirtualizedContainerService.HintSize="485.6,369.6" sap2010:WorkflowViewState.IdRef="Sequence_50">
+    <Sequence sap2010:Annotation.AnnotationText="1~45까지 테스트용" sap:VirtualizedContainerService.HintSize="852.8,400" sap2010:WorkflowViewState.IdRef="Sequence_50">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,226.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,256.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -221,11 +223,19 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Boolean">[out_isAllSuccess]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Boolean">[in_isAllSuccess]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="485.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="852.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
       <ui:CommentOut.Body>
         <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_52">
           <sap:WorkflowViewStateService.ViewState>
@@ -243,13 +253,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="485.6,81.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="6" StartAt="1">
+    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="852.8,2494.4" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="6" StartAt="1">
       <ui:RepeatNumberOfTimesX.Body>
         <ActivityAction x:TypeArguments="x:Int32">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="721.6,2213.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="819.2,2335.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Double" Name="midNum" />
             </Sequence.Variables>
@@ -258,7 +268,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="659.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+            <Assign sap:VirtualizedContainerService.HintSize="756.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Double">[midNum]</OutArgument>
               </Assign.To>
@@ -266,18 +276,18 @@
                 <InArgument x:TypeArguments="x:Double">[Math.Truncate((minNum + maxNum) / 2)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:IfElseIf sap2010:Annotation.AnnotationText="정답이면 반복 종료s" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,1138.4" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
+            <ui:IfElseIf sap2010:Annotation.AnnotationText="정답이면 반복 종료s" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="756.8,1260" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[i_answer = midNum]">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="608.8,911.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="706.4,1032.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="644,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
                               <sap:WorkflowViewStateService.ViewState>
@@ -295,7 +305,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_39">
+                        <Assign sap:VirtualizedContainerService.HintSize="644,81.6" sap2010:WorkflowViewState.IdRef="Assign_39">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Int32">[successCnt]</OutArgument>
                           </Assign.To>
@@ -303,12 +313,12 @@
                             <InArgument x:TypeArguments="x:Int32">[successCnt + 1]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,520" sap2010:WorkflowViewState.IdRef="IfElseIf_15">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="644,641.6" sap2010:WorkflowViewState.IdRef="IfElseIf_15">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[item = 6 and i_answer &lt;&gt; midNum]">
                                 <ui:IfElseIfBlock.Then>
-                                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,324" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,445.6" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -323,13 +333,21 @@
                                         <InArgument x:TypeArguments="x:Int32">[failCnt + 1]</InArgument>
                                       </Assign.Value>
                                     </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_42">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Boolean">[out_isAllSuccess]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
                                   </Sequence>
                                 </ui:IfElseIfBlock.Then>
                               </ui:IfElseIfBlock>
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:Break sap:VirtualizedContainerService.HintSize="546.4,24.8" sap2010:WorkflowViewState.IdRef="Break_4" />
+                        <ui:Break sap:VirtualizedContainerService.HintSize="644,24.8" sap2010:WorkflowViewState.IdRef="Break_4" />
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
@@ -343,7 +361,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="659.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="756.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_5">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_51">
                   <sap:WorkflowViewStateService.ViewState>
@@ -361,7 +379,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,708.8" sap2010:WorkflowViewState.IdRef="IfElseIf_14">
+            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="756.8,708.8" sap2010:WorkflowViewState.IdRef="IfElseIf_14">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[i_answer &lt; midNum]">
@@ -416,7 +434,7 @@
       </ui:RepeatNumberOfTimesX.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>

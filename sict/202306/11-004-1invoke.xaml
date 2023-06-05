@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_11_004_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,1381.6" sap2010:WorkflowViewState.IdRef="_11_004_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_11_004_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,1512" sap2010:WorkflowViewState.IdRef="_11_004_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -82,12 +82,17 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="11-004-1" sap:VirtualizedContainerService.HintSize="593.6,1316.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+  <Sequence DisplayName="11-004-1" sap:VirtualizedContainerService.HintSize="593.6,1447.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="startNum" />
       <Variable x:TypeArguments="x:Int32" Default="45" Name="endNum" />
       <Variable x:TypeArguments="x:Int32" Name="startN" />
       <Variable x:TypeArguments="x:Int32" Name="failCnt" />
+      <Variable x:TypeArguments="x:Boolean" Name="isAllSuccess">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Boolean" Value="True" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -125,6 +130,12 @@
               <OutArgument x:TypeArguments="x:Int32" x:Key="out_failCnt">
                 <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="failCnt" />
               </OutArgument>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="in_isAllSuccess">
+                <Literal x:TypeArguments="x:Boolean" Value="True" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_isAllSuccess">
+                <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="isAllSuccess" />
+              </OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
           <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_17">
@@ -145,10 +156,11 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleWhile>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="531.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[String.Format(&quot;{0}~{1}까지 테스트완료&quot;, startN, endNum)]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="531.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[isAllSuccess.ToString]" />
     <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="531.2,398.4" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
       <ui:IfElseIf.ConditionBlocks>
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-          <ui:IfElseIfBlock BlockType="If" Condition="[failCnt = 0]">
+          <ui:IfElseIfBlock BlockType="If" Condition="[isAllSuccess = True]">
             <ui:IfElseIfBlock.Then>
               <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_29">
                 <sap:WorkflowViewStateService.ViewState>
