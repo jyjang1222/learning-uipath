@@ -3,11 +3,13 @@
     <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
     <x:Property Name="in_startNum" Type="InArgument(x:Int32)" />
     <x:Property Name="in_endNum" Type="InArgument(x:Int32)" />
+    <x:Property Name="io_num" Type="InOutArgument(x:String)" />
+    <x:Property Name="out_num" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>844,3271.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>838.4,3271.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">

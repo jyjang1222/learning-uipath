@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_11_003_1invoke" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,691.2" sap2010:WorkflowViewState.IdRef="_11_003_1invoke_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_11_003_1invoke" this:_11_003_1invoke.num="test" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="num" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>838.4,691.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>_11_003_1invoke_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -78,11 +86,7 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="_11_003_1invoke" sap:VirtualizedContainerService.HintSize="593.6,626.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="startNum">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="startNum" />
       <Variable x:TypeArguments="x:Int32" Default="45" Name="endNum" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -90,7 +94,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="531.2,514.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[startNum &lt;= endNum]" DisplayName="While" sap:VirtualizedContainerService.HintSize="531.2,514.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
       <ui:InterruptibleWhile.Body>
         <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,347.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
@@ -107,6 +111,10 @@
               <InArgument x:TypeArguments="x:Int32" x:Key="in_endNum">
                 <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="endNum" />
               </InArgument>
+              <InOutArgument x:TypeArguments="x:String" x:Key="io_num">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="num" />
+              </InOutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_num" />
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
           <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
@@ -119,9 +127,6 @@
           </Assign>
         </Sequence>
       </ui:InterruptibleWhile.Body>
-      <ui:InterruptibleWhile.Condition>
-        <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="startNum &lt;= endNum" />
-      </ui:InterruptibleWhile.Condition>
     </ui:InterruptibleWhile>
   </Sequence>
 </Activity>
