@@ -1,7 +1,7 @@
 {
   "name": "20230602",
   "description": "빈 프로세스",
-  "main": "11-003-1.xaml",
+  "main": "11-004-1.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -48,14 +48,20 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "11-003-1_test1.xaml",
-      "uniqueId": "08d6e750-4b4e-4ad4-bd85-01d361a359e4",
+      "filePath": "11-003-1.xaml",
+      "uniqueId": "c5ef0e64-6df7-485a-9949-97293ba0015d",
       "input": [],
       "output": []
     },
     {
-      "filePath": "11-003-1.xaml",
-      "uniqueId": "c5ef0e64-6df7-485a-9949-97293ba0015d",
+      "filePath": "11-004-1.xaml",
+      "uniqueId": "d63fdd34-2908-4ad4-b2f4-81fcabe812c1",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "11-003-1log.xaml",
+      "uniqueId": "2ac79855-e5ee-47d9-89a6-583424670cfb",
       "input": [],
       "output": []
     }
