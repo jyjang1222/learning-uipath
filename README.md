@@ -61,8 +61,17 @@
     - 예시(vb) : {"Tom", "Jerry"}
 
 ## 배열 요소 추가하는 법
+### 배열 선언
+- new String(){}
+
+### 배열 요소 추가하는 법
 - Array.Append(1).ToArray
 - 출력할때 : String.join(",")
+
+### 배열에 ""인 아이템을 삭제하는 코드
+- strArr_total.Where(Function(s) s <> "").ToArray
+- strArr_total = strArr_total.Where(Function(s) s <> "").ToArray
+
 
 ## UI Selector
 - 5초 동안 구성 일시 중지 : F2
