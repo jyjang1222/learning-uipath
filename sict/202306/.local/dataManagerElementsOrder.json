@@ -9,20 +9,6 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "11-003-1_test1.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "midNum&Sequence_1",
-        "minNum&Sequence_1",
-        "maxNum&Sequence_1",
-        "i_answer&Sequence_1",
-        "answer&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
       "Path": "11-003-1.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
@@ -73,6 +59,90 @@
         "students&Sequence_5",
         "idx_i&Sequence_5",
         "scoreTotal&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-003-1invoke.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "endNum&Sequence_1",
+        "startNum&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "num"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-003-1 - 복사본.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "answer&Sequence_1",
+        "maxNum&Sequence_1",
+        "minNum&Sequence_1",
+        "i_answer&Sequence_1",
+        "midNum&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_num",
+        "io_num",
+        "in_endNum",
+        "in_startNum"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-004-1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "loopCnt&Sequence_1",
+        "isSuccess&Sequence_1",
+        "endNum&Sequence_1",
+        "startNum&Sequence_1",
+        "answer&Sequence_1",
+        "maxNum&Sequence_1",
+        "minNum&Sequence_1",
+        "i_answer&Sequence_1",
+        "midNum&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-004-1 - 복사본.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "answer&Sequence_1",
+        "maxNum&Sequence_1",
+        "minNum&Sequence_1",
+        "i_answer&Sequence_1",
+        "isSuccess&Sequence_1",
+        "startNum&Sequence_1",
+        "endNum&Sequence_1",
+        "loopCnt&Sequence_1",
+        "midNum&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "11-004-1-2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "midNum&Sequence_61",
+        "endNum&Sequence_1",
+        "isSuccess&Sequence_1",
+        "startNum&Sequence_1",
+        "answer&Sequence_1",
+        "maxNum&Sequence_1",
+        "minNum&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
