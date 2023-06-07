@@ -196,3 +196,19 @@
 
 ## 회사 노트북 교체
 - 지원받은 노트북이 사용기간이 다돼가서 교체할때는 2주전에 교체 하면 되는데 보안상 교체가 힘들기 때문에 프로젝트 전에는 미리 바꿔달라고 요청
+
+## 오류 해결
+- 컴파일에러 : “ " 구별
+
+## 디버그 모드에서 브레이크를 해준 후에 값 확인
+- 보기 패널에서 표현식을 작성하면 값을 바로 확인 가능하다
+
+## Pdf이미지에서 데이터 추출
+- OmniPage OCR
+- Digitize Document
+
+## Document Class
+- https://docs.uipath.com/activities/other/latest/user-guide/document-class
+- 속성
+    - Pages : Pages속성을 활용해서 document의 필요한 데이터를 탐색할 수 있다.
+        - 예) DocumentVariable.Pages(0).Sections(0).WordGroups(1).Words(0).Text

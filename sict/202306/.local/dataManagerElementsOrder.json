@@ -147,6 +147,22 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "11-005-1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "prevIdx&Sequence_7",
+        "lastIdx&Sequence_7",
+        "lastCh&Sequence_7",
+        "idx_i&Sequence_1",
+        "res&Sequence_1",
+        "s&Sequence_1",
+        "arr_s&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
