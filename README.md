@@ -217,5 +217,8 @@
 - 선언방법 : dr_row = DataTable.NewRow
 - 참조방법 : dr_row("소속부서"), dr_row(index)
 
+## 첨부파일
+- 파일이름에 경로+파일이름을 작성해도 업로드가 가능하다.
+
 ## 첨부파일 여러개 넣기
 - 첨부파일 넣을 때 Chr(34) + temp1.pdf + Chr(34) + Chr(34) + temp2.pdf + Chr(34)
