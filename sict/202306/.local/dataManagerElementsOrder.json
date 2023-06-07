@@ -168,9 +168,9 @@
       "Path": "13-001-1.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "a_txtExistFolder&Sequence_1",
-        "path&Sequence_2",
-        "endIdx&Sequence_2",
+        "res&Sequence_1",
+        "temp&Sequence_12",
+        "path&Sequence_12",
         "idx_i&Sequence_1",
         "arr&Sequence_1"
       ],
