@@ -60,6 +60,10 @@
 - Array of [T] : 열거된 배열 타입이다. T는 변수 유형인 Type의 약자이며, 다양한 데이터 형식을 선택하여 여러 유형의 배열을 생성할 수 있다.
     - 예시(vb) : {"Tom", "Jerry"}
 
+## 배열 요소 추가하는 법
+- Array.Append(1).ToArray
+- 출력할때 : String.join(",")
+
 ## UI Selector
 - 5초 동안 구성 일시 중지 : F2
 - 이미지 선택 모드 : F3
