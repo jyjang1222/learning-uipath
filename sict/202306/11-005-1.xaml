@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_11_005_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1222.4,1828" sap2010:WorkflowViewState.IdRef="_11_005_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_11_005_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1222.4,1698.4" sap2010:WorkflowViewState.IdRef="_11_005_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -86,7 +86,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_11_005_1" sap:VirtualizedContainerService.HintSize="685.6,1763.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_11_005_1" sap:VirtualizedContainerService.HintSize="685.6,1633.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="s" />
       <Variable x:TypeArguments="s:Int32[]" Name="arr_s" />
@@ -120,13 +120,13 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idx_i]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="623.2,1275.2" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[s]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idx_i]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="623.2,1145.6" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[s]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="589.6,1087.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="589.6,957.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="lastCh" />
               <Variable x:TypeArguments="x:Int32" Name="lastIdx" />
@@ -137,42 +137,53 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[lastIdx]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[s.Length - 1]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[lastCh]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[s(lastIdx)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[s]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[s.Substring(0, lastIdx)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[prevIdx]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[s.LastIndexOf(lastCh)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,389.6" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+            <ui:MultipleAssign sap2010:Annotation.AnnotationText="1.  s의 마지막 인덱스와 마지막 문자ch를 저장&#xD;&#xA;2. s의 마지막 인덱스 잘라서 버림&#xD;&#xA;3. LastIndexOf를 활용해서 자신앞에 있는 idx 저장" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="546.4,254.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[lastIdx]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">[s.Length - 1]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[lastCh]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[s(lastIdx)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[s]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[s.Substring(0, lastIdx)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[prevIdx]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">[s.LastIndexOf(lastCh)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MultipleAssign>
+            <ui:IfElseIf sap2010:Annotation.AnnotationText="prevIdx가 -1 이 아니면 가까운 값이 존재하므로, (문자열s의 길이에서 - prevIdx)를 빼준다" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,420.8" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                  <ui:IfElseIfBlock BlockType="If" Condition="[s.LastIndexOf(lastCh) &lt;&gt; -1]">
+                  <ui:IfElseIfBlock BlockType="If" Condition="[prevIdx &lt;&gt; -1]">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <sap:WorkflowViewStateService.ViewState>
@@ -185,7 +196,7 @@
                             <OutArgument x:TypeArguments="x:Int32">[prevIdx]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:Int32">[Cint(s.Length) - s.LastIndexOf(lastCh)]</InArgument>
+                            <InArgument x:TypeArguments="x:Int32">[Cint(s.Length) - prevIdx]</InArgument>
                           </Assign.Value>
                         </Assign>
                       </Sequence>
@@ -193,14 +204,24 @@
                   </ui:IfElseIfBlock>
                 </sc:BindingList>
               </ui:IfElseIf.ConditionBlocks>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <Assign sap2010:Annotation.AnnotationText="결과 res에 prevIdx저장" sap:VirtualizedContainerService.HintSize="546.4,112.8" sap2010:WorkflowViewState.IdRef="Assign_8">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[res]</OutArgument>
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="x:String">[prevIdx.ToString + res]</InArgument>
               </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </Assign>
           </Sequence>
         </ActivityAction>
