@@ -11,7 +11,14 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "loopCnt&Sequence_3",
+        "page1ItemCnt&Sequence_1",
+        "dt_url&Sequence_1",
+        "dt_temp&Sequence_23",
+        "idx_p&Sequence_3",
+        "searchRange&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
