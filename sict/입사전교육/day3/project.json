@@ -1,0 +1,91 @@
+{
+  "name": "day3",
+  "description": "asdf",
+  "main": "Quiz4.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.20.1]",
+    "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.System.Activities": "[23.4.2]",
+    "UiPath.Testing.Activities": "[23.4.0]",
+    "UiPath.UIAutomation.Activities": "[23.4.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Recording.xaml",
+      "uniqueId": "01c041fd-dffe-4407-b24f-2bb83da32fe4",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "ReadRange.xaml",
+      "uniqueId": "8da1e995-be02-469c-84df-ce468f045eb0",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Quiz1.xaml",
+      "uniqueId": "ecf06736-5ac4-4e05-94d4-78c0b40d8b53",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Quiz2.xaml",
+      "uniqueId": "ebff493d-f3b9-4c5e-ae66-91fbe85d5060",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Quiz3.xaml",
+      "uniqueId": "48778424-7603-478d-ae64-936f0ba332e3",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Quiz4.xaml",
+      "uniqueId": "fbde858a-8613-436b-82a0-dae2d65c0ea8",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

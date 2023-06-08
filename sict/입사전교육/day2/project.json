@@ -1,0 +1,133 @@
+{
+  "name": "day2",
+  "description": "빈 프로세스",
+  "main": "TodayDegreePractice.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.20.1]",
+    "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.System.Activities": "[23.4.2]",
+    "UiPath.Testing.Activities": "[23.4.0]",
+    "UiPath.UIAutomation.Activities": "[23.4.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "ScreenScrap.xaml",
+      "uniqueId": "40207d8c-5444-4bd5-a4f8-a39645d6354f",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DataScrap.xaml",
+      "uniqueId": "f56eba77-98ed-413e-b2a1-31c53406fc15",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DataScrap2.xaml",
+      "uniqueId": "01207cea-7bd2-4c10-a053-370dd2b7d489",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "AttachWindow.xaml",
+      "uniqueId": "b19c0845-f2f3-49e2-b0a7-462bf217c1f3",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DataScrap3.xaml",
+      "uniqueId": "c888da17-bc48-4488-b2f8-7b68effe801d",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "IfSwitch1.xaml",
+      "uniqueId": "4d0861b9-0f14-4a01-ba00-746ade119eee",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "FlowChart.xaml",
+      "uniqueId": "c18f7811-11a7-4355-89bb-42bdafddf092",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DataScrap4.xaml",
+      "uniqueId": "83ab3d1a-f19e-4ce8-b2e4-47e434fd5f17",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Parallel.xaml",
+      "uniqueId": "18f88eb4-bab4-4479-a8f1-8dbb7cdf6c1c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "BuildDataTable.xaml",
+      "uniqueId": "4b6d5737-5251-4f9e-b790-657369b9b58b",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DateTime.xaml",
+      "uniqueId": "3604310f-6fbf-44dc-b703-581340fe568a",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Clipboard.xaml",
+      "uniqueId": "a47a22ea-8193-4e93-a178-f2ac772c8ba9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TodayDegreePractice.xaml",
+      "uniqueId": "92469266-b84f-496a-b8a2-f170a678687a",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

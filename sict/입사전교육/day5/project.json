@@ -1,0 +1,79 @@
+{
+  "name": "day4",
+  "description": "빈 프로세스",
+  "main": "practice2.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.20.1]",
+    "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.System.Activities": "[23.4.2]",
+    "UiPath.Testing.Activities": "[23.4.0]",
+    "UiPath.UIAutomation.Activities": "[23.4.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "practice1.xaml",
+      "uniqueId": "11818138-ae85-49fa-9974-297582308884",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "test1.xaml",
+      "uniqueId": "0e173b71-f101-4d50-b9ea-31643150ea44",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "test2.xaml",
+      "uniqueId": "5d2c933c-bd2c-4099-b7e0-f19f1e79fccc",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "practice2.xaml",
+      "uniqueId": "ae3f5ab9-52d3-45d7-b2af-24dc0b5e76d5",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
