@@ -21265,9 +21265,9 @@
     "restore": {
       "projectUniqueName": "day2",
       "projectName": "day2",
-      "projectPath": "C:\\Jun\\learning-uipath\\sict\\day2\\.local",
+      "projectPath": "C:\\Jun\\learning-uipath\\sict\\입사전교육\\day2\\.local",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Jun\\learning-uipath\\sict\\day2\\.local"
+      "outputPath": "C:\\Jun\\learning-uipath\\sict\\입사전교육\\day2\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21298,7 +21298,7 @@
             "version": "[23.4.4, 23.4.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
