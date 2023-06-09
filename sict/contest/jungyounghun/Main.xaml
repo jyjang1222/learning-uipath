@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1208,10115.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1208,9533.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -108,7 +108,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1026.4,10050.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1026.4,9468.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="searchName" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="degree37Cnt" />
@@ -135,13 +135,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="964,9807.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.daangn.com/">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="964,9225.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.daangn.com/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="930.4,9704.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="930.4,9123.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="mailTitle" />
               <Variable x:TypeArguments="x:String" Name="mailContent" />
@@ -238,13 +238,13 @@
                 </ui:Target>
               </ui:ExtractData.Target>
             </ui:ExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="데이터 추출" DataTable="[dt_url]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="868,5728" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="데이터 추출" DataTable="[dt_url]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="868,5146.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="본문1" sap:VirtualizedContainerService.HintSize="834.4,5580.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="본문1" sap:VirtualizedContainerService.HintSize="834.4,4999.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="mannerDegree" />
                     </Sequence.Variables>
@@ -288,12 +288,12 @@
                         </scg:List>
                       </ui:MultipleAssign.AssignOperations>
                     </ui:MultipleAssign>
-                    <ui:IfElseIf sap2010:Annotation.AnnotationText="매너온도 37도 이상이면" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="772,5049.6" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                    <ui:IfElseIf sap2010:Annotation.AnnotationText="매너온도 37도 이상이면" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="772,4468" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
                       <ui:IfElseIf.ConditionBlocks>
                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                           <ui:IfElseIfBlock BlockType="If" Condition="[Cint(mannerDegree) &gt;= 37]">
                             <ui:IfElseIfBlock.Then>
-                              <Sequence DisplayName="본문2" sap:VirtualizedContainerService.HintSize="721.6,4822.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <Sequence DisplayName="본문2" sap:VirtualizedContainerService.HintSize="721.6,4240.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="itemName" />
                                   <Variable x:TypeArguments="x:String" Name="itemCountry" />
@@ -554,7 +554,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:IfElseIf>
-                                <If sap2010:Annotation.AnnotationText="가격 없음 이 아닐경우 , 넣기" Condition="[itemPrice &lt;&gt; &quot;없음&quot;]" sap:VirtualizedContainerService.HintSize="510.4,678.4" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If sap2010:Annotation.AnnotationText="가격 없음 이 아닐경우 , 넣기" Condition="[itemPrice &lt;&gt; &quot;없음&quot;]" sap:VirtualizedContainerService.HintSize="659.2,84" sap2010:WorkflowViewState.IdRef="If_1">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -688,13 +688,13 @@
                                     <OutArgument x:TypeArguments="x:String">[itemLike]</OutArgument>
                                   </Assign.To>
                                   <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[row("like").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String">[row("like").ToString + "개"]</InArgument>
                                   </Assign.Value>
                                 </Assign>
                                 <ui:IfElseIf sap2010:Annotation.AnnotationText="좋아요 없음 처리" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,84" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                                   <ui:IfElseIf.ConditionBlocks>
                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                      <ui:IfElseIfBlock BlockType="If" Condition="[itemLike = &quot;&quot;]">
+                                      <ui:IfElseIfBlock BlockType="If" Condition="[itemLike = &quot;&quot; or itemLike = &quot;개&quot;]">
                                         <ui:IfElseIfBlock.Then>
                                           <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -795,7 +795,7 @@
                                           <OutArgument x:TypeArguments="x:Object">[dr_row("등록시간")]</OutArgument>
                                         </ui:AssignOperation.To>
                                         <ui:AssignOperation.Value>
-                                          <InArgument x:TypeArguments="x:Object">[itemUploadTime]</InArgument>
+                                          <InArgument x:TypeArguments="x:Object">[itemUploadTime.Trim()]</InArgument>
                                         </ui:AssignOperation.Value>
                                       </ui:AssignOperation>
                                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
@@ -818,12 +818,12 @@
                                   </ui:MultipleAssign.AssignOperations>
                                 </ui:MultipleAssign>
                                 <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[dr_row]" DataTable="[dt_res]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="659.2,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                                <ui:IfElseIf sap2010:Annotation.AnnotationText="0을 초과하는 최저값 , 가격 누적" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,972" sap2010:WorkflowViewState.IdRef="IfElseIf_26">
+                                <ui:IfElseIf sap2010:Annotation.AnnotationText="0을 초과하는 최저값 , 가격 누적" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,96.8" sap2010:WorkflowViewState.IdRef="IfElseIf_26">
                                   <ui:IfElseIf.ConditionBlocks>
                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                       <ui:IfElseIfBlock BlockType="If" Condition="[i_itemPrice &lt;&gt; 0]">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="608.8,744.8" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="608.8,744" sap2010:WorkflowViewState.IdRef="Sequence_48">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -878,22 +878,30 @@
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:IfElseIf>
-                                <ui:IfElseIf sap2010:Annotation.AnnotationText="최대 좋아요 수" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,84" sap2010:WorkflowViewState.IdRef="IfElseIf_28">
+                                <ui:IfElseIf sap2010:Annotation.AnnotationText="최대 좋아요 수" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,972" sap2010:WorkflowViewState.IdRef="IfElseIf_28">
                                   <ui:IfElseIf.ConditionBlocks>
                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                       <ui:IfElseIfBlock BlockType="If" Condition="[itemLike &lt;&gt; &quot;없음&quot;]">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="608.8,623.2" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="608.8,744.8" sap2010:WorkflowViewState.IdRef="Sequence_50">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_42">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[itemLike]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[itemLike.Replace("개", "")]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
                                             <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,511.2" sap2010:WorkflowViewState.IdRef="IfElseIf_27">
                                               <ui:IfElseIf.ConditionBlocks>
                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
@@ -935,7 +943,7 @@
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
@@ -1127,9 +1135,10 @@
             </ui:MultipleAssign>
             <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="868,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[saveFolderPath + &quot;당근마켓 &quot; + searchName]" />
             <ui:CopyFile ContinueOnError="{x:Null}" Destination="[excelFolderPath + excelName]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="868,155.2" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[saveFolderPath + &quot;template.xlsx&quot;]" />
+            <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="가격i" DataTable="[dt_res]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="868,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
             <ui:WriteRange AddHeaders="False" DataTable="[dt_res]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="868,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A2" WorkbookPath="[excelFolderPath + excelName]" />
-            <ui:WriteCell Cell="L1" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="868,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[priceSum.ToString(&quot;#,##0&quot;)]" WorkbookPath="[excelFolderPath + excelName]" />
-            <ui:WriteCell Cell="L2" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="868,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[priceAvg.ToString]" WorkbookPath="[excelFolderPath + excelName]" />
+            <ui:WriteCell Cell="L1" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="868,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[priceSum.ToString(&quot;#,##0&quot;) + &quot;원&quot;]" WorkbookPath="[excelFolderPath + excelName]" />
+            <ui:WriteCell Cell="L2" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="868,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[priceAvg.ToString + &quot;원&quot;]" WorkbookPath="[excelFolderPath + excelName]" />
             <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="868,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
@@ -1180,7 +1189,6 @@
               </ui:SendHotkey.Target>
             </ui:SendHotkey>
             <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="868,90.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
-            <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="가격i" DataTable="[dt_res]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="868,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
             <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="868,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[mhtmlFolderPath + mhtmlName+ &quot;[k(enter)]&quot;]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2e983575-c0a6-4991-a7fb-78f354b5e58e" InformativeScreenshot="6de62c9a37622da2f186793512b50ea9" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='다른 이름으로 저장' /&gt;&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" WaitForReady="COMPLETE">
