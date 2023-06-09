@@ -115,6 +115,7 @@
 - Format
 - IndexOf
 - Environment.NewLine : 개행
+- vbCrLf : 개행
 - system.Environment.UserName : 사용자 계정 이름 가져오기
 
 ## 주석 넣기
@@ -231,3 +232,4 @@
 
 ## 첨부파일 여러개 넣기
 - 첨부파일 넣을 때 Chr(34) + temp1.pdf + Chr(34) + Chr(34) + temp2.pdf + Chr(34)
+("#,##0")
