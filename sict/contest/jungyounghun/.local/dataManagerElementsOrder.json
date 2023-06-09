@@ -12,6 +12,12 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "i_itemPrice&Sequence_12",
+        "view&Sequence_3",
+        "priceAvg&Sequence_3",
+        "priceSum&Sequence_1",
+        "mhtmlFolderPath&Sequence_3",
+        "mhtmlName&Sequence_3",
         "mailContent&Sequence_3",
         "mailTitle&Sequence_3",
         "maxLikeRow&Sequence_1",
@@ -44,7 +50,9 @@
     {
       "Path": "test.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "test&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

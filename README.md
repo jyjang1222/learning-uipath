@@ -137,6 +137,7 @@
 - https://forum.uipath.com/t/how-to-sort-a-datatable-by-two-columns/133795
 - datatablevariable = From x In datatablevariable.AsEnumerable() Order By convert.Tostring(x("Location)"),convert.ToString(x("Month")) Select x).CopyToDataTable
 - invoke 라는 액티비티를 사용해서 저 쿼리문은 써야한다.
+- https://gent.tistory.com/320 - DataView
 
 ## PDF 데이터 가져오기
 - PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
@@ -164,6 +165,7 @@
 ## ToString메서드 대신 사용할 수 있는 문자열 메서드
 - String.Format("{idx1}{idx2}{idx3}", item1, item2, item3)
 - 예) String.Format("{0} : {1}, {2}", name, scoreTotal, scoreTotal / 4)
+- 가격에 , 넣기 ToString("#,##0")
 
 ## 반올림
 - Cint(), Math.round
@@ -233,3 +235,7 @@
 ## 첨부파일 여러개 넣기
 - 첨부파일 넣을 때 Chr(34) + temp1.pdf + Chr(34) + Chr(34) + temp2.pdf + Chr(34)
 ("#,##0")
+
+## 디버그 모드
+### 변수에서 오류날시
+- 로컬 보기 즉시 중 즉시 패널에서 변수에 오류가 안날 것 같은 값을 다시 할당해서 재실행 할 수 있다.
