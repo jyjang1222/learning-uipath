@@ -229,12 +229,15 @@
 - 선언방법 : dr_row = DataTable.NewRow
 - 참조방법 : dr_row("소속부서"), dr_row(index)
 
-## 첨부파일
-- 파일이름에 경로+파일이름을 작성해도 업로드가 가능하다.
-
 ## 첨부파일 여러개 넣기
-- 첨부파일 넣을 때 Chr(34) + temp1.pdf + Chr(34) + Chr(34) + temp2.pdf + Chr(34)
-("#,##0")
+- 파일이름에 경로+파일이름을 작성해도 업로드가 가능하다.
+- Chr(34) : " 을 활용
+- 예:) resultFolderPath + Chr(34) + resultFileName + Chr(34) + Chr(34) + resultFileName2 + Chr(34)
+- https://www.youtube.com/watch?v=U-9wYDIAN5Q
+
+## 동시 정렬
+- (From x In dt.AsEnumerable
+Order By convert.ToString(x("끌올 여부")) Descending, convert.ToInt32(x("가격").ToString.Replace("원", "").Replace(",","").Replace("가격없음", "0")) Select x).CopyToDataTable
 
 ## 디버그 모드
 ### 변수에서 오류날시
