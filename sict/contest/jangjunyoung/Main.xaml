@@ -283,7 +283,7 @@
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
                             <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="612.8,60" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[urlLowPrice]" />
-                            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="612.8,90.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                            <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="612.8,90.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
                             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'B'" sap:VirtualizedContainerService.HintSize="612.8,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
                               <ui:GetValue.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6cf83272-fd97-451e-b8f7-45387b427595" InformativeScreenshot="baa1fda6a82b3e41806022d2fdf19b5d" Selector="&lt;webctrl class='total' tag='B' /&gt;" WaitForReady="COMPLETE">

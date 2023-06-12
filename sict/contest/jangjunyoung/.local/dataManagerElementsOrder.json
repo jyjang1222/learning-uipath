@@ -41,6 +41,7 @@
       "Path": "Main2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "itemCnt&Sequence_8",
         "idx_depth1&Sequence_2",
         "excelFileName&Sequence_1",
         "dt_itemData&Sequence_5",
