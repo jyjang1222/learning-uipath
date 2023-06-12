@@ -131,14 +131,6 @@
 ## UiElement 변수 사용법에 대해
 - https://forum.uipath.com/t/variable-uielement/275353
 
-## How-to-sort-a-datatable-by-two-columns
-- https://uipath.tistory.com/52
-- dtTable = (From x In dtTable.AsEnumerable() Order By convert.ToString(x("Column1")), convert.ToString(x("Column2")) Select x).CopyToDataTable()
-- https://forum.uipath.com/t/how-to-sort-a-datatable-by-two-columns/133795
-- datatablevariable = From x In datatablevariable.AsEnumerable() Order By convert.Tostring(x("Location)"),convert.ToString(x("Month")) Select x).CopyToDataTable
-- invoke 라는 액티비티를 사용해서 저 쿼리문은 써야한다.
-- https://gent.tistory.com/320 - DataView
-
 ## PDF 데이터 가져오기
 - PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
 - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
@@ -236,8 +228,19 @@
 - https://www.youtube.com/watch?v=U-9wYDIAN5Q
 
 ## 동시 정렬
+### 방법1
 - (From x In dt.AsEnumerable
 Order By convert.ToString(x("끌올 여부")) Descending, convert.ToInt32(x("가격").ToString.Replace("원", "").Replace(",","").Replace("가격없음", "0")) Select x).CopyToDataTable
+- https://uipath.tistory.com/52
+- https://www.youtube.com/watch?v=U-9wYDIAN5Q
+### 방법2
+- DataView 형식 변수 view 선언
+- 예시
+    - view = new dataview(dt_res)
+    - view.Sort = "가격 desc, 끌올여부 asc"
+    - DataTable = view.ToTable
+
+- https://gent.tistory.com/320 - DataView
 
 ## 디버그 모드
 ### 변수에서 오류날시
