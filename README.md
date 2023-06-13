@@ -72,6 +72,17 @@
 - strArr_total.Where(Function(s) s <> "").ToArray
 - strArr_total = strArr_total.Where(Function(s) s <> "").ToArray
 
+## DataRow 타입
+- Add Data Row 액티비티에서 row의 배열이 너무 길때 유용하다.
+- 선언방법 : dr_row = DataTable.NewRow
+- 참조방법 : dr_row("소속부서"), dr_row(index)
+
+## Dictionary 사용법
+### Dictionary 선언 방법
+- dict_temp = New Dictionary(of String, String)
+
+## UiElement 변수 사용법에 대해
+- https://forum.uipath.com/t/variable-uielement/275353
 
 ## UI Selector
 - 5초 동안 구성 일시 중지 : F2
@@ -127,9 +138,6 @@
 - ctrl + d : Activity 비활성화
 - ctrl + e : Activity 활성화
 - shift + f2 : 주석 넣기
-
-## UiElement 변수 사용법에 대해
-- https://forum.uipath.com/t/variable-uielement/275353
 
 ## PDF 데이터 가져오기
 - PDF문서의 특정 데이터를 가져 오고 싶다면 배열을 활용해야 한다.
@@ -216,11 +224,6 @@
 - 속성
     - Pages : Pages속성을 활용해서 document의 필요한 데이터를 탐색할 수 있다.
         - 예) DocumentVariable.Pages(0).Sections(0).WordGroups(1).Words(0).Text
-
-## DataRow 타입
-- Add Data Row 액티비티에서 row의 배열이 너무 길때 유용하다.
-- 선언방법 : dr_row = DataTable.NewRow
-- 참조방법 : dr_row("소속부서"), dr_row(index)
 
 ## 첨부파일 여러개 넣기
 - 파일이름에 경로+파일이름을 작성해도 업로드가 가능하다.

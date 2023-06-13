@@ -47,9 +47,48 @@
       "Path": "test.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "temp&Sequence_10",
-        "child&Sequence_10",
-        "idx_item&Sequence_11"
+        "dict_temp&Sequence_34",
+        "dt_temp&Sequence_34"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "totalRowCnt&Sequence_1",
+        "dataRowCnt&Sequence_12",
+        "firstText&Sequence_12",
+        "certiName&Sequence_12",
+        "dt_data&Sequence_12",
+        "idx_n&Sequence_6",
+        "depth5Cnt&Sequence_6",
+        "getRows5&Sequence_6",
+        "browser1&Sequence_1",
+        "idx_m&Sequence_3",
+        "depth4Cnt&Sequence_3",
+        "getRows4&Sequence_3",
+        "idx_j&Sequence_2",
+        "idx_k&Sequence_4",
+        "depth2Cnt&Sequence_2",
+        "depth3Cnt&Sequence_2",
+        "getRow2&Sequence_2",
+        "getRows3&Sequence_2",
+        "idx_i&Sequence_1",
+        "depth1Cnt&Sequence_1",
+        "getRows1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "json.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "fff&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
