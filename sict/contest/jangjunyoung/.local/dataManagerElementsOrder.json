@@ -12,6 +12,12 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "isSoldOut2&Sequence_15",
+        "idx_i&Sequence_7",
+        "idx_item&Sequence_9",
+        "isSoldOut&Sequence_13",
+        "className&Sequence_13",
+        "dt_soldout&Sequence_7",
         "dt_itemData4&Sequence_7",
         "excelFolderPath&Sequence_1",
         "mailContent&Sequence_2",
@@ -38,18 +44,12 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Main2.xaml",
+      "Path": "test.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "itemCnt&Sequence_8",
-        "idx_depth1&Sequence_2",
-        "excelFileName&Sequence_1",
-        "dt_itemData&Sequence_5",
-        "urlLowPrice&Sequence_8",
-        "urlSlice&Sequence_8",
-        "urlIdx&Sequence_8",
-        "dt_category1&Sequence_2",
-        "dt_category2&Sequence_5"
+        "temp&Sequence_10",
+        "child&Sequence_10",
+        "idx_item&Sequence_11"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
