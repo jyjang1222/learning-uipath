@@ -88,7 +88,8 @@
       "Path": "json.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "fff&Sequence_1"
+        "test&Sequence_2",
+        "browser1&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
