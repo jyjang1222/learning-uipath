@@ -254,8 +254,7 @@
 ## 동시 정렬
 ### 방법1
 - (From x In dt_res.AsEnumerable() Order By convert.ToString(x("끌올여부")) Descending, convert.ToString(x("가격")) Select x).CopyToDataTable()
-- (From x In dt.AsEnumerable
-Order By convert.ToString(x("끌올 여부")) Descending, convert.ToInt32(x("가격").ToString.Replace("원", "").Replace(",","").Replace("가격없음", "0")) Select x).CopyToDataTable
+- (From x In dt.AsEnumerable Order By convert.ToString(x("끌올 여부")) Descending, convert.ToInt32(x("가격").ToString.Replace("원", "").Replace(",","").Replace("가격없음", "0")) Select x).CopyToDataTable
 - https://uipath.tistory.com/52
 - https://www.youtube.com/watch?v=U-9wYDIAN5Q
 ### 방법2
