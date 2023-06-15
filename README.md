@@ -128,6 +128,7 @@
 - Environment.NewLine : 개행
 - vbCrLf : 개행
 - system.Environment.UserName : 사용자 계정 이름 가져오기
+- Environment.CurrentDirectory : 현재 프로젝트 디렉토리 가져오기
 
 ## 주석 넣기
 - Activity 기능에 대한 설명 및 변수 사용에 대해 설명을 주석을 통해 넣을 수 있다.

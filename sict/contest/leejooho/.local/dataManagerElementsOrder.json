@@ -1,0 +1,59 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "idx_q&Sequence_2",
+        "dt_quiz&Sequence_2",
+        "idx_o&Sequence_2",
+        "createfolder&Sequence_1",
+        "a_maxCmt&Sequence_2",
+        "a_func&Sequence_2",
+        "a_cnt&Sequence_2",
+        "a_type&Sequence_2",
+        "idx_m&Sequence_9",
+        "commentCnt&Sequence_9",
+        "dr_row&Sequence_9",
+        "dt_res&Sequence_2",
+        "isFindfunc&Sequence_9",
+        "resFunc&Sequence_9",
+        "funcName&Sequence_9",
+        "fnction&Sequence_12",
+        "fnction&Sequence_10",
+        "idx_k&Sequence_9",
+        "boxCnt&Sequence_9",
+        "el_boxs&Sequence_9",
+        "idx_j&Sequence_9",
+        "pCnt&Sequence_9",
+        "el_pTags&Sequence_9",
+        "lastPrm&Sequence_7",
+        "prmCnt&Sequence_7",
+        "el_prms&Sequence_7",
+        "idx_i&Sequence_2",
+        "dt_data1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_temp&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

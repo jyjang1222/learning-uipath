@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "mailAddr&Sequence_1",
         "isSoldOut2&Sequence_15",
         "idx_i&Sequence_7",
         "idx_item&Sequence_9",
@@ -44,18 +45,15 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "test.xaml",
+      "Path": "mailtest.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "dict_temp&Sequence_34",
-        "dt_temp&Sequence_34"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "Main2.xaml",
+      "Path": "test2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "totalRowCnt&Sequence_1",
@@ -79,17 +77,6 @@
         "idx_i&Sequence_1",
         "depth1Cnt&Sequence_1",
         "getRows1&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "json.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "test&Sequence_2",
-        "browser1&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

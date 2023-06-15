@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1140.8,7884</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>968.8,7884</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,11 +117,7 @@
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="800.8,7819.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_data1" />
-      <Variable x:TypeArguments="x:String" Name="createfolder">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\result</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="C:\result" Name="createfolder" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -163,7 +159,7 @@
                 </ui:Target>
               </ui:ExtractData.Target>
             </ui:ExtractData>
-            <ui:BuildDataTable sap2010:Annotation.AnnotationText="dt_res" DataTable="[dt_res]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="642.4,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;범주&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;함수명&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;구문&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;최대인수개수&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;댓글수&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+            <ui:BuildDataTable sap2010:Annotation.AnnotationText="dt_res" DataTable="[dt_res]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="642.4,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;범주&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;함수명&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;구문&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;최대인수개수&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;댓글수&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -307,7 +303,7 @@
                     </ui:IfElseIf>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_8">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="608.8,501.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="608.8,500.8" sap2010:WorkflowViewState.IdRef="Sequence_38">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -567,7 +563,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="608.8,956.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="608.8,878.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="fnction" />
                             </Sequence.Variables>
@@ -961,13 +957,13 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:String" Name="item" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="897.6,1030.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="702.4,1030.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="854.4,940.8" sap2010:WorkflowViewState.IdRef="IfElseIf_10">
+                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,940.8" sap2010:WorkflowViewState.IdRef="IfElseIf_10">
                               <ui:IfElseIf.ConditionBlocks>
                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                   <ui:IfElseIfBlock BlockType="If" Condition="[a_type(idx_m) = row(&quot;범주&quot;).ToString]">
@@ -1163,12 +1159,12 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WriteCell Cell="[&quot;A&quot; + (1 + idx_o).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[currentText.ToString]" WorkbookPath="temp.xlsx" />
+                    <ui:WriteCell Cell="[&quot;I&quot; + (3 + idx_o).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[currentText.ToString]" WorkbookPath="C:\result\엑셀기초함수.xlsx" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEach.Body>
             </ui:ForEach>
-            <ui:ReadRange AddHeaders="False" DataTable="[dt_quiz]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="642.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_3" Range="A1:A10" SheetName="Sheet1" WorkbookPath="temp.xlsx" />
+            <ui:ReadRange AddHeaders="False" DataTable="[dt_quiz]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="642.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_3" Range="I3:I12" SheetName="Sheet1" WorkbookPath="C:\result\엑셀기초함수.xlsx" />
             <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[idx_q]" DataTable="[dt_quiz]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="642.4,309.6" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
