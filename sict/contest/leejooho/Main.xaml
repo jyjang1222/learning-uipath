@@ -932,7 +932,7 @@
                               <OutArgument x:TypeArguments="x:Object">[dr_row("구문")]</OutArgument>
                             </ui:AssignOperation.To>
                             <ui:AssignOperation.Value>
-                              <InArgument x:TypeArguments="x:Object">[row("구문").ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:Object">[row("구문").ToString.Replace("=", "").Trim]</InArgument>
                             </ui:AssignOperation.Value>
                           </ui:AssignOperation>
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
@@ -1183,7 +1183,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_26">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:Object">[row(idx_q)]</OutArgument>
+                        <OutArgument x:TypeArguments="x:Object">[dt_quiz.Rows(idx_q).Item(0)]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
                         <InArgument x:TypeArguments="x:Object">[Cint(a_cnt(idx_q))]</InArgument>
