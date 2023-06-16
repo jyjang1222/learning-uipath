@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1192.8,11421.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1192.8,11042.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,7 +112,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1203.2,11356.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1203.2,10977.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_category1" />
       <Variable x:TypeArguments="x:Int32" Default="1" Name="idx_depth1" />
@@ -200,13 +200,13 @@
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
     <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1140.8,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome.exe" />
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1140.8,10610.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" Url="https://www.naturerepublic.com/goods/goods/list">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1140.8,10231.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" Url="https://www.naturerepublic.com/goods/goods/list">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="1107.2,10508" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="1107.2,10128.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="mailTitle" />
               <Variable x:TypeArguments="x:String" Name="mailContent" />
@@ -226,13 +226,13 @@
                 </ui:Target>
               </ui:ExtractData.Target>
             </ui:ExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_category1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1044.8,7574.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_category1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1044.8,7195.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row1" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="loop1" sap:VirtualizedContainerService.HintSize="1011.2,7458.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="loop1" sap:VirtualizedContainerService.HintSize="1011.2,7079.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_category2" />
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_detailType" />
@@ -278,13 +278,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:BuildDataTable>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="데이터 추출" DataTable="[dt_category2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="948.8,4082.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="데이터 추출" DataTable="[dt_category2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="948.8,3703.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row2" />
                           </ActivityAction.Argument>
-                          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="loop2" sap:VirtualizedContainerService.HintSize="915.2,3935.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="loop2" sap:VirtualizedContainerService.HintSize="817.6,3556" sap2010:WorkflowViewState.IdRef="Sequence_9">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="itemCnt" />
                               <Variable x:TypeArguments="x:Int32" Name="urlIdx" />
@@ -298,7 +298,7 @@
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="852.8,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="755.2,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -328,9 +328,9 @@
                                 </scg:List>
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
-                            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="852.8,60" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[urlLowPrice]" />
-                            <Delay Duration="00:00:00.1000000" sap:VirtualizedContainerService.HintSize="852.8,90.4" sap2010:WorkflowViewState.IdRef="Delay_23" />
-                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'B'" sap:VirtualizedContainerService.HintSize="852.8,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="755.2,60" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[urlLowPrice]" />
+                            <Delay Duration="00:00:00.1000000" sap:VirtualizedContainerService.HintSize="755.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_23" />
+                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'B'" sap:VirtualizedContainerService.HintSize="755.2,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
                               <ui:GetValue.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6cf83272-fd97-451e-b8f7-45387b427595" InformativeScreenshot="baa1fda6a82b3e41806022d2fdf19b5d" Selector="&lt;webctrl class='total' tag='B' /&gt;" WaitForReady="COMPLETE">
                                   <ui:Target.TimeoutMS>
@@ -342,7 +342,7 @@
                                 <OutArgument x:TypeArguments="x:String">[itemCnt]</OutArgument>
                               </ui:GetValue.Value>
                             </ui:GetValue>
-                            <Assign sap:VirtualizedContainerService.HintSize="852.8,80.8" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign sap:VirtualizedContainerService.HintSize="755.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[itemCnt]</OutArgument>
                               </Assign.To>
@@ -350,12 +350,12 @@
                                 <InArgument x:TypeArguments="x:String">[itemCnt.Replace("개", "")]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="852.8,3089.6" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
+                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="755.2,2709.6" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
                               <ui:IfElseIf.ConditionBlocks>
                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                   <ui:IfElseIfBlock BlockType="If" Condition="[Cint(itemCnt) &gt; 0]">
                                     <ui:IfElseIfBlock.Then>
-                                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="704.8,2894.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="704.8,2513.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:Boolean" Name="el_existRecc" />
                                           <Variable x:TypeArguments="x:Boolean" Name="el_recommend" />
@@ -366,62 +366,40 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="642.4,297.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                                          <ui:CommentOut.Body>
-                                            <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="449.6,219.2" sap2010:WorkflowViewState.IdRef="Sequence_59">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[el_recommend]" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
-                                                <ui:UiElementExists.Target>
-                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eed3cbb9-50a1-4cbb-ba36-b5e52278a547" InformativeScreenshot="ff1327d11f2a477e8f1b0c791f48a2e0" Selector="&lt;webctrl id='category-bnr-slide' tag='DIV' /&gt;&lt;webctrl parentid='category-bnr-slide' tag='DIV' class='swiper-slide slide-item swiper-slide-active' /&gt;" TimeoutMS="100" WaitForReady="NONE" />
-                                                </ui:UiElementExists.Target>
-                                              </ui:UiElementExists>
-                                            </Sequence>
-                                          </ui:CommentOut.Body>
-                                        </ui:CommentOut>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="642.4,622.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                                          <ui:CommentOut.Body>
-                                            <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="562.4,544" sap2010:WorkflowViewState.IdRef="Sequence_60">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="500,432" sap2010:WorkflowViewState.IdRef="IfElseIf_15">
-                                                <ui:IfElseIf.ConditionBlocks>
-                                                  <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                                    <ui:IfElseIfBlock BlockType="If" Condition="[el_recommend = True]">
-                                                      <ui:IfElseIfBlock.Then>
-                                                        <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="449.6,236" sap2010:WorkflowViewState.IdRef="Sequence_58">
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="387.2,124" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="&quot; &quot;" KeyModifiers="None" SpecialKey="False">
-                                                            <ui:SendHotkey.Target>
-                                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="6b2bc26a-36e0-4ff1-8902-ff34cbe598b4">
-                                                                <ui:Target.TimeoutMS>
-                                                                  <InArgument x:TypeArguments="x:Int32" />
-                                                                </ui:Target.TimeoutMS>
-                                                                <ui:Target.WaitForReady>
-                                                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                                                </ui:Target.WaitForReady>
-                                                              </ui:Target>
-                                                            </ui:SendHotkey.Target>
-                                                          </ui:SendHotkey>
-                                                        </Sequence>
-                                                      </ui:IfElseIfBlock.Then>
-                                                    </ui:IfElseIfBlock>
-                                                  </sc:BindingList>
-                                                </ui:IfElseIf.ConditionBlocks>
-                                              </ui:IfElseIf>
-                                            </Sequence>
-                                          </ui:CommentOut.Body>
-                                        </ui:CommentOut>
+                                        <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[el_recommend]" sap:VirtualizedContainerService.HintSize="642.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                                          <ui:UiElementExists.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eed3cbb9-50a1-4cbb-ba36-b5e52278a547" InformativeScreenshot="ff1327d11f2a477e8f1b0c791f48a2e0" Selector="&lt;webctrl id='category-bnr-slide' tag='DIV' /&gt;&lt;webctrl parentid='category-bnr-slide' tag='DIV' class='swiper-slide slide-item swiper-slide-active' /&gt;" TimeoutMS="100" WaitForReady="NONE" />
+                                          </ui:UiElementExists.Target>
+                                        </ui:UiElementExists>
+                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="642.4,432" sap2010:WorkflowViewState.IdRef="IfElseIf_16">
+                                          <ui:IfElseIf.ConditionBlocks>
+                                            <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                              <ui:IfElseIfBlock BlockType="If" Condition="[el_recommend = True]">
+                                                <ui:IfElseIfBlock.Then>
+                                                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="449.6,236" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="387.2,124" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="&quot; &quot;" KeyModifiers="None" SpecialKey="False">
+                                                      <ui:SendHotkey.Target>
+                                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="6b2bc26a-36e0-4ff1-8902-ff34cbe598b4">
+                                                          <ui:Target.TimeoutMS>
+                                                            <InArgument x:TypeArguments="x:Int32" />
+                                                          </ui:Target.TimeoutMS>
+                                                          <ui:Target.WaitForReady>
+                                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                          </ui:Target.WaitForReady>
+                                                        </ui:Target>
+                                                      </ui:SendHotkey.Target>
+                                                    </ui:SendHotkey>
+                                                  </Sequence>
+                                                </ui:IfElseIfBlock.Then>
+                                              </ui:IfElseIfBlock>
+                                            </sc:BindingList>
+                                          </ui:IfElseIf.ConditionBlocks>
+                                        </ui:IfElseIf>
                                         <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[dt_itemData4]" DisplayName="Extract Structured Data 'UL  goods-list'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;/row&gt;&lt;column exact='1' name='상품명' attr='fulltext' name2='url' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='할인가격' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='정가' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='할인율' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="642.4,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_9" MaxNumberOfResults="100" SimulateClick="False">
                                           <ui:ExtractData.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9b344898-700e-4684-afa1-891ba88be92a" InformativeScreenshot="86792d7ec81231fc3a2a678e69b7aa86" Selector="&lt;webctrl id='goods-list' tag='UL' /&gt;" TimeoutMS="0" WaitForReady="COMPLETE" />
