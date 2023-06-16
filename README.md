@@ -88,6 +88,8 @@
 ### 값 불러오기
 - for each -> currentItem.ToString. 출력값예: [key1, 1]
 - dict_temp("key1").ToString = "1"
+### 딕셔너리 정렬
+- dict_temp.OrderBy(Function(x) x.Key).ToDictionary(Function(y) y.Key,Function(y) y.Value)
 
 ## UiElement 변수 사용법에 대해
 - https://forum.uipath.com/t/variable-uielement/275353
