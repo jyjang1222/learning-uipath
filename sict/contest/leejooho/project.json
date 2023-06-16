@@ -1,7 +1,7 @@
 {
   "name": "leejooho",
   "description": "빈 프로세스",
-  "main": "Main.xaml",
+  "main": "Main2.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -50,6 +50,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "56551aa3-01a6-49ef-bc79-f69ef58fe6f5",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main2.xaml",
+      "uniqueId": "29bcdec1-b4d2-49c7-83f8-c41150ccc3aa",
       "input": [],
       "output": []
     }
