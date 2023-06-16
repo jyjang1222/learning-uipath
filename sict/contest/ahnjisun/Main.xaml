@@ -149,7 +149,7 @@
               <OutArgument x:TypeArguments="x:String">[curDate]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">[String.Format("{0}-{1}-{2}", Now.Year.ToString, Now.Month.ToString, Now.Day.ToString)]</InArgument>
+              <InArgument x:TypeArguments="x:String">[Now.ToString("yyyy-MM-dd")]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
