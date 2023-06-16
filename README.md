@@ -80,9 +80,14 @@
 - 선언방법 : dr_row = DataTable.NewRow
 - 참조방법 : dr_row("소속부서"), dr_row(index)
 
-## Dictionary 사용법
-### Dictionary 선언 방법
+## 딕셔너리 Dictionary 사용법
+### 딕셔너리 선언
 - dict_temp = New Dictionary(of String, String)
+### 딕셔너리 추가
+- dict_temp("key1") = "1", dict_temp("key2") = "2"
+### 값 불러오기
+- for each -> currentItem.ToString. 출력값예: [key1, 1]
+- dict_temp("key1").ToString = "1"
 
 ## UiElement 변수 사용법에 대해
 - https://forum.uipath.com/t/variable-uielement/275353

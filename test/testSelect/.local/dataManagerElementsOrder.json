@@ -12,6 +12,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "liCount&Sequence_1",
+        "el_itemlist&Sequence_1",
         "browser1&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],

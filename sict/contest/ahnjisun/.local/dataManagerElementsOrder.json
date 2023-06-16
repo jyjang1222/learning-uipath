@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "mailpw&Sequence_1",
         "maxStarScorePrice&Sequence_1",
         "mailContent&Sequence_2",
         "mailTitle&Sequence_2",
