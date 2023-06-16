@@ -34,7 +34,7 @@
 ### 딕셔너리 선언
 - 선언방법 : dr_row = DataTable.NewRow
 ### 딕셔너리 참조
-- 참조방법 : dr_row("소속부서"), dr_row(index)
+- 참조방법 : dr_row("소속g부서"), dr_row(index)
 
 ## UiElement 변수 사용법에 대해
 - https://forum.uipath.com/t/variable-uielement/275353
