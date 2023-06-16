@@ -91,6 +91,18 @@
 ### 딕셔너리 정렬
 - dict_temp.OrderBy(Function(x) x.Key).ToDictionary(Function(y) y.Key,Function(y) y.Value)
 
+## 사이트에서 JSON파일 가져오기
+- 패키지 관리에서 WebApi를 추가
+- 'HTTP Request', 'Deserialize JSON' 액티비티를 사용한다.
+- 개발자 도구를 켜서 Network 패널에 Fetch/XHR 에서 필요한 json 파일을 찾아서 HTTP Request의 URL요청 속성에 넣는다.
+### HTTP Request
+- 형식 수락(Accept Format) : JSON 선택
+- URL 요청 : json파일의 url을 넣는다
+- 응답 내용(Response content) : json정보를 담을 변수 선언 
+- 본문 형식 : 'application/json' 작성
+### Deserialize JSON
+- Json문자열을 JObject개체로 변환 해주는 액티비티이다.
+
 ## UiElement 변수 사용법에 대해
 - https://forum.uipath.com/t/variable-uielement/275353
 
