@@ -54,42 +54,8 @@
     - 예시 : aNameList, sName, iAge, g_global, dYear
 - 카멜 표기법을 따른다.
 
-## 데이터 타입
-- Object : 모든 데이터 형식을 받을 수 있는 변수이다. 사용되는 변수의 형식을 명확히 모르거나, 하나의 변수에 다양한 형식의 값을 받고자 할 때 사용된다.
-- DataTable : 테이블형 복합타입이다. 테이블 내의 다양한 데이터 형식을 담을 수도 있으며, 데이터의 구조적 표현이 가능하다.
-- Array of [T] : 열거된 배열 타입이다. T는 변수 유형인 Type의 약자이며, 다양한 데이터 형식을 선택하여 여러 유형의 배열을 생성할 수 있다.
-    - 예시(vb) : {"Tom", "Jerry"}
-
 ## 삼항연산자 사용 방법
 - IF(String.IsNullOrEmpty(도착예정), "알 수 없음", DateTime.Parse(도착예정.Substring(0, 도착예정.ToString.IndexOf("("))).ToString("yyyy-MM-dd"))
-
-## 배열 요소 추가하는 법
-### 배열 선언
-- new String(){}
-
-### 배열 요소 추가하는 법
-- Array.Append(1).ToArray
-- 출력할때 : String.join(",")
-
-### 배열에 ""인 아이템을 삭제하는 코드
-- strArr_total.Where(Function(s) s <> "").ToArray
-- strArr_total = strArr_total.Where(Function(s) s <> "").ToArray
-
-## DataRow 타입
-- Add Data Row 액티비티에서 row의 배열이 너무 길때 유용하다.
-- 선언방법 : dr_row = DataTable.NewRow
-- 참조방법 : dr_row("소속부서"), dr_row(index)
-
-## 딕셔너리 Dictionary 사용법
-### 딕셔너리 선언
-- dict_temp = New Dictionary(of String, String)
-### 딕셔너리 추가
-- dict_temp("key1") = "1", dict_temp("key2") = "2"
-### 값 불러오기
-- for each -> currentItem.ToString. 출력값예: [key1, 1]
-- dict_temp("key1").ToString = "1"
-### 딕셔너리 정렬
-- dict_temp.OrderBy(Function(x) x.Key).ToDictionary(Function(y) y.Key,Function(y) y.Value)
 
 ## 사이트에서 JSON파일 가져오기
 - 패키지 관리에서 WebApi를 추가
@@ -114,9 +80,6 @@
 - js_response("list")(0)("goods_nm").ToString
 - js_response("list").Item(0).item("goods_nm").ToString
 
-## UiElement 변수 사용법에 대해
-- https://forum.uipath.com/t/variable-uielement/275353
-
 ## UI Selector
 - 5초 동안 구성 일시 중지 : F2
 - 이미지 선택 모드 : F3
@@ -124,44 +87,6 @@
     - Default : UiPath에서 자체 개발한 라이브러리입니다. 일반적으론 해당 라이브러리를 사용하여 선택 지정
     - AA : 기본 라이브러리에서 선택되지 않고, MFC, VB6 버전과 같이 오래 전 개발된 프로그램의 엘리먼트를 선택 해야할 경우 사용하여 선택 지정
     - UIA : 기본 라이브러리에서 선택되지 않고, WPF와 같이 비교적 최근 도입된 UI 프레임워크 기반의 프로그램의 엘리먼트를 선택해야할 경우 사용하여 선택 지정
-
-## Methods
-- ToString : 문자열로 타입변환. 
-    - 예) iAge.ToString
-    - 숫자에 , 넣기 : Num.ToString("#,##0")
-- split : 옵션을 추가할때는 , 로 구분한다. 나누는 기준의 디폴트는 공백이다.
-    - split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
-    - split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries
-    - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
-    - 예) sVar.split, Split(sVariable, " ")
-- Contains : 해당 문자열에 명시한 문자열이 있으면 true 없으면 false 반환
-    - 예) row.Contains("성명")
-- Length : 문자열의 길이나 배열의 길이를 반환
-    - 예) sVar.Length, Len(sVar)
-- Trim : 양끝의 공백을 제거한다. 
-    - 예) "Trim : [" + sVariable.Trim + "]"
-- Ltrim : 왼쪽편의 공백을 제거한다.
-    - 예) "Ltrim : [" + LTrim(sVariable) + "]"
-- Rtrim : 오른쪽편의 공백을 제거한다.
-    - 예) "Rtrim : [" + RTrim(sVariable.Trim) + "]"
-- Replace : 특정 문자열을 교체한다.
-    - 예) "Replace : [" + sVariable.Replace("동해", "서해") + "]"
-- Remove : 문자열을 index부터 count만큼 삭제한다. 인덱스는 0부터 시작
-    - 예) sVariable.Remove(startIndex, Count)
-- Left : 왼쪽에서부터 Length만큼만 반환한다.
-    - 예) "Left : [" + Left(sVariable, length) + "]"
-- Right : 오른쪽에서부터 Length만큼만 반환한다.
-    - 예) "Right : [" + Right(sVariable, 6) + "]"
-- Substring : 문자열을 index부터 count만큼만 반환한다. 인덱스는 0부터 시작
-    - 예) "Substring : [" + sVariable.Substring(startIndex, count) + "]"
-- StartsWith : 특정 문자열로 시작하는지.. true or false 로 반환
-- EndsWith : 특정 문자열로 끝나는지.. true or false 로 반환
-- Format
-- IndexOf
-- Environment.NewLine : 개행
-- vbCrLf : 개행
-- system.Environment.UserName : 사용자 계정 이름 가져오기
-- Environment.CurrentDirectory : 현재 프로젝트 디렉토리 가져오기
 
 ## 주석 넣기
 - Activity 기능에 대한 설명 및 변수 사용에 대해 설명을 주석을 통해 넣을 수 있다.
@@ -207,14 +132,6 @@
 - gmail
     - 서버 : "smtp.gmail.com"
     - 포트 : 465
-
-## Get IMAP Mail Message Activity
-- 가져온 메일 데이터는 for each문을 돌려서 확인한다.
-    - 타이틀 : item.Subject
-    - 본문 : item.Body
-- gmail
-    - 서버 : "imtp.gmail.com"
-    - 포트 : 993
 
 ## ToString메서드 대신 사용할 수 있는 문자열 메서드
 - String.Format("{idx1}{idx2}{idx3}", item1, item2, item3)
@@ -272,12 +189,6 @@
 ## Pdf이미지에서 데이터 추출
 - OmniPage OCR
 - Digitize Document
-
-## Document Class
-- https://docs.uipath.com/activities/other/latest/user-guide/document-class
-- 속성
-    - Pages : Pages속성을 활용해서 document의 필요한 데이터를 탐색할 수 있다.
-        - 예) DocumentVariable.Pages(0).Sections(0).WordGroups(1).Words(0).Text
 
 ## 첨부파일 여러개 넣기
 - 파일이름에 경로+파일이름을 작성해도 업로드가 가능하다.

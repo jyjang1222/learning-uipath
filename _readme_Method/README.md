@@ -1,0 +1,37 @@
+## Methods
+- ToString : 문자열로 타입변환. 
+    - 예) iAge.ToString
+    - 숫자에 , 넣기 : Num.ToString("#,##0")
+- split : 옵션을 추가할때는 , 로 구분한다. 나누는 기준의 디폴트는 공백이다.
+    - split메서드의 옵션을 활용해서 공백마다 나누는 것이 아닌 행마다 나누게 한다. 옵션: Environment.NewLine.ToArray
+    - split메서드에 추가 옵션으로 빈문자열일 경우 저장을 하지않도록 할수 있다. 옵션: StringSplitOptions.RemoveEmptyEntries
+    - 예) sGetText.split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)
+    - 예) sVar.split, Split(sVariable, " ")
+- Contains : 해당 문자열에 명시한 문자열이 있으면 true 없으면 false 반환
+    - 예) row.Contains("성명")
+- Length : 문자열의 길이나 배열의 길이를 반환
+    - 예) sVar.Length, Len(sVar)
+- Trim : 양끝의 공백을 제거한다. 
+    - 예) "Trim : [" + sVariable.Trim + "]"
+- Ltrim : 왼쪽편의 공백을 제거한다.
+    - 예) "Ltrim : [" + LTrim(sVariable) + "]"
+- Rtrim : 오른쪽편의 공백을 제거한다.
+    - 예) "Rtrim : [" + RTrim(sVariable.Trim) + "]"
+- Replace : 특정 문자열을 교체한다.
+    - 예) "Replace : [" + sVariable.Replace("동해", "서해") + "]"
+- Remove : 문자열을 index부터 count만큼 삭제한다. 인덱스는 0부터 시작
+    - 예) sVariable.Remove(startIndex, Count)
+- Left : 왼쪽에서부터 Length만큼만 반환한다.
+    - 예) "Left : [" + Left(sVariable, length) + "]"
+- Right : 오른쪽에서부터 Length만큼만 반환한다.
+    - 예) "Right : [" + Right(sVariable, 6) + "]"
+- Substring : 문자열을 index부터 count만큼만 반환한다. 인덱스는 0부터 시작
+    - 예) "Substring : [" + sVariable.Substring(startIndex, count) + "]"
+- StartsWith : 특정 문자열로 시작하는지.. true or false 로 반환
+- EndsWith : 특정 문자열로 끝나는지.. true or false 로 반환
+- Format
+- IndexOf
+- Environment.NewLine : 개행
+- vbCrLf : 개행
+- system.Environment.UserName : 사용자 계정 이름 가져오기
+- Environment.CurrentDirectory : 현재 프로젝트 디렉토리 가져오기

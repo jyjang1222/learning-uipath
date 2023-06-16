@@ -1,4 +1,4 @@
-# UiPath 학습저장소 - 빠코의 디비 스토리
+# UiPath 학습저장소 - 액티비티
 
 ## Activity
 - RPA 개발 프로세스는 크게 2가지 유형이며 Sequence, Flow Chart 방식이다.
@@ -306,3 +306,11 @@ DataTable DataType의 변수로부터 Row 값들을 하나씩 꺼내오는 역�
 ### Navigate To
 - 입력한 url로 이동하는 액티비티이다.
 - 입력값으로 브라우저 변수와 url를 넣으면 된다.
+
+### Get IMAP Mail Message Activity
+- 가져온 메일 데이터는 for each문을 돌려서 확인한다.
+    - 타이틀 : item.Subject
+    - 본문 : item.Body
+- gmail
+    - 서버 : "imtp.gmail.com"
+    - 포트 : 993
