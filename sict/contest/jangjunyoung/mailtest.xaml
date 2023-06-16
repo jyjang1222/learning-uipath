@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>680.8,975.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1140.8,1104.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -47,6 +47,7 @@
       <x:String>System.Windows.Media.Animation</x:String>
       <x:String>System.Windows</x:String>
       <x:String>System.Windows.Threading</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -112,26 +113,32 @@
       <AssemblyReference>System.Windows.Presentation</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="608,910.4" sap2010:WorkflowViewState.IdRef="Sequence_42">
+  <Sequence sap:VirtualizedContainerService.HintSize="608,1040" sap2010:WorkflowViewState.IdRef="Sequence_42">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="pw" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="545.6,798.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" Url="https://mail.google.com/mail/">
+    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="545.6,24.8" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJcWSJ5VBhkOxMJqbuhFZPgAAAAACAAAAAAAQZgAAAAEAACAAAADf5yWCoZLQx8e7FMYz05ShKFwqSccT9q7F/OXnrPLMSgAAAAAOgAAAAAIAACAAAACJzQZws01Gn5VyN3+zyHWP/JIWF8mdPbohZm8xOfOEmBAAAAD0SkWIBoQM6vvljinujfcNQAAAAP0/k2ItgmsnOk81WKOVeMxjAzTkGK80Jqx5m2K2cxWlV/E/QfEeijridgtNGTg1EV4gnkGxhKjQV7QPdOYes7o=" Result="[pw]" />
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="545.6,863.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" Url="https://mail.google.com/mail/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="512,696" sap2010:WorkflowViewState.IdRef="Sequence_44">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="512,760.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
             <Sequence sap2010:Annotation.AnnotationText="로그인" sap:VirtualizedContainerService.HintSize="449.6,584" sap2010:WorkflowViewState.IdRef="Sequence_43">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -149,7 +156,7 @@
                 </ui:TypeInto.Target>
               </ui:TypeInto>
               <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-              <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="387.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="a123456789![k(enter)]">
+              <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="387.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[pw + &quot;[k(enter)]&quot;]">
                 <ui:TypeInto.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73f53736-d9b3-4a96-aa03-c9990b99928a" InformativeScreenshot="1244ec5bf93c41ec0a93ef704ccb99f3" Selector="&lt;html app='chrome.exe' title='Gmail' /&gt;&lt;webctrl tag='INPUT' type='password' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>

@@ -60,6 +60,9 @@
 - Array of [T] : 열거된 배열 타입이다. T는 변수 유형인 Type의 약자이며, 다양한 데이터 형식을 선택하여 여러 유형의 배열을 생성할 수 있다.
     - 예시(vb) : {"Tom", "Jerry"}
 
+## 삼항연산자 사용 방법
+- IF(String.IsNullOrEmpty(도착예정), "알 수 없음", DateTime.Parse(도착예정.Substring(0, 도착예정.ToString.IndexOf("("))).ToString("yyyy-MM-dd"))
+
 ## 배열 요소 추가하는 법
 ### 배열 선언
 - new String(){}

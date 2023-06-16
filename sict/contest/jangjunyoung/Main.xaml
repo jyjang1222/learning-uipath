@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1305.6,11101.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1305.6,11099.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,7 +112,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1316,11036.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1316,11034.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_category1" />
       <Variable x:TypeArguments="x:Int32" Default="1" Name="idx_depth1" />
@@ -200,13 +200,13 @@
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
     <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1253.6,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome.exe" />
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1253.6,10290.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" Url="https://www.naturerepublic.com/goods/goods/list">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1253.6,10288" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" Url="https://www.naturerepublic.com/goods/goods/list">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="1220,10188" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="1220,10185.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="mailTitle" />
               <Variable x:TypeArguments="x:String" Name="mailContent" />
@@ -226,13 +226,13 @@
                 </ui:Target>
               </ui:ExtractData.Target>
             </ui:ExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_category1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1157.6,6983.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_category1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1157.6,6980.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row1" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="loop1" sap:VirtualizedContainerService.HintSize="1124,6867.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="loop1" sap:VirtualizedContainerService.HintSize="1124,6864.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_category2" />
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_detailType" />
@@ -278,13 +278,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:BuildDataTable>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="데이터 추출" DataTable="[dt_category2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1061.6,3828" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="데이터 추출" DataTable="[dt_category2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1061.6,3825.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row2" />
                           </ActivityAction.Argument>
-                          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="loop2" sap:VirtualizedContainerService.HintSize="930.4,3680.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="loop2" sap:VirtualizedContainerService.HintSize="817.6,3678.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="itemCnt" />
                               <Variable x:TypeArguments="x:Int32" Name="urlIdx" />
@@ -298,7 +298,7 @@
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="868,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="755.2,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -328,9 +328,9 @@
                                 </scg:List>
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
-                            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="868,60" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[urlLowPrice]" />
-                            <Delay Duration="00:00:00.5750000" sap:VirtualizedContainerService.HintSize="868,90.4" sap2010:WorkflowViewState.IdRef="Delay_15" />
-                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'B'" sap:VirtualizedContainerService.HintSize="868,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="755.2,60" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[urlLowPrice]" />
+                            <Delay Duration="00:00:00.6000000" sap:VirtualizedContainerService.HintSize="755.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_15" />
+                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'B'" sap:VirtualizedContainerService.HintSize="755.2,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
                               <ui:GetValue.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6cf83272-fd97-451e-b8f7-45387b427595" InformativeScreenshot="baa1fda6a82b3e41806022d2fdf19b5d" Selector="&lt;webctrl class='total' tag='B' /&gt;" WaitForReady="COMPLETE">
                                   <ui:Target.TimeoutMS>
@@ -342,7 +342,7 @@
                                 <OutArgument x:TypeArguments="x:String">[itemCnt]</OutArgument>
                               </ui:GetValue.Value>
                             </ui:GetValue>
-                            <Assign sap:VirtualizedContainerService.HintSize="868,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign sap:VirtualizedContainerService.HintSize="755.2,80.8" sap2010:WorkflowViewState.IdRef="Assign_5">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[itemCnt]</OutArgument>
                               </Assign.To>
@@ -350,18 +350,18 @@
                                 <InArgument x:TypeArguments="x:String">[itemCnt.Replace("개", "")]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="868,2834.4" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
+                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="755.2,2832.8" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
                               <ui:IfElseIf.ConditionBlocks>
                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                   <ui:IfElseIfBlock BlockType="If" Condition="[Cint(itemCnt) &gt; 0]">
                                     <ui:IfElseIfBlock.Then>
-                                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="704.8,2638.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="704.8,2637.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="642.4,703.2" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
+                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="642.4,702.4" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
                                           <ui:IfElseIf.ConditionBlocks>
                                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                               <ui:IfElseIfBlock BlockType="If" Condition="[Cint(itemCnt) &gt;= 17]">
