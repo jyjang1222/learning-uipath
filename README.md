@@ -102,6 +102,17 @@
 - 본문 형식 : 'application/json' 작성
 ### Deserialize JSON
 - Json문자열을 JObject개체로 변환 해주는 액티비티이다.
+### 사용예시
+- {
+    "params": [],
+    "pages": {
+      ...
+    },
+    "list" : [...
+    ]
+  }
+- js_response("list")(0)("goods_nm").ToString
+- js_response("list").Item(0).item("goods_nm").ToString
 
 ## UiElement 변수 사용법에 대해
 - https://forum.uipath.com/t/variable-uielement/275353
