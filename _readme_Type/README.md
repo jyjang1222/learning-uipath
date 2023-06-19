@@ -31,9 +31,9 @@
 
 ## 데이터로우 DataRow
 - Add Data Row 액티비티에서 row의 배열이 너무 길때 유용하다.
-### 딕셔너리 선언
+### 데이터로우 선언
 - 선언방법 : dr_row = DataTable.NewRow
-### 딕셔너리 참조
+### 데이터로우 참조
 - 참조방법 : dr_row("소속g부서"), dr_row(index)
 
 ## UiElement 변수 사용법에 대해
