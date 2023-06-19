@@ -12,7 +12,7 @@
 
 ### 배열 요소 추가하는 법
 - Array.Append(1).ToArray
-- 출력할때 : String.join(",")
+- 출력할때 : String.join(",", Array)
 
 ### 배열에 ""인 아이템을 삭제하는 코드
 - strArr_total.Where(Function(s) s <> "").ToArray
