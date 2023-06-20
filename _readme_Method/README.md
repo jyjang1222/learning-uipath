@@ -29,9 +29,10 @@
     - 예) "Substring : [" + sVariable.Substring(startIndex, count) + "]"
 - StartsWith : 특정 문자열로 시작하는지.. true or false 로 반환
 - EndsWith : 특정 문자열로 끝나는지.. true or false 로 반환
-- Format
-- IndexOf
+- String.Format : String.Format("{0}{1}", variable, variable)
+- IndexOf : 첫인덱스부터 탐색해서 특정문자열의 인덱스를 반환
 - Environment.NewLine : 개행
 - vbCrLf : 개행
-- system.Environment.UserName : 사용자 계정 이름 가져오기
+- Environment.UserName : 사용자 계정 이름 가져오기
 - Environment.CurrentDirectory : 현재 프로젝트 디렉토리 가져오기
+- String.IsNullOrEmpty : null인지 빈값인지 boolean값 반환

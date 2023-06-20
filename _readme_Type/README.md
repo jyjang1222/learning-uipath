@@ -21,11 +21,13 @@
 ## 딕셔너리 Dictionary
 ### 딕셔너리 선언
 - dict_temp = New Dictionary(of String, String)
+- dict_temp = New Dictionary(of String, Int32)
 ### 딕셔너리 추가
 - dict_temp("key1") = "1", dict_temp("key2") = "2"
+- for each -> dict_temp("key"+idx_i.ToString) = idx_i
 ### 값 불러오기
-- for each -> currentItem.ToString. 출력값예: [key1, 1]
-- dict_temp("key1").ToString = "1"
+- for each -> item.Key, item.Value.ToString
+- dict_temp("key1").ToString = 1
 ### 딕셔너리 정렬
 - dict_temp.OrderBy(Function(x) x.Key).ToDictionary(Function(y) y.Key,Function(y) y.Value)
 
