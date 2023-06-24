@@ -9,6 +9,7 @@
 ## 배열 Array
 ### 배열 선언
 - new String(){}
+- new String()(){}
 
 ### 배열 요소 추가하는 법
 - Array.Append(1).ToArray
