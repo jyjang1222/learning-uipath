@@ -1,4 +1,8 @@
-# VBA 기록
+# VBA 학습
+## 참고 사이트
+- https://kukuta.tistory.com/397
+- https://mainia.tistory.com/6097
+
 ## 시트 존재 확인 후 추가
 ```javascript
 Sub AddWorksheet(ByVal WorksheetName As String)
