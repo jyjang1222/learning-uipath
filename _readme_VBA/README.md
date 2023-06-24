@@ -23,46 +23,37 @@ WorksheetExists = (Sheets(WorksheetName).name <> "")
 On Error GoTo 0
 
 End Function
-
-
 ```
 
+## 3차원 배열의 값을 VBA을 통해 sheet 만들고 데이터 입력
 ```javascript
-Function macro2(arr1, arr2_1, arr2_2, arr2_3, arr3)
+Sub macro(MyArray As Variant)
+
+    Dim i As Integer
     
-'워크시트가 없으면 추가
-    For i = LBound(arr1) To UBound(arr1)
-        If WorksheetExists(arr1(i)) = False Then
-            Worksheets.Add().Name = arr1(i)
+'   시트없으면 생성
+    For i = 0 To UBound(MyArray) Step 1
+        If WorksheetExists(MyArray(i)(0)) = False Then
+            Worksheets.Add().Name = MyArray(i)(0)
         End If
     Next i
     
-'워크시트 이동
-    Worksheets("미존재2").Move after:=Worksheets("Sheet1")
-    Worksheets("미존재3").Move after:=Worksheets("미존재2")
-    Worksheets("미존재4").Move after:=Worksheets("미존재3")
-
-'값 입력
-    For i = LBound(arr2_1) To UBound(arr2_1)
-        Sheets("미존재2").Cells(1, i + 1) = arr2_1(i)
+'   시트 순서에 맞게 이동
+    For i = 1 To UBound(MyArray) Step 1
+        Worksheets(MyArray(i)(0)).Move after:=Worksheets(MyArray(i - 1)(0))
     Next i
     
-    For i = LBound(arr2_2) To UBound(arr2_2)
-        Sheets("미존재3").Cells(1, i + 1) = arr2_2(i)
+'   데이터 입력.
+    For i = 0 To UBound(MyArray) Step 1
+        Dim j As Integer
+'   j = 0 에는 시트명이 있기 때문에 1부터 시작
+        For j = 1 To UBound(MyArray(i)) Step 1
+            Dim k As Integer
+            For k = 0 To UBound(MyArray(i)(j)) Step 1
+                Debug.Print i, j, k
+                Sheets(MyArray(i)(0)).Cells(j, k + 1) = MyArray(i)(j)(k)
+            Next k
+        Next j
     Next i
-    
-    For i = LBound(arr2_3) To UBound(arr2_3)
-        Sheets("미존재4").Cells(1, i + 1) = arr2_3(i)
-    Next i
-    
-    For i = LBound(arr3) To UBound(arr3)
-        Sheets("미존재2").Cells(2, i + 1) = arr3(i)
-        Sheets("미존재3").Cells(2, i + 1) = arr3(i)
-        Sheets("미존재4").Cells(2, i + 1) = arr3(i)
-        Sheets("미존재2").Cells(3, i + 1) = arr3(i)
-        Sheets("미존재3").Cells(3, i + 1) = arr3(i)
-        Sheets("미존재4").Cells(3, i + 1) = arr3(i)
-    Next i
-    
-End Function
+End Sub
 ```
