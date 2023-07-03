@@ -5,7 +5,7 @@
 
 ## 정규식 연습 사이트
 - https://regexr.com
-
+- https://youtu.be/V_ePeBaQzSc
 ## UiPath Extension
 - uipath홈에서 도구를 통해 확장기능을 추가 할수있다.
 - 확장기능을 설치한 후 해당 브라우저에 접속하면 확장프로그램이 설치된다.
@@ -49,13 +49,16 @@
 - 패키지 관리에서 WebApi를 추가
 - 'HTTP Request', 'Deserialize JSON' 액티비티를 사용한다.
 - 개발자 도구를 켜서 Network 패널에 Fetch/XHR 에서 필요한 json 파일을 찾아서 HTTP Request의 URL요청 속성에 넣는다.
+
 ### HTTP Request
 - 형식 수락(Accept Format) : JSON 선택
 - URL 요청 : json파일의 url을 넣는다
 - 응답 내용(Response content) : json정보를 담을 변수 선언 
 - 본문 형식 : 'application/json' 작성
+
 ### Deserialize JSON
 - Json문자열을 JObject개체로 변환 해주는 액티비티이다.
+
 ### 사용예시
 - {
     "params": [],
