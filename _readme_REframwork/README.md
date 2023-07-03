@@ -28,5 +28,6 @@
 
 3. Process Transaction State
 - 앞의 단계 에서 받아온 트랜잭션 데이터를 처리하는 단계이다.
+- 처리 결과 
 
 4. End Process State
