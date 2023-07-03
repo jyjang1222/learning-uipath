@@ -3,11 +3,6 @@
 ## RPA Challenges
 - https://community.robotict.com/c/challenge/9
 
-## 정규식 연습 사이트
-- https://regexr.com - 직접 코드
-- https://youtu.be/V_ePeBaQzSc - 생활코딩
-- http://zvon.org/comp/r/tut-Regexp.html#Pages~Contents - 정규식 예시
-
 ## UiPath Extension
 - uipath홈에서 도구를 통해 확장기능을 추가 할수있다.
 - 확장기능을 설치한 후 해당 브라우저에 접속하면 확장프로그램이 설치된다.
