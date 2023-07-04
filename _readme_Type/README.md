@@ -51,3 +51,7 @@
 - 속성
     - Pages : Pages속성을 활용해서 document의 필요한 데이터를 탐색할 수 있다.
         - 예) DocumentVariable.Pages(0).Sections(0).WordGroups(1).Words(0).Text
+
+## 타입 변환
+### String To DateTime
+- Datetime.ParseExact(row("마감일").ToString, "yy-mm-dd", System.Globalization.CultureInfo.CurrentUICulture.DateTimeFormat)
