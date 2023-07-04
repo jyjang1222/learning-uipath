@@ -35,8 +35,11 @@
 |l|long 형 변수|
 |**s**|String 문자열|
 |**dt**|DataTable 형 변수|
+|**in**|안으로 전달할 인수|
+|**out**|밖으로전달받을 인수|
+
 - 변수명의 첫 글자는 변수 타입을 의미하는 접두어를 사용하며 소문자로 표현해준다.
-    - 예시 : aNameList, sName, iAge, g_global, dYear
+    - 예시 : aNameList, sName, iAge, g_global, dYear, dt_data, in_name
 - 카멜 표기법을 따른다.
 
 ## 삼항연산자 사용 방법
