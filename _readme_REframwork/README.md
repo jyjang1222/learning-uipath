@@ -1,5 +1,6 @@
 # Reframework
-
+## 정보 사이트
+- https://www.youtube.com/watch?v=JPZ7a3lS2Io&ab_channel=HarikaMudiam - config assets
 ## 기억사항
 - 오케스트레이터 폴더에 맞게 프로세스를 실행해야 정상작동한다.
 - 하단의 파란 바 에서 프로세스 폴더 선택 가능
