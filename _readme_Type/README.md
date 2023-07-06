@@ -54,4 +54,5 @@
 
 ## 타입 변환
 ### String To DateTime
-- Datetime.ParseExact(row("마감일").ToString, "yy-mm-dd", System.Globalization.CultureInfo.CurrentUICulture.DateTimeFormat)
+- CDate(row("마감일")).ToString("yyyy-MM-dd")
+- 2024년08월24일, 2024-08-24 가능, 24년08월24일
